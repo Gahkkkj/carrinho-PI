@@ -22,7 +22,7 @@
 						<thead>
 							<tr>
 								<th colspan='2' class='text-center'>Produtos</th>
-								<th>Price</th>
+								<th>preco_produto</th>
 								<th>Qty</th>
 								<th>Total</th>
 								<th>Action</th>
@@ -34,7 +34,7 @@
 							<tr>
 								<td><img src='images/<?php echo $item["img"];?>' style='height:80px;' ></td>
 								<td><?php echo $item["name"];?></td>
-								<td> R$ <?php echo $item["price"];?></td>
+								<td> R$ <?php echo $item["preco_produto"];?></td>
 								<td><input type='number' value='<?php echo $item["qty"];?>' class='qty' pid='<?php echo $item["id"]; ?>' min='1'></td>
 								<td> R$ <span class='row_total'><?php echo $item["total"];?></span></td>
 								<td><a href='remove.php?id=<?php echo $item["id"]; ?>' onclick="return confirm('Are You Sure?')">Remover</a></td>

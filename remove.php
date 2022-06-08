@@ -5,5 +5,5 @@
   include "cart.class.php";
   $cart=new Cart();
   $cart->remove($id);
-  header("location:view_cart.php");
+  header("location:view_carrinho.php");
 ?>

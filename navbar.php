@@ -29,7 +29,7 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
       <a class="nav-item nav-link" href="index.php">Produtos</a>
-      <a class="nav-item nav-link" href="view_cart.php">Carrinho (<?php echo $cart->get_cart_count();?>)</a>
+      <a class="nav-item nav-link" href="view_carrinho.php">Carrinho (<?php echo $cart->get_cart_count();?>)</a>
     </div>
   </div>
   </div>

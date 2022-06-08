@@ -31,7 +31,7 @@ if(!session_id()){
 		
 		#add item to cart
 		public function add_to_cart($item=[]){
-			if(isset($item["id"],$item["name"],$item["price"],$item["qty"],$item["total"])){
+			if(isset($item["id"],$item["name"],$item["preco_produto"],$item["qty"],$item["total"])){
 				
 				#Check Product already exists
 				$ids=$this->get_ids();
@@ -39,7 +39,7 @@ if(!session_id()){
 					
 					#update qty and total
 					$this->cart_items[$item["id"]]["qty"]+=$item["qty"];
-					$this->cart_items[$item["id"]]["total"]=$this->cart_items[$item["id"]]["qty"]*$item["price"];
+					$this->cart_items[$item["id"]]["total"]=$this->cart_items[$item["id"]]["qty"]*$item["preco_produto"];
 				}else{
 					
 					#add item to cart
@@ -56,7 +56,7 @@ if(!session_id()){
 		#update cart qty
 		public function update_cart($item=[]){
 			$this->cart_items[$item["id"]]["qty"]=$item["qty"];
-			$this->cart_items[$item["id"]]["total"]=$this->cart_items[$item["id"]]["qty"]*$this->cart_items[$item["id"]]["price"];
+			$this->cart_items[$item["id"]]["total"]=$this->cart_items[$item["id"]]["qty"]*$this->cart_items[$item["id"]]["preco_produto"];
 			$this->commit();
 			return true;
 		}

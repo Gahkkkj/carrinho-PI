@@ -17,7 +17,7 @@
 			<h2 class='text-muted mb-4'>Seu pedido concluido</h2>
 			<div class='row'>
 				<div class='col-md-12'>
-						<div class='alert alert-success'>Seu pedido é #<?php echo $_GET["order_no"];?></div>
+						<div class='alert alert-success'>Seu pedido é #<?php echo $_GET["PEDIDO_NO"];?></div>
 					</div>
 					
 				</div>

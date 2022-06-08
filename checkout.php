@@ -19,22 +19,22 @@
 			$uid=$con->insert_id;
 
 			#insert Order information
-			$order_no=rand(10000,100000);
+			$PEDIDO_NO=rand(10000,100000);
 			$total_amt=$cart->get_cart_total();
-			$sql="insert into orders (ORDER_NO,ORDER_DATE,UID,TOTAL_AMT) values ('{$order_no}',NOW(),'{$uid}','{$total_amt}')";
+			$sql="insert into orders (PEDIDO_NO,data_pedido,UID,TOTAL_AMT) values ('{$PEDIDO_NO}',NOW(),'{$uid}','{$total_amt}')";
 			if($con->query($sql)){
 				$oid=$con->insert_id;
 				
 				#insert Order Item Details
-				$sql="insert into order_details (OID,PID,PNAME,PRICE,QTY,TOTAL) values ";
+				$sql="insert into detalhes_pedido (OID,PID,PNAME,preco_produto,QTY,TOTAL) values ";
 				$rows=[];
 				foreach($cart->get_all_items() as $item){
-					$rows[]="('{$oid}','{$item["id"]}','{$item["name"]}','{$item["price"]}','{$item["qty"]}','{$item["total"]}')";
+					$rows[]="('{$oid}','{$item["id"]}','{$item["name"]}','{$item["preco_produto"]}','{$item["qty"]}','{$item["total"]}')";
 				}
 				$sql.=implode(",",$rows);
 				if($con->query($sql)){
 					$cart->destroy();
-					header("location:complete.php?order_no={$order_no}");
+					header("location:complete.php?PEDIDO_NO={$PEDIDO_NO}");
 				}
 			}
 			

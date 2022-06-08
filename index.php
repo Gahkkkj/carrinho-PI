@@ -6,7 +6,7 @@
 	$cart=new Cart();
   
 	$data=[];
-	$sql="select * from products";
+	$sql="select * from produtos";
 	$res=$con->query($sql);
 	if($res->num_rows>0){
 		while($row=$res->fetch_assoc()){
@@ -33,7 +33,7 @@
 						  <div class="card-body">
 							<h5 class="card-title"><?php echo $row["PRODUCT"]; ?></h5>
 							<p class="card-text">
-							Preço R$ <?php echo $row["PRICE"]; ?> 
+							Preço R$ <?php echo $row["preco_produto"]; ?> 
 							</p>
 							<a href="view_details.php?id=<?php echo $row["PID"]; ?>" class='btn btn-primary  float-right' >View Details</a>
 						  </div>
