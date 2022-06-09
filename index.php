@@ -47,10 +47,12 @@ if ($res->num_rows > 0) {
 		</div>
 
 	</section>
-	<section>
 
-		<footer class="pt-4 pt-md-5 mt-5 border-top bg-dark" id="futer">
+
+	<section>
+		<footer class="pt-4 pt-md-5 mt-5text-center  border-top bg-dark" id="futer">
 			<div class="row andrei">
+
 				<div class="col-4">
 					<h5 class="andreifooter"> MAIS </h5>
 					<ul class="list-unstyled text-small">
@@ -83,6 +85,7 @@ if ($res->num_rows > 0) {
 			</div>
 		</footer>
 	</section>
+	
 </body>
 
 </html>
