@@ -75,6 +75,7 @@ if ($res->num_rows > 0) {
 				</div>
 				<div class="col-4">
 					<h5 class="andreifooter"> SOBRE </h5>
+					
 					<ul class="list-unstyled text-small">
 						<li><a class="text-muted" href="#">Equipe</a></li>
 						<li><a class="text-muted" href="#">Locais</a></li>
