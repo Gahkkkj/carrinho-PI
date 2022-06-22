@@ -13,23 +13,19 @@
 
 <body class="text-dark" style="background-color: #C7A4A4;">
 
-  <header class="jumbotron bg-dark andreifooter" style="text-align: center;">
-    <h1 class="display-4" style="color: orange;"> MAXEL </h1>
-    <p class="lead " style="color: orange;"> Busque do melhor! </p>
+  <header>
+    <div class="d-flex justify-content-around align-items-center bg-dark andreifooter">
+      <a class="navbar-brand btn btn-dark " style="color: orange;" href="index.php">Menu</a>
+       <h1 class="display-4" style="color: orange;"> MAXEL
+        <p class="lead " style="color: orange;"> Busque do melhor! </p>
+      </h1>
+      <h2 class="row">
+         <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="index.php" role="button">Produtos</a>
+        <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="view_carrinho.php">Carrinho (<?php echo $cart->get_cart_count(); ?>)</a>
+      </h2>
+    </div>
+    </div>
+
   </header>
 
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
-      <div class='container'>
-        <a class="navbar-brand" href="index.php">Menu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="index.php">Produtos</a>
-            <a class="nav-item nav-link" href="view_carrinho.php">Carrinho (<?php echo $cart->get_cart_count(); ?>)</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+  
