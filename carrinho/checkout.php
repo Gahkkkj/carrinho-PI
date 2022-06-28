@@ -48,7 +48,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     </head>
     <body>
-		<?php include "navbar.php"; ?>
+		<?php include "../includes/header.php"; ?>
         <div class='container mt-5'>
 			<h2 class='text-muted mb-4'>Detalhes da compra</h2>
 			<div class='row'>

@@ -12,4 +12,5 @@
     require __DIR__.'/includes/Usuario.php';   
 
     require __DIR__.'/includes/footer.php';
+    require __DIR__ . '/carrinho/index.php';
 ?>

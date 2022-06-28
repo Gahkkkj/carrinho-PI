@@ -31,7 +31,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     </head>
     <body>
-	<?php include "navbar.php"; ?>
+	<?php include "../includes/header.php"; ?>
         <div class='container mt-5'>
 			<div class='row'>
 				<div class='col-md-9 mx-auto'>

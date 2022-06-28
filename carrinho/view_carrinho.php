@@ -12,7 +12,7 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
-		<?php include "navbar.php"; ?>
+		<?php include "../includes/header.php"; ?>
         <div class='container mt-3'>
 			<div class='row'>
 				<div class='col-md-12'>

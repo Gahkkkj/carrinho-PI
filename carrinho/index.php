@@ -25,7 +25,7 @@ if ($res->num_rows > 0) {
 
 <body>
 	<section>
-		<?php include "navbar.php"; ?>
+		<?php include "../includes/header.php"; ?>
 		<div class='container mt-5 pb-5'>
 			<h2 class='text-muted mb-4 text-center'>Produtos</h2>
 			<div class='row'>
@@ -38,6 +38,7 @@ if ($res->num_rows > 0) {
 								<p class="card-text">
 									Preço R$ <?php echo $row["preco_produto"]; ?>
 								</p>
+								<a href="view_details.php?id=<?php echo $row["PID"]; ?>" class='btn btn-primary  float-right'>View Details</a>
 								<a href="view_details.php?id=<?php echo $row["PID"]; ?>" class='btn btn-primary  float-right'>View Details</a>
 							</div>
 						</div>
