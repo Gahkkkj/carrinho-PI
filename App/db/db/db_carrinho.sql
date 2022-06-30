@@ -121,43 +121,11 @@ CREATE TABLE `produtos_carrinho` (
 --
 -- insert table `produtos`
 --
-INSERT INTO
-  `produtos_carrinho` (
-    `PID`,
-    `PRODUCT`,
-    `preco_produto`,
-    `IMAGE`,
-    `DESCRIPTION`
-  )
-VALUES
-  (
-    2,
-    'Product 1',
-    100.00,
-    '2.jpg',
-    'pc gamer pronto pra entrega'
-  ),
-  (
-    3,
-    'Product 2',
-    75.00,
-    '3.jpg',
-    'placa de video mostra'
-  ),
-  (
-    4,
-    'Product 3',
-    45.00,
-    '4.jpg',
-    'headset gamer black'
-  ),
-  (
-    5,
-    'Product 4',
-    85.00,
-    '5.jpg',
-    'garrafinha de agua tonica bolada com rgb'
-  );
+INSERT INTO `produtos_carrinho` (`PID`, `PRODUCT`, `preco_produto`, `IMAGE`, `DESCRIPTION`) VALUES
+(2, 'Product 1', 100.00, '2.jpg', 'pc gamer pronto pra entrega'),
+(3, 'Product 2', 75.00, '3.jpg', 'placa de video mostra'),
+(4, 'Product 3', 45.00, '4.jpg', 'headset gamer black'),
+(5, 'Product 4', 85.00, '5.jpg', 'garrafinha de agua tonica bolada com rgb');
 
 -- --------------------------------------------------------
 --
