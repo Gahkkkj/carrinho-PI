@@ -39,6 +39,9 @@ if (isset($_GET['status'])) {
     <a href="cadastrar">
         <button class="btn btn-success"> Cadastrar </button>
     </a>
+    <a href="cadastrarCart.php">
+        <button class="btn btn-success"> Cadastrar cart </button>
+    </a>
 
     <?php if (count($Noticia) == 0) { ?>
         <div class="alert alert-secondary mt-3"> Nenhuma Vaga Encontrada </div>

@@ -101,7 +101,7 @@ class Pedido
      * Função para excluir vagas no banco
      * @return boolean
      */
-    public function excluirPedido()
+    public function excluirPedidos()
     {
         $objdatabase = new database('detalhes_pedido');
 

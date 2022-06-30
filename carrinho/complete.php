@@ -29,7 +29,7 @@ $cart = new Cart();
 		</div>
 		<div class="form-group" style="margin-top: 5%; margin-bottom: 10%;">
 			<a href="../pedidoindex.php">
-				<button type="button" class="btn btn-secondary">Ver pedidos </button>
+				<button type="button" class="btn btn btn-success">Ver pedidos </button>
 			</a>
 
 		</div>

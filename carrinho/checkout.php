@@ -56,29 +56,29 @@
 					<form method='post' action='<?php echo $_SERVER["REQUEST_URI"];?>' autocomplete="off">
 						<div class='form-group'>
 							<label>Nome</label>
-							<input type='text' name='name' class='form-control' required placeholder='User Name'>
+							<input type='text' name='name' class='form-control' required placeholder='Usuario'>
 						</div>
 						<div class='form-group'>
 							<label>Email</label>
-							<input type='email' name='email' class='form-control' required placeholder='User Name'>
+							<input type='email' name='email' class='form-control' required placeholder='Email'>
 						</div>
 						<div class='form-group'>
 							<label>Numero</label>
-							<input type='text' name='contact' class='form-control' required placeholder='Contact No'>
+							<input type='text' name='contact' class='form-control' required placeholder='Numero de Telefone'>
 						</div>
 						<div class='form-group'>
 							<label>Endereço</label>
-							<textarea class='form-control' required name='address'></textarea>
+							<textarea class='form-control' required name='Endereço'></textarea>
 						</div>
 						<div class='form-group'>
 							<label>Cidade</label>
-							<input type='text' name='city' class='form-control' required placeholder='City'>
+							<input type='text' name='city' class='form-control' required placeholder='Cidade'>
 						</div>
 						<div class='form-group'>
 							<label>Senha</label>
-							<input type='text' name='pincode' class='form-control' required placeholder='Pincode'>
+							<input type='text' name='pincode' class='form-control' required placeholder='Senha'>
 						</div>
-						<input type='submit' name='submit' value='Checkout' class='btn btn-primary'>
+						<input type='submit' name='submit' value='Enviar' class='btn btn-success'>
 					</form>
 				</div>
 			</div>
