@@ -2,6 +2,8 @@
     require __DIR__.'/vendor/autoload.php';
 
     use \App\entity\Noticia;
+    $Noticia = Noticia::getNoticia();
+    $obNoticia = new Noticia;
 
     $busca = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_STRING);
 
@@ -23,5 +25,5 @@
     require __DIR__.'/includes/header.php';
     require __DIR__.'/includes/listagem.php';
     require __DIR__.'/includes/footer.php';
-    require __DIR__ . '/carrinho/index.php';
+
 ?>

@@ -25,7 +25,7 @@
         header('location: indexProdutos.php?status=success');
         exit;
     }
-    require __DIR__ . '/carrinho/index.php';
+   
     require __DIR__.'/includes/header.php';
     require __DIR__.'/includes/confirmarExclusao.php';
     require __DIR__.'/includes/footer.php';

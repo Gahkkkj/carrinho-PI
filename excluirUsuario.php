@@ -26,7 +26,7 @@ use \App\entity\Usuario;
         header('location: listaUsuario.php?status=success');
         exit;
     }
-    require __DIR__ . '/carrinho/index.php';
+ 
     require __DIR__.'/includes/header.php';
     require __DIR__.'/includes/confirmarExclusaoUsuario.php';
     require __DIR__.'/includes/footer.php';

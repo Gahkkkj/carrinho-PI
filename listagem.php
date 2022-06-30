@@ -16,7 +16,7 @@ if (isset($_GET['status'])) {
 ?>
 
 <?php 
-    require __DIR__.'../../vendor/autoload.php';
+    require __DIR__.'/vendor/autoload.php';
 
     use \App\entity\Noticia;
 
