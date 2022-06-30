@@ -86,6 +86,7 @@ if (isset($_GET['status'])) {
                                 </div>
 
                             </div>
+                            
                             <div style="text-align: center; margin-top: 7%;">
 
                                 <a href="https://wa.me/5551995665319">
@@ -111,25 +112,25 @@ if (isset($_GET['status'])) {
 			
                 
         <div class='card-deck row' style="margin-top: 5%">
-				<?php foreach ($Pedido as $key => $value) { ?>
-                    <div class="col-12 col-xl-3 item item-selecionado-<?php echo $value->ID; ?>">
+				<?php foreach($data as $row => $value) { ?>
+                    <div class="col-12 col-xl-3 item item-selecionado-<?php echo $value->$IDpedido; ?>">
                     <div class='card mb-4 botoes'>
                         <img src='assets/image/adoleta.webp' class="card-img-top">
                         <div class='card-body' style="text-align: center;">
-                            <h5 class='card-title'><?php echo $value->PNAME; ?></h5>
-                            <p class='card-text'><?php echo $value->preco_produto; ?></p>
-                            <p class='card-text'><?php echo $value->QTY; ?></p>
+                            <h5 class='card-title'><?php echo $row["PRODUCT"]; ?></h5>
+                            <p class='card-text'><?php echo $row["preco_produto"]; ?></p>
+                            <p class='card-text'><?php echo  $row["PID"]; ?></p>
                         </div>
                         <div class="row mt-3" style="margin-right: 0px">
                                 <div class="col-6">
-                                    <a href="editar.php?id=<?php echo $value->id; ?>">
+                                    <a href="editar.php?id=<?php echo $value->ID; ?>">
                                         <button type='button' class='btn btn-success botoes' style="padding: 0.375rem 1.1rem; text-align: center;">Editar</button>
                                     </a>
                                 </div>
 
                                 <div class="col-5">
 
-                                    <a href="excluir.php?id=<?php echo $value->id; ?>">
+                                    <a href="excluir.php?id=<?php echo $value->ID; ?>">
                                         <button type='button' class='btn btn-danger botoes' style="padding: 0.375rem 1.1rem; text-align: center;">Excluir</button>
                                     </a>
                                 </div>
