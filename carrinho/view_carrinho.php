@@ -2,7 +2,7 @@
 	include "config.php";
 	session_start();
 	
-	include "./App/entity/cart.php";
+	include "cart.class.php";
 	$cart=new Cart();
 ?>
 <html>
@@ -12,7 +12,7 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
-		<?php include "../includes/headerCart.php"; ?>
+		<?php include "navbar.php"; ?>
         <div class='container mt-3'>
 			<div class='row'>
 				<div class='col-md-12'>
@@ -43,7 +43,7 @@
 						</tbody>
 						<tfoot>
 							<tr>
-								<td colspan='3'><a href='indexCart.php' class="btn btn-success">Continue comprando</a></td>
+								<td colspan='3'><a href='index.php' class="btn btn-success">Continue comprando</a></td>
 								<th>Total</th>
 								<th> R$  <span id='total'><?php echo $cart->get_cart_total();?></span></th>
 								<td><a href='checkout.php' class='btn btn-info'>Checkout</a></td>
