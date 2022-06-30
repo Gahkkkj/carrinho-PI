@@ -2,9 +2,7 @@
     require __DIR__.'/vendor/autoload.php';
 
     use \App\entity\Noticia;
-    $Noticia = Noticia::getNoticia();
-    $obNoticia = new Noticia;
-   
+
     include "./carrinho/config.php";
     session_start();
     
@@ -20,6 +18,9 @@
     
         }
     }
+
+    $Noticia = Noticia::getNoticia();
+    $obNoticia = new Noticia;
 
     $busca = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_STRING);
 
