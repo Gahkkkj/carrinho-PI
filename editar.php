@@ -36,7 +36,7 @@ if (isset($_POST['nome'], $_POST['descricao'], $_POST['data_compra'], $_POST['no
     header('location: indexProdutos.php?status=success');
     exit;
 }
-require __DIR__ . '/carrinho/index.php';
+
 require __DIR__ . '/INCLUDES/header.php';
 
 require __DIR__ . '/INCLUDES/formulario.php';

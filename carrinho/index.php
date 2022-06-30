@@ -49,7 +49,7 @@ if ($res->num_rows > 0) {
 			</div>
 		</div>
 
-	</section>
+		</section>
 
 
 	<section>
