@@ -18,13 +18,13 @@
 
   <header>
     <div class="d-flex justify-content-around align-items-center bg-dark andreifooter">
-      <a class="navbar-brand btn btn-dark " style="color: orange;" href="index.php">Menu</a>
+      <a class="navbar-brand btn btn-dark " style="color: orange;" href="../index.php">Menu</a>
        <h1 class="display-4" style="color: orange;"> MAXEL
         <p class="lead " style="color: orange;"> Busque do melhor! </p>
       </h1>
       <h2 class="row">
-         <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="./carrinho/indexCart.php" role="button">Produtos</a>
-        <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="./carrinho/view_carrinho.php">Carrinho (<?php echo $cart->get_cart_count(); ?>)</a>
+         <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="indexCart.php" role="button">Produtos</a>
+        <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="view_carrinho.php">Carrinho (<?php echo $cart->get_cart_count(); ?>)</a>
       </h2>
     </div>
     </div>

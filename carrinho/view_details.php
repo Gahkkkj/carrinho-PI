@@ -2,7 +2,7 @@
 	include "config.php";
 	session_start();
 	
-	include "cart.class.php";
+	include "./App/entity/cart.php";
 	$cart=new Cart();
 	
 	if(isset($_POST["submit"])){
@@ -31,7 +31,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     </head>
     <body>
-	<?php include "../includes/header.php"; ?>
+	<?php include "../includes/headerCart.php"; ?>
         <div class='container mt-5'>
 			<div class='row'>
 				<div class='col-md-9 mx-auto'>

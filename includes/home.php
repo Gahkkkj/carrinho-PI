@@ -1,4 +1,8 @@
 
+<head>
+	<title>Produtos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
 
     <nav class="navbar1 navbar-light bg-light">
       <span class="navbar-brand mb-0 h1"> <b> HOME! </b> </span>

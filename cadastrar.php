@@ -18,11 +18,12 @@ if (isset($_POST['nome'], $_POST['descricao'], $_POST['data_compra'], $_POST['no
     $obNoticia->cadastrar();
 
     header('location: indexProdutos.php?status=success');
-    echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
+    // echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
+   
 
     exit;
 }
-require __DIR__ . '/carrinho/index.php';
+
 require __DIR__ . '/includes/header.php';
 require __DIR__ . '/includes/formulario.php';
 require __DIR__ . '/includes/footer.php';

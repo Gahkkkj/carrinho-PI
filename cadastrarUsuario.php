@@ -32,7 +32,7 @@ if (isset($_POST['nome'], $_POST['sobrenome'], $_POST['idade'], $_POST['cpf'], $
     exit;
 }
 
-require __DIR__ . '/carrinho/index.php';
+
 require __DIR__ . '/includes/header.php';
 require __DIR__ . '/includes/formularioUsuario.php';
 require __DIR__ . '/includes/footer.php';

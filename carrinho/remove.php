@@ -2,7 +2,7 @@
   session_start();
   $id=$_GET["id"];
   
-  include "cart.class.php";
+  include "./App/entity/cart.php";
   $cart=new Cart();
   $cart->remove($id);
   header("location:view_carrinho.php");
