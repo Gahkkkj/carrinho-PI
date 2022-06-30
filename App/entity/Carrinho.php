@@ -49,12 +49,14 @@ class Carrinho
         $objdatabase = new database('produtos_carrinho');
 
         $this->id = $objdatabase->insert([
-            'OID' => $this->OID,
             'PID' => $this->PID,
+            'PRODUCT' => $this->PRODUCT,
             'PNAME' => $this->PNAME,
             'preco_produto' => $this->preco_produto,
-            'QTY' => $this->QTY,   
-            'TOTAL' => $this->TOTAL,    
+            'IMAGE' => $this->IMAGE,   
+            'DESCRIPTION' => $this->DESCRIPTION,    
+
+       
         ]);
 
         return true;
@@ -109,12 +111,13 @@ class Carrinho
         $objDatabase = new database('produtos_carrinho');
 
         return ($objDatabase)->update('ID = ' . $this->ID, [
-            'OID' => $this->OID,
             'PID' => $this->PID,
+            'PRODUCT' => $this->PRODUCT,
             'PNAME' => $this->PNAME,
             'preco_produto' => $this->preco_produto,
-            'QTY' => $this->QTY,   
-            'TOTAL' => $this->TOTAL,        
+            'IMAGE' => $this->IMAGE,   
+            'DESCRIPTION' => $this->DESCRIPTION,    
+        
         ]);
     }
 }

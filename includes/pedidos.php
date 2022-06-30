@@ -28,7 +28,7 @@
 
     <?php } else { ?>
 
-        <table class="table bg-light mt-3">
+        <table class="table bg-light mt-3" style="text-align: center;">
         <thead>
             <tr>
                 <th>Pedido</th>

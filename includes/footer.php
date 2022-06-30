@@ -1,7 +1,7 @@
 </div>
 
 </footer>
-      </section>
+      </section class="fixe">
       <footer class="pt-4 pt-md-5 mt-5 border-top bg-dark" id="futer">
         <div class="row andrei">
           <div class="col-4">
