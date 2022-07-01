@@ -51,7 +51,6 @@ class Carrinho
         $this->id = $objdatabase->insert([
             'PID' => $this->PID,
             'PRODUCT' => $this->PRODUCT,
-            'PNAME' => $this->PNAME,
             'preco_produto' => $this->preco_produto,
             'IMAGE' => $this->IMAGE,   
             'DESCRIPTION' => $this->DESCRIPTION,    

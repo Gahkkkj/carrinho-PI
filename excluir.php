@@ -1,6 +1,6 @@
 <?php 
     require __DIR__.'/vendor/autoload.php';
-    use \App\entity\Noticia;
+    use \App\entity\Carrinho;
     
     include "./carrinho/config.php";
     session_start();
@@ -17,25 +17,25 @@
     
         }
     }
-    // Validação do ID
-    if(!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+    // ValIDação do ID
+    if(!isset($_GET['ID']) || !is_numeric($_GET['ID'])) {
         header('location: indexProdutos.php?status=error');
         exit;
     }
 
     // Consulta Vaga
-    $obNoticia = Noticia::getNoticias($_GET['id']);
+    $obCarrinho = Carrinho::getCarrinhos($_GET['ID']);
 
-    // Validação da Vaga
-    if(!$obNoticia instanceof Noticia) {
+    // ValIDação da Vaga
+    if(!$obCarrinho instanceof Carrinho) {
         header('location: indexProdutos.php?status=error');
         exit;
     }
 
-    // Validação do Post
+    // ValIDação do Post
     if(isset($_POST['excluir'])) {
 
-        $obNoticia->excluir();
+        $obCarrinho->excluirCarrinhos();
 
         header('location: indexProdutos.php?status=success');
         exit;

@@ -39,7 +39,7 @@ if ($res->num_rows > 0) {
 									Preço R$ <?php echo $row["preco_produto"]; ?>
 								</p>
 								<a href="view_details.php?id=<?php echo $row["PID"]; ?>" class='btn btn-primary  float-right'>Comprar</a>
-								
+								<a href="excluir.php?id=<id=<?php echo $row["ID"]; ?> "class='btn btn-primary  float-right'>excluir</a>
 							</div>
 						</div>
 					</div>

@@ -1,25 +1,23 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-define('TITLE', 'Cadastrar Pedido');
+define('TITLE', 'Cadastrar Carrinho');
 
-use \App\entity\Pedido;
+use \App\entity\Carrinho;
 
-$obPedido = new Pedido;
+$obCarrinho = new Carrinho;
 
-if (isset($_POST['OID'], $_POST['PID'], $_POST['PNAME'], $_POST['preco_produto'], $_POST['QTY'], $_POST['TOTAL'])) {
-    $obPedido->OID = $_POST['OID'];
-    $obPedido->PID = $_POST['PID'];
-    $obPedido->PNAME = $_POST['PNAME'];
-    $obPedido->preco_produto = $_POST['preco_produto'];
-    $obPedido->QTY = $_POST['QTY'];
-    $obPedido->TOTAL = $_POST['TOTAL'];
+if (isset($_POST['PID'], $_POST['PRODUCT'], $_POST['preco_produto'], $_POST['DESCRIPTION'])) {
+    $obCarrinho->PID = $_POST['PID'];
+    $obCarrinho->PRODUCT = $_POST['PRODUCT'];
+    $obCarrinho->preco_produto = $_POST['preco_produto'];
+    $obCarrinho->DESCRIPTION = $_POST['DESCRIPTION'];
 
-    $obPedido->cadastrarPedido();
+    $obCarrinho->cadastrarCarrinho();
 
     header('location: indexProdutos.php?status=success');
-    echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
-
+    // echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
+ 
     exit;
 }
 include "./carrinho/config.php";
