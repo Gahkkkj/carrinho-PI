@@ -113,7 +113,7 @@ CREATE TABLE `produtos_carrinho` (
   `PID` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `PRODUCT` varchar(45) NOT NULL DEFAULT '',
   `preco_produto` double(10, 2) NOT NULL DEFAULT '0.00',
-  `IMAGE` varchar(45) NOT NULL DEFAULT '',
+  `IMAGE` varchar(45) NULL DEFAULT '',
   `DESCRIPTION` text,
   PRIMARY KEY (`PID`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1 AUTO_INCREMENT = 6;
