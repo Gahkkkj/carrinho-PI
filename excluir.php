@@ -19,7 +19,7 @@
     }
     // ValIDação do ID
     if(!isset($_GET['ID']) || !is_numeric($_GET['ID'])) {
-        header('location: indexProdutos.php?status=error');
+        header('location: produtoscart.php?status=error');
         exit;
     }
 
@@ -28,7 +28,7 @@
 
     // ValIDação da Vaga
     if(!$obCarrinho instanceof Carrinho) {
-        header('location: indexProdutos.php?status=error');
+        header('location: produtoscart.php?status=error');
         exit;
     }
 
@@ -37,7 +37,7 @@
 
         $obCarrinho->excluirCarrinhos();
 
-        header('location: indexProdutos.php?status=success');
+        header('location: produtoscart.php?status=success');
         exit;
     }
 
