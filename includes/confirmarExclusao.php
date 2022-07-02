@@ -14,7 +14,7 @@
             <a href="../indexProdutos.php">
                 <button type="button" class="btn btn-secondary"> Cancelar </button>
             </a>
-            <button type="submit" name="excluir" class="btn btn-danger"> Excluir </button>
+            <button type="submit" name="excluirCarrinhos" class="btn btn-danger"> Excluir </button>
         </div>
     </form>
 </div>
