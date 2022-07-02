@@ -5,6 +5,7 @@
     include "./carrinho/config.php";
     session_start();
     
+    
     include "./carrinho/cart.class.php";
     $cart = new Cart();
     
@@ -18,17 +19,17 @@
         }
     }
     // ValIDação do ID
-    if(!isset($_GET['ID']) || !is_numeric($_GET['ID'])) {
-        header('location: produtoscart.php?status=error');
+    if(!isset($_GET['PID']) || !is_numeric($_GET['PID'])) {
+        header('location: indexProdutos.php?status=error');
         exit;
     }
 
     // Consulta Vaga
-    $obCarrinho = Carrinho::getCarrinhos($_GET['ID']);
+    $obCarrinho = Carrinho::getCarrinhos($_GET['PID']);
 
     // ValIDação da Vaga
     if(!$obCarrinho instanceof Carrinho) {
-        header('location: produtoscart.php?status=error');
+        header('location:  indexProdutos.php?status=error');
         exit;
     }
 
@@ -37,7 +38,7 @@
 
         $obCarrinho->excluirCarrinhos();
 
-        header('location: produtoscart.php?status=success');
+        header('location:  indexProdutos.php?status=success');
         exit;
     }
 

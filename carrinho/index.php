@@ -2,8 +2,9 @@
 include "config.php";
 session_start();
 
-include "cart.class.php";
+include_once "cart.class.php";
 $cart = new Cart();
+
 
 $data = [];
 $sql = "select * from produtos_carrinho";
@@ -41,8 +42,13 @@ if ($res->num_rows > 0) {
 								<a href="view_details.php?id=<?php echo $row["PID"]; ?>" class='btn btn-primary  float-right'>Comprar</a>
 								<div class="col-6">
                                     <a href="../editar.php?id=<?php echo $row["PID"]; ?>">
-                                        <button type='button' class='btn btn-success botoes' style="padding: 0.375rem 1.1rem; text-align: center;">Editar</button>
+                                        <button type='button' class='btn btn-success botoes'>Editar</button>
                                     </a>
+
+									<a href="../excluir.php?id=<?php echo $row["PID"]; ?>">
+                                        <button type='button' class='btn btn-danger botoes'>Excluir</button>
+                                    </a>
+                               
                                 </div>
 							</div>
 						</div>

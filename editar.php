@@ -5,6 +5,24 @@ define('TITLE', 'Editar Produto');
 
 use \App\Entity\Carrinho;
 
+include "./carrinho/config.php";
+session_start();
+
+
+include "./carrinho/cart.class.php";
+$cart = new Cart();
+
+$data = [];
+$sql = "select * from produtos_carrinho";
+$res = $con->query($sql);
+if ($res->num_rows > 0) {
+    while ($row = $res->fetch_assoc()) {
+        $data[] = $row;
+
+    }
+}
+
+
 //Validação do ID
 if (!isset($_GET['id'])  || !is_numeric($_GET['id'])) {
     header('location: produtoscart.php?status=error');
@@ -17,7 +35,7 @@ $obCarrinho = Carrinho::getCarrinhos($_GET['id']);
 
 //Validação da Vaga
 if (!$obCarrinho instanceof Carrinho) {
-    header('location: produtoscart.php?status=error');
+    header('location: indexProdutos.php?status=error');
     exit;
 }
 //Validação do POST
@@ -30,10 +48,10 @@ if (isset($_POST['PID'], $_POST['PRODUCT'], $_POST['preco_produto'], $_POST['DES
     $obCarrinho->atualizarCarrinho();
     // echo "<pre>"; print_r($obCarrinho); echo "</pre>"; exit; 
 
-    header('location: produtoscart.php?status=success');
+    header('location:  indexProdutos.php?status=success');
     exit;
 }
-require __DIR__ . '/carrinho/index.php';
+
 
 require __DIR__ . '/INCLUDES/header.php';
 

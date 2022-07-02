@@ -1,12 +1,21 @@
 <?php 
 if(!session_id()){
-	session_start();
+
+		session_start(); 
+	}
+	else
+	{
+		session_destroy();
+		session_start(); 
+	
+	
 }
 
 
  
  
 	class Cart{
+		
 		
 		protected $cart_items=array();
 		

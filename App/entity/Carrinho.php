@@ -11,7 +11,7 @@ class Carrinho
      * Identificador único da vaga
      * @var integer
      */
-    public $IDCart;
+    public $PIDCart;
 
       /**
      * Descrição da vaga (pode conter html)
@@ -83,11 +83,11 @@ class Carrinho
      * @params string @id
      * @return Carrinho
      */
-    public static function getCarrinhos($ID)
+    public static function getCarrinhos($PID)
     {
         $objdatabase = new database('produtos_carrinho');
 
-        return ($objdatabase)->select('id = ' . $ID)->fetchObject(self::class);
+        return ($objdatabase)->select('PID = ' . $PID)->fetchObject(self::class);
     }
     /**
      * Função para excluir vagas no banco
@@ -97,7 +97,7 @@ class Carrinho
     {
         $objdatabase = new database('produtos_carrinho');
 
-        return ($objdatabase)->delete('id = ' . $this->ID);
+        return ($objdatabase)->delete('PID = ' . $this->PID);
     }
 
     /**
@@ -110,10 +110,10 @@ class Carrinho
 
         $objDatabase = new database('produtos_carrinho');
 
-        return ($objDatabase)->update('ID = ' . $this->ID, [
+        return ($objDatabase)->update('PID = ' . $this->PID, [
             'PID' => $this->PID,
             'PRODUCT' => $this->PRODUCT,
-            'PNAME' => $this->PNAME,
+            
             'preco_produto' => $this->preco_produto,
             'IMAGE' => $this->IMAGE,   
             'DESCRIPTION' => $this->DESCRIPTION,    
