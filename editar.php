@@ -35,7 +35,7 @@ $obCarrinho = Carrinho::getCarrinhos($_GET['id']);
 
 //Validação da Vaga
 if (!$obCarrinho instanceof Carrinho) {
-    header('location: indexProdutos.php?status=error');
+    header('location:produtoscart.php?status=error');
     exit;
 }
 //Validação do POST
@@ -48,7 +48,7 @@ if (isset($_POST['PID'], $_POST['PRODUCT'], $_POST['preco_produto'], $_POST['DES
     $obCarrinho->atualizarCarrinho();
     // echo "<pre>"; print_r($obCarrinho); echo "</pre>"; exit; 
 
-    header('location:  indexProdutos.php?status=success');
+    header('location: produtoscart.php?status=success');
     exit;
 }
 
