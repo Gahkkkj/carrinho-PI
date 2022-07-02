@@ -11,7 +11,7 @@ class Carrinho
      * Identificador único da vaga
      * @var integer
      */
-    public $PIDCart;
+    public $PID;
 
       /**
      * Descrição da vaga (pode conter html)
@@ -48,10 +48,8 @@ class Carrinho
         // Inserir a vaga no bano e retornar o ID
         $objdatabase = new database('produtos_carrinho');
 
-        $this->id = $objdatabase->insert([
-            'PID' => $this->PID,
+        $this->PID = $objdatabase->insert([
             'PRODUCT' => $this->PRODUCT,
-    
             'preco_produto' => $this->preco_produto,
             'IMAGE' => $this->IMAGE,   
             'DESCRIPTION' => $this->DESCRIPTION,    
@@ -111,9 +109,8 @@ class Carrinho
         $objDatabase = new database('produtos_carrinho');
 
         return ($objDatabase)->update('PID = ' . $this->PID, [
-            'PID' => $this->PID,
+           
             'PRODUCT' => $this->PRODUCT,
-            
             'preco_produto' => $this->preco_produto,
             'IMAGE' => $this->IMAGE,   
             'DESCRIPTION' => $this->DESCRIPTION,    

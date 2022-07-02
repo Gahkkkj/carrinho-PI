@@ -6,11 +6,7 @@
     <h2 class="mt-3"><?php echo TITLE; ?> </h2>
 
     <form method="POST" class="form-send">
-        <div class="form-group">
-            <label> id produto</label>
-            <input type="text" required class="form-control" name="PID" value="<?php echo isset($obPedido->PID) ? $obPedido->PID : ''; ?>">
-        </div>
-
+ 
         <div class="form-group">
             <label> Produto nome </label>
             <textarea class="form-control" required name="PRODUCT" rows="5"><?php echo isset($obPedido->PRODUCT) ? $obPedido->PRODUCT : ''; ?> </textarea>
