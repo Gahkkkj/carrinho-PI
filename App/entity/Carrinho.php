@@ -109,7 +109,6 @@ class Carrinho
         $objDatabase = new database('produtos_carrinho');
 
         return ($objDatabase)->update('PID = ' . $this->PID, [
-           
             'PRODUCT' => $this->PRODUCT,
             'preco_produto' => $this->preco_produto,
             'IMAGE' => $this->IMAGE,   

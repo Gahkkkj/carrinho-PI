@@ -1,18 +1,7 @@
 <?php 
 if(!session_id()){
-
-		session_start(); 
-	}
-	else
-	{
-		session_destroy();
-		session_start(); 
-	
-	
+	session_start();
 }
-
-
- 
  
 	class Cart{
 		

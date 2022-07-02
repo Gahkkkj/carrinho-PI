@@ -16,9 +16,9 @@ $cart = new Cart();
 <body>
 	<?php include "navbar.php"; ?>
 	<div class="container">
-			<div class='container mt-5'>
+		<div class='container mt-5'>
 			<h2 class='text-muted mb-4'>Seu pedido concluido</h2>
-		
+
 
 			<div class='row'>
 				<div class='col-md-12'>
@@ -27,13 +27,7 @@ $cart = new Cart();
 
 			</div>
 		</div>
-		<div class="form-group" style="margin-top: 5%; margin-bottom: 10%;">
-			<a href="../pedidoindex.php">
-				<button type="button" class="btn btn btn-success">Ver pedidos </button>
-			</a>
 
-		</div>
-		</div>
 	</div>
 
 

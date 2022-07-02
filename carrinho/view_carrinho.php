@@ -51,7 +51,7 @@
 						</tfoot>
 					</table>
 					<?php else: ?>
-						<div class='alert alert-warning'>cariinho vazio...</div>
+						<div class='alert alert-warning'>carrinho vazio...</div>
 					<?php endif; ?>
 				</div>
 			</div>
