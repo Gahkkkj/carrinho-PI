@@ -32,7 +32,7 @@
 						<?php $items=$cart->get_all_items(); ?>
 						<?php foreach($items as $item): ?>
 							<tr>
-								<td><img src='images/<?php echo $item["img"];?>' style='height:80px;' ></td>
+								<td><img src='images/2.jpg<?php echo $item["img"];?>' style='height:80px;' ></td>
 								<td><?php echo $item["name"];?></td>
 								<td> R$ <?php echo $item["preco_produto"];?></td>
 								<td><input type='number' value='<?php echo $item["qty"];?>' class='qty' pid='<?php echo $item["id"]; ?>' min='1'></td>

@@ -38,7 +38,7 @@
 					<h2 class='text-muted mb-4'>Detalhes do produto</h2><hr>
 					<div class='row mt-5'>
 						<div class='col-md-4'>
-							  <img src="images/<?php echo $data["IMAGE"]; ?>" class='img-thumbnail'>
+							  <img src="images/2.jpg<?php echo $data["IMAGE"]; ?>" class='img-thumbnail'>
 						</div>	
 						<div class='col-md-8'>
 							<h2 class='text-muted'><?php echo $data["PRODUCT"]; ?></h2>
