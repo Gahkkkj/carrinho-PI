@@ -7,8 +7,8 @@ use \App\entity\Carrinho;
 
 $obCarrinho = new Carrinho;
 
-if (isset($_POST['PID'], $_POST['PRODUCT'], $_POST['preco_produto'], $_POST['DESCRIPTION'])) {
-    $obCarrinho->PID = $_POST['PID'];
+if (isset( $_POST['PRODUCT'], $_POST['preco_produto'], $_POST['DESCRIPTION'])) {
+   
     $obCarrinho->PRODUCT = $_POST['PRODUCT'];
     $obCarrinho->preco_produto = $_POST['preco_produto'];
     $obCarrinho->DESCRIPTION = $_POST['DESCRIPTION'];
