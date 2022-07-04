@@ -37,11 +37,12 @@ if ($res->num_rows > 0) {
     <?php include "navbar.php"; ?>
     <div class='container mt-5 pb-5'>
       <h2 class='text-muted mb-4 text-center' style="text-align: center;">Produtos</h2>
+      
       <div class='row'>
         <?php foreach ($data as $row) : ?>
           <div class='col-md-3 mt-2'>
             <div class="card">
-              <img class="card-img-top" src="images/<?php echo $row["IMAGE"]; ?>">
+              <img class="card-img-top" src="images/2.jpg<?php echo $row["IMAGE"]; ?>">
               <div class="card-body" style="text-align: center;">
                 <h5 class="card-title"><?php echo $row["PRODUCT"]; ?></h5>
                 <p class="card-text">

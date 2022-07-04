@@ -39,7 +39,7 @@ if (isset($_GET['status'])) {
 			</a>
 
     <?php if (count($Noticia) == 0) { ?>
-        <div class="alert alert-secondary mt-3"> Nenhuma Vaga Encontrada </div>
+        <div class="alert alert-secondary mt-3"> Nenhum produto encondrado </div>
 
     <?php } else { ?>
 
