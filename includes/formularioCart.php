@@ -14,7 +14,7 @@
 
         <div class="form-group">
             <label> Preço produto </label>
-            <textarea class="form-control" type="number" required name="preco_produto" rows="5"><?php echo isset($obPedido->preco_produto) ? $obPedido->preco_produto : ''; ?> </textarea>
+            <input class="form-control" type="number" required name="preco_produto" rows="5"><?php echo isset($obPedido->preco_produto) ? $obPedido->preco_produto : ''; ?>
         </div>
     
         <div class="form-group">

@@ -22,10 +22,10 @@
 						<thead>
 							<tr>
 								<th colspan='2' class='text-center'>Produtos</th>
-								<th>preco_produto</th>
-								<th>Qty</th>
+								<th>preço do produto</th>
+								<th>Quantidade</th>
 								<th>Total</th>
-								<th>Action</th>
+								<th>Ação</th>
 							</tr>
 						</thead>
 						<tbody>
