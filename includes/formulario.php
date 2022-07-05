@@ -1,5 +1,5 @@
 <section>
-    <a href="indexProdutos.php">
+    <a href="indexGerente.php">
         <button class="btn btn-success"> Voltar </button>
     </a>
 

@@ -18,7 +18,7 @@
 
   <div class="row rowandrei">
     <div class="col"style="margin-left: 4%;">
-      <a href="indexProdutos.php">
+      <a href="./carrinho/view_carrinho.php">
      <input type="image" class="iconesmaxel" src="assets/image/loja.jpg" width="120px" height="120px">  
      </a>
     </div>
