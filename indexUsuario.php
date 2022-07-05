@@ -3,7 +3,7 @@
     require __DIR__.'/vendor/autoload.php';
 
     use \App\Entity\Usuario;
-    $grupos = Usuario::getnoar();
+    $grupos = Usuario::getUsuario();
     // echo "<pre>"; print_r ($vagas); echo "</pre>"; exit; 
     include "./carrinho/config.php";
     session_start();

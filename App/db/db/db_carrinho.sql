@@ -63,25 +63,6 @@ CREATE TABLE `empresa` (
 ) ENGINE = innodb;
 
 -- COMANDO DE CRIAÇÃO DE TABELA DE USUÁRIOS
-CREATE TABLE `usuario` (
-  `id` INT(10) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(255) DEFAULT NULL,
-  `sobrenome` varchar(255) DEFAULT NULL,
-  `cpf` bigint NOT NULL,
-  `telefone` bigint,
-  `email` varchar(100),
-  `numero_end` INT,
-  `rua_end` varchar(50),
-  `bairro_end` varchar(50),
-  `cidade_end` varchar(50),
-  `estado_end` varchar(2),
-  `focal` enum('s', 'n') DEFAULT NULL,
-  `ordem` INT(10) NOT NULL,
-  `status` enum('s', 'n') DEFAULT NULL,
-  `data_inc` timestamp NULL DEFAULT NULL,
-  `fk_id_empresa` int,
-  PRIMARY KEY (`id`)
-) ENGINE = innodb;
 
 CREATE TABLE `orders` (
   `OID` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -120,9 +101,9 @@ CREATE TABLE `produtos_carrinho` (
 
 --------------------------------------------------------
 --
---  table `users`
+--  table `Usuario`
 --
-CREATE TABLE `users` (
+CREATE TABLE `Usuario` (
   `UID` int(11) NOT NULL AUTO_INCREMENT,
   `NAME` varchar(150) NOT NULL DEFAULT '',
   `CONTACT` varchar(150) NOT NULL DEFAULT '',

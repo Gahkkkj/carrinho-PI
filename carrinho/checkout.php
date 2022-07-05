@@ -14,7 +14,7 @@
 		$city=mysqli_real_escape_string($con,$_POST["city"]);
 		$pincode=mysqli_real_escape_string($con,$_POST["pincode"]);
 		#insert User Details
-		$sql="insert into users (NAME,EMAIL,CONTACT,ADDRESS,CITY,PINCODE) values ('{$name}','{$email}','{$contact}','{$address}','{$city}','{$pincode}')";
+		$sql="insert into Usuario (NAME,EMAIL,CONTACT,ADDRESS,CITY,PINCODE) values ('{$name}','{$email}','{$contact}','{$address}','{$city}','{$pincode}')";
 		if($con->query($sql)){
 			$uid=$con->insert_id;
 
