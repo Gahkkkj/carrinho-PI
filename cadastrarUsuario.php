@@ -4,7 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 define('TITLE', 'Cadastrar registro!');
 
 use App\entity\Usuario;
-}
+
 include "./carrinho/config.php";
 session_start();
 
