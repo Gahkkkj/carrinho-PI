@@ -7,54 +7,46 @@ use App\entity\Usuario;
 include "./carrinho/config.php";
 session_start();
 
-include "./carrinho/cart.class.php";
+include_once "./carrinho/cart.class.php";
 $cart = new Cart();
 
-$data = [];
-$sql = "select * from produtos_carrinho";
-$res = $con->query($sql);
-if ($res->num_rows > 0) {
-	while ($row = $res->fetch_assoc()) {
-		$data[] = $row;
 
-    }
-}
 
 //Validação do ID
-if (!isset($_GET['id'])  || !is_numeric($_GET['id'])) {
-    header('location: index.php?status=error');
+if (!isset($_GET['UID'])  || !is_numeric($_GET['UID'])) {
+    header('location: indexUsuario.php?status=error');
     exit;
 }
 
 //Consulta Vaga
-$obUsuario = Usuario::getArUsuario($_GET['id']);
+$obUsuario = Usuario::getUsuarios($_GET['UID']);
 
 //Validação da Vaga
 if (!$obUsuario instanceof Usuario) {
-    header('location: index.php?status=error');
+    header('location: indexUsuario.php?status=error');
     exit;
 }
 
 //Validação do POST
-if (isset($_POST['nome'], $_POST['sobrenome'], $_POST['idade'], $_POST['cpf'], $_POST['descricao'], $_POST['sexo'], $_POST['ordem'], $_POST['status'])) {
-    $obUsuario->nome = $_POST['nome'];
-    $obUsuario->sobrenome = $_POST['sobrenome'];
-    $obUsuario->idade = $_POST['idade'];
-    $obUsuario->cpf = $_POST['cpf'];
-    $obUsuario->descricao = $_POST['descricao'];
-    $obUsuario->sexo = $_POST['sexo'];
-    $obUsuario->ordem = $_POST['ordem'];
-    $obUsuario->status = $_POST['status'];
-
+if (isset($_POST['NAME'], $_POST['EMAIL'],  $_POST['CONTACT'], $_POST['ADDRESS'], $_POST['CITY'], $_POST['PINCODE'], $_POST['ordem'], $_POST['status'])) {
+    $obUsuario->NAME = $_POST['NAME'];
+    $obUsuario->EMAIL = $_POST['EMAIL'];
+    $obUsuario->CONTACT = $_POST['CONTACT'];
+    $obUsuario->ADDRESS = $_POST['ADDRESS'];
+    $obUsuario->CITY = $_POST['CITY'];
+    $obUsuario->PINCODE = $_POST['PINCODE'];
+   
+    
+    
     $obUsuario->atualizarUsuario();
 
-    header('location: listaUsuario.php?status=success');
+    header('location: indexUsuario.php?status=success');
     exit;
     
 }
 
 require __DIR__ . '/INCLUDES/header.php';
 
-require __DIR__ . '/INCLUDES/formularioUsuario.php';
+require __DIR__ . '/includes/formularioUsuario.php';
 
 require __DIR__ . '/INCLUDES/footer.php';

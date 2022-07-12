@@ -1,6 +1,6 @@
 <?php 
 	include "config.php";
-	session_start();
+	
 	
 	include "cart.class.php";
 	$cart=new Cart();
