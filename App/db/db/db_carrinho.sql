@@ -44,24 +44,6 @@ CREATE TABLE `produtos`(
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1 AUTO_INCREMENT = 1;
 
-CREATE TABLE `empresa` (
-  `id` INT(10) NOT NULL AUTO_INCREMENT,
-  `nome_fantasia` varchar(255) DEFAULT NULL,
-  `nome` varchar(255) DEFAULT NULL,
-  `cnpj` bigint,
-  `descricao` TEXT,
-  `numero_end` INT,
-  `rua_end` varchar(50),
-  `bairro_end` varchar(50),
-  `cidade_end` varchar(50),
-  `estado_end` varchar(2),
-  `ordem` INT(10) NOT NULL,
-  `status` enum('s', 'n') DEFAULT NULL,
-  `data_inc` timestamp NULL DEFAULT NULL,
-  `fk_id_grupo` int,
-  PRIMARY KEY (`id`)
-) ENGINE = innodb;
-
 -- COMANDO DE CRIAÇÃO DE TABELA DE USUÁRIOS
 
 CREATE TABLE `orders` (

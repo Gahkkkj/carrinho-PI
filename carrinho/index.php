@@ -19,7 +19,15 @@ if ($res->num_rows > 0) {
     $data[] = $row;
   }
 }
+?>
+<?php
+$busca = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_STRING);
 
+$condicoes = [
+    strlen($busca) ? 'PRODUCT LIKE "%' .str_replace(' ','%',$busca).'%"' : null
+];
+
+$condicoes = array_filter($condicoes);
 
 ?>
 <html>
@@ -38,6 +46,27 @@ if ($res->num_rows > 0) {
     <div class='container mt-5 pb-5'>
       <h2 class='text-muted mb-4 text-center' style="text-align: center;">Produtos</h2>
 
+      
+        <form method="get">
+
+            <div class="row my-4">
+
+
+                <div class="col">
+
+                    <input type="text" placeholder="Buscar por nome!" name="busca" class="form-control" value="<?= $busca ?>">
+
+                </div>
+
+                <div class="col d-flex align-itens-end">
+
+                    <button type="submit" class="btn btn-primary"> Filtrar </button>
+
+                </div>
+
+            </div>
+
+        </form>
 
       <div class='row'>
         <?php foreach ($data as $row) : ?>
