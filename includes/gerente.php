@@ -34,6 +34,10 @@ if (isset($_GET['status'])) {
     <a href="cadastrarCart.php">
         <button class="btn btn-success"> Cadastrar Produto </button>
     </a>
+    
+    <a href="cadastrarFornecedor.php">
+        <button class="btn btn-success"> Cadastrar Fornecedor </button>
+    </a>
 				<a href="pedidoindex.php">
 				<button type="button" class="btn btn btn-success">Ver pedidos </button>
 			</a>

@@ -4,7 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 define('TITLE', 'Cadastrar registro!');
 
 use App\entity\Usuario;
-}
+
 include "./carrinho/config.php";
 session_start();
 
@@ -45,6 +45,7 @@ if (isset($_POST['nome'], $_POST['sobrenome'], $_POST['idade'], $_POST['cpf'], $
     // echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
 
     exit;
+}
 
 
 require __DIR__ . '/includes/header.php';
