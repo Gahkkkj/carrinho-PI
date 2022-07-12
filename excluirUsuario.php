@@ -20,7 +20,7 @@ if ($res->num_rows > 0) {
 }
     // Validação do ID
     if(!isset($_GET['UID']) || !is_numeric($_GET['UID'])) {
-        header('location: /listaUsuario.php?status=error');
+        header('location: indexUsuario.php?status=error');
         exit;
     }
 
@@ -29,7 +29,7 @@ if ($res->num_rows > 0) {
 
     // Validação da Vaga
     if(!$obUsuario instanceof Usuario) {
-        header('location: /listaUsuario.php?status=error');
+        header('location:indexUsuario.php?status=error');
         exit;
     }
 
@@ -38,12 +38,12 @@ if ($res->num_rows > 0) {
 
         $obUsuario->excluirUsuario();
 
-        header('location: ./listaUsuario.php?status=success');
+        header('location: indexUsuario.php?status=success');
         exit;
     }
 
     require __DIR__.'/includes/header.php';
-    require __DIR__.'/includes/formularioUsuario.php';
+    require __DIR__.'/includes/confirmarExclusaoUsuario.php';
     require __DIR__.'/includes/footer.php';
     
 ?> 
