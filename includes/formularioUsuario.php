@@ -8,7 +8,7 @@
     <form method="POST" class="form-send">
         <div class="form-group">
             <label> Nome </label>
-            <input type="text" required class="form-control" name="nome" value="<?php echo isset($obUsuario->NAME) ? $obUsuario->NAME : ''; ?>">
+            <input type="text" required class="form-control" name="NAME" value="<?php echo isset($obUsuario->NAME) ? $obUsuario->NAME : ''; ?>">
         </div>
         <div class="form-group">
             <label> EMAIL </label>
@@ -17,28 +17,29 @@
 
         <div class="form-group">
             <label> Numero </label>
-            <input type="number" required class="form-control" name="sobrenome" value="<?php echo isset($obUsuario->CONTACT) ? $obUsuario->CONTACT : ''; ?>">
+            <input type="number" required class="form-control" name="CONTACT" value="<?php echo isset($obUsuario->CONTACT) ? $obUsuario->CONTACT : ''; ?>">
         </div>
         <div class="form-group">
             <label> Endereço </label>
-            <input type="text" required class="form-control" name="idade" value="<?php echo isset($obUsuario->ADDRESS) ? $obUsuario->ADDRESS : ''; ?>">
+            <input type="text" required class="form-control" name="ADDRESS" value="<?php echo isset($obUsuario->ADDRESS) ? $obUsuario->ADDRESS : ''; ?>">
         </div>
         <div class="form-group">
             <label> Cidade</label>
-            <input type="text" required class="form-control" name="cpf" value="<?php echo isset($obUsuario->CITY) ? $obUsuario->CITY : ''; ?>">
+            <input type="text" required class="form-control" name="CITY" value="<?php echo isset($obUsuario->CITY) ? $obUsuario->CITY : ''; ?>">
         </div>
         <div class="form-group">
             <label> Senha </label>
-            <input type="text" required class="form-control" name="senha" value="<?php echo isset($obUsuario->PINCODE) ? $obUsuario->PINCODE : ''; ?>">
+            <input type="text" required class="form-control" name="PINCODE" value="<?php echo isset($obUsuario->PINCODE) ? $obUsuario->PINCODE : ''; ?>">
         </div>
   
             </div>
         </div>
-   
-        <div class="form-group">
+     
+        <div class="funciona">
             <button type="submit" class="btn btn-success"> Enviar </button>
         </div>
 
 
     </form>
+
 </section>

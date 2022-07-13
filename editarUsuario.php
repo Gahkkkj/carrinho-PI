@@ -28,7 +28,7 @@ if (!$obUsuario instanceof Usuario) {
 }
 
 //Validação do POST
-if (isset($_POST['NAME'], $_POST['EMAIL'],  $_POST['CONTACT'], $_POST['ADDRESS'], $_POST['CITY'], $_POST['PINCODE'], $_POST['ordem'], $_POST['status'])) {
+if (isset($_POST['NAME'], $_POST['EMAIL'],  $_POST['CONTACT'], $_POST['ADDRESS'], $_POST['CITY'], $_POST['PINCODE'])) {
     $obUsuario->NAME = $_POST['NAME'];
     $obUsuario->EMAIL = $_POST['EMAIL'];
     $obUsuario->CONTACT = $_POST['CONTACT'];
