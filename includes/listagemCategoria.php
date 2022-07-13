@@ -28,21 +28,10 @@ if (isset($_GET['status'])) {
 </nav>
 
 <section>
-    <a href="cadastrar">
+    <a href="cadastrarCategoria">
         <button class="btn btn-success"> Cadastrar </button>
-    </a>
-    <a href="cadastrarCart.php">
-        <button class="btn btn-success"> Cadastrar Categorias </button>
-    </a>
-				<a href="pedidoindex.php">
-				<button type="button" class="btn btn btn-success"> Ver pedidos </button>
-			</a>
 
-            <a href="indexUsuarios.php">
-        <button class="btn btn-success"> Usuarios </button>
-    </a>
-
-    <?php if (count($Noticia) == 0) { ?>
+    <?php if (count($listaCategoria) == 0) { ?>
         <div class="alert alert-secondary mt-3"> Nenhum produto encondrado </div>
 
     <?php } else { ?>
@@ -54,7 +43,7 @@ if (isset($_GET['status'])) {
 
                 <div class="col">
 
-                    <input type="text" placeholder="Buscar por nome!" name="busca" class="form-control" value="<?= $busca ?>">
+                    <input type="text" placeholder="Buscar por categoria!" name="busca" class="form-control" value="<?= $busca ?>">
 
                 </div>
 
@@ -70,7 +59,7 @@ if (isset($_GET['status'])) {
 
 
         <div class='card-deck row' style="margin-top: 5%">
-            <?php foreach ($Noticia as $key => $value) { ?>
+            <?php foreach ($listaCategoria as $key => $value) { ?>
                 <div class="col-12 col-xl-3 item item-selecionado-<?php echo $value->id; ?>">
                     <div class='card mb-4 botoes'>
                         <img src='assets/image/adoleta.webp' class="card-img-top">
