@@ -35,7 +35,7 @@ $condicoes = array_filter($condicoes);
 <head>
   <title>Produtos</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/css/main.css?date= . <?php echo time(); ?>">
+  <link rel="stylesheet" href="../assets/css/main.css?date= . <?php echo time(); ?>">
 
 
 </head>
@@ -113,7 +113,7 @@ $condicoes = array_filter($condicoes);
 
   </footer>
   </section class="fixe">
-  <footer class="pt-4 pt-md-5 mt-5 border-top bg-dark" style="text-align: center;">
+  <footer class=" pt-md-5  border-top bg-dark" id="futer" style="text-align: center;">
     <div class="row andrei">
       <div class="col-4">
         <h5 class="andreifooter" style="text-align: center; color: orange;"> MAIS </h5>
