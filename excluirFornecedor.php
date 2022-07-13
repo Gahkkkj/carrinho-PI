@@ -4,6 +4,22 @@
 use \App\entity\Fornecedor;
 
 
+include "./carrinho/config.php";
+session_start();
+
+include "./carrinho/cart.class.php";
+$cart = new Cart();
+
+$data = [];
+$sql = "select * from produtos_carrinho";
+$res = $con->query($sql);
+if ($res->num_rows > 0) {
+	while ($row = $res->fetch_assoc()) {
+		$data[] = $row;
+
+    }
+}
+
     // Validação do ID
     if(!isset($_GET['id']) || !is_numeric($_GET['id'])) {
         header('location: listaFornecedor.php?status=error');
@@ -11,10 +27,10 @@ use \App\entity\Fornecedor;
     }
 
     // Consulta Vaga
-    $obFornecdor = Fornecedor::getArFornecedor($_GET['id']);
+    $obFornecedor = Fornecedor::getArFornecedor($_GET['id']);
 
     // Validação da Vaga
-    if(!$obFornecdor instanceof Fornecedor) {
+    if(!$obFornecedor instanceof Fornecedor) {
         header('location: listaFornecedor.php?status=error');
         exit;
     }
@@ -22,9 +38,9 @@ use \App\entity\Fornecedor;
     // Validação do Post
     if(isset($_POST['excluirFornecedor'])) {
 
-        $obFornecdor->excluirFornecedor();
+        $obFornecedor->excluirFornecedor();
 
-        header('location: listaFornecedor.php?status=success');
+        header('location: listagemFornecedor.php?status=success');
         exit;
     }
 

@@ -1,5 +1,5 @@
 <section>
-    <a href="index">
+    <a href="indexGerente.php">
         <button class="btn btn-success"> Voltar </button>
     </a>
 
@@ -28,15 +28,15 @@
         </div>
         <div class="form-group">
             <label> Bairro </label>
-            <input type="number" required class="form-control" name="bairro_end" value="<?php echo isset($obFornecedor->bairro_end) ? $obFornecedor->bairro_end : ''; ?>">
+            <input type="text" required class="form-control" name="bairro_end" value="<?php echo isset($obFornecedor->bairro_end) ? $obFornecedor->bairro_end : ''; ?>">
         </div>
         <div class="form-group">
             <label> Cidade </label>
-            <input type="number" required class="form-control" name="cidade_end" value="<?php echo isset($obFornecedor->cidade_end) ? $obFornecedor->cidade_end : ''; ?>">
+            <input type="text" required class="form-control" name="cidade_end" value="<?php echo isset($obFornecedor->cidade_end) ? $obFornecedor->cidade_end : ''; ?>">
         </div>
         <div class="form-group">
             <label> Estado </label>
-            <input type="number" required class="form-control" name="estado_end" value="<?php echo isset($obFornecedor->estado_end) ? $obFornecedor->estado_end : ''; ?>">
+            <input type="text" required class="form-control" name="estado_end" value="<?php echo isset($obFornecedor->estado_end) ? $obFornecedor->estado_end : ''; ?>">
         </div>
         <div class="form-group">
             <label> Ordem </label>
