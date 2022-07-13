@@ -95,17 +95,17 @@ class Pedido
     {
         $objdatabase = new database('detalhes_pedido');
 
-        return ($objdatabase)->select('id = ' . $ID)->fetchObject(self::class);
+        return ($objdatabase)->select('ID = ' . $ID)->fetchObject(self::class);
     }
     /**
      * Função para excluir vagas no banco
      * @return boolean
      */
-    public function excluirPedidos()
+    public function excluirPedido()
     {
         $objdatabase = new database('detalhes_pedido');
 
-        return ($objdatabase)->delete('id = ' . $this->ID);
+        return ($objdatabase)->delete('ID = ' . $this->ID);
     }
 
     /**
