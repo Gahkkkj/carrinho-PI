@@ -1,8 +1,10 @@
 <?php 
-    require __DIR__.'/vendor/autoload.php';
+    require __DIR__.'../../vendor/autoload.php';
 
-    use \App\entity\Usuario; 
-    $grupos = Usuario::getUsuario();
+    use \App\entity\Usuario;
+
+    $Usuario = Usuario::getUsuario();
+    $obUsuario = new Usuario;
     // echo "<pre>"; print_r($vaga); echo "</pre>"; exit;
 ?>
 
@@ -31,8 +33,8 @@
 
 <section>
 
-    <?php if(count($Pedido) == 0) { ?>
-    <div class="alert alert-secondary mt-3"> Nenhum Pedido Encontrado </div>
+    <?php if(count($Usuario) == 0) { ?>
+    <div class="alert alert-secondary mt-3"> Nenhum Usuario Encontrado </div>
 
     <?php } else { ?>
 
@@ -41,22 +43,22 @@
             <tr>
                 <th>Nome</th>
                 <th>Endereço</th>
-                <th>EmailL</th>
+                <th>Email</th>
             </tr>
         </thead>
  
         <tbody>
-            <?php foreach ($Pedido as $key => $value) { ?>
+            <?php foreach ($Usuario as $key => $value) { ?>
                 <tr>
                     <td><?php echo $value->NAME; ?></td>
                     <td><?php echo $value->ADDRESS; ?></td>
                     <td><?php echo $value->EMAIL; ?></td>
                     <td>
-                                <a href="editar.php?id=<?php echo $value->id; ?>">
+                                <a href="editarUsuario.php?UID=<?php echo $value->UID; ?>">
                                     <button type="button" class="btn btn-primary">Editar</button>
                                 </a>
 
-                                <a href="excluir.php?id=<?php echo $value->id; ?>">
+                                <a href="excluirUsuario.php?UID=<?php echo $value->UID; ?>">
                                     <button type="button" class="btn btn-danger">Excluir</button>
                                 </a>
                             </td>

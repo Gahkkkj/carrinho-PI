@@ -38,7 +38,7 @@ if (isset($_GET['status'])) {
 				<button type="button" class="btn btn btn-success">Ver pedidos </button>
 			</a>
 
-            <a href="indexUsuarios.php">
+            <a href="indexUsuario.php">
         <button class="btn btn-success"> Usuarios </button>
     </a>
 

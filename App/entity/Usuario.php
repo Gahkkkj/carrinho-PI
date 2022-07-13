@@ -122,7 +122,6 @@ class Usuario
         $objDatabase = new database('Usuario');
 
         return ($objDatabase)->update('UID = ' . $this->UID, [
-            'UID' => $this->UID,
             'NAME' => $this->NAME,
             'CONTACT' => $this->CONTACT,
             'ADDRESS' => $this->ADDRESS,
