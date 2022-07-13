@@ -3,6 +3,7 @@
     require __DIR__.'/vendor/autoload.php';
 
     use \App\Entity\Categoria;
+    use \App\Entity\Carrinho;
 
     $busca = '';
 
@@ -22,7 +23,7 @@
         // echo $busca;
     }
 
-    $listaCategoria = Carrinho::getCategoria();
+    $listaCategoria = Carrinho::getCarrinho();
     $categorias = Categoria::getCategoria($busca); 
 
     // echo "<pre>"; print_r ($_GET['categoria']); echo "</pre>"; exit; 
@@ -35,6 +36,6 @@
 
     require __DIR__.'/includes/header.php';
 
-    require __DIR__.'/includes/listagemEmpresa.php';   
+    require __DIR__.'/includes/listagemCategoria.php';   
 
     require __DIR__.'/includes/footer.php';
