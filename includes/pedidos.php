@@ -1,5 +1,5 @@
 <?php 
-    require __DIR__.'/vendor/autoload.php';
+    require __DIR__.'../../vendor/autoload.php';
 
     use \App\entity\Pedido;
 
@@ -57,7 +57,18 @@ if (isset($_GET['status'])) {
                     <td><?php echo $value->PNAME; ?></td>
                     <td><?php echo $value->preco_produto; ?></td>
                     <td><?php echo $value->TOTAL; ?></td>
-                </tr>
+                    <td>
+                                <a href="editarPedidos.php?ID=<?php echo $value->ID; ?>">
+                                    <button type="button" class="btn btn-primary">Editar</button>
+                                </a>
+
+                                <a href="excluirPedidos.php?ID=<?php echo $value->ID; ?>">
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </a>
+                            </td>
+                          
+
+                            </tr>
             <?php } ?> 
         </tbody>
     </table>

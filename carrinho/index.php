@@ -112,39 +112,7 @@ $condicoes = array_filter($condicoes);
 
 
   </footer>
-  </section class="fixe">
-  <footer class=" pt-md-5  border-top bg-dark" id="futer" style="text-align: center;">
-    <div class="row andrei">
-      <div class="col-4">
-        <h5 class="andreifooter" style="text-align: center; color: orange;"> MAIS </h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Algo legal</a></li>
-          <li><a class="text-muted" href="#">Feature aleatória</a></li>
-          <li><a class="text-muted" href="#">Recursos para times</a></li>
-          <li><a class="text-muted" href="#">Coisas para desenvolvedores</a></li>
-          <li><a class="text-muted" href="#">Outra coisa legal</a></li>
-          <li><a class="text-muted" href="#">Último item</a></li>
-        </ul>
-      </div>
-      <div class="col-4">
-        <h5 class="andreifooter" style="text-align: center; color: orange;"> FONTES </h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Fonte</a></li>
-          <li><a class="text-muted" href="#">Nome da fonte</a></li>
-          <li><a class="text-muted" href="#">Outra fonte</a></li>
-          <li><a class="text-muted" href="#">Fonte final</a></li>
-        </ul>
-      </div>
-      <div class="col-4">
-        <h5 class="andreifooter" style="text-align: center; color: orange;"> SOBRE </h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Equipe</a></li>
-          <li><a class="text-muted" href="#">Locais</a></li>
-          <li><a class="text-muted" href="#">Privacidade</a></li>
-          <li><a class="text-muted" href="#">Termos</a></li>
-        </ul>
-      </div>
-    </div>
+  <?php include "../includes/footer.php"; ?>
   </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
