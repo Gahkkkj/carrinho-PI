@@ -54,7 +54,7 @@ if (isset($_POST["submit"])) {
 		<?php include "navbar.php"; ?>
 		<div class='container mt-5'>
 			<h2 class='text-muted mb-4'>Detalhes da compra</h2>
-			<div class='>
+			<div class='row'>
 			<div class=' col-md-6 mx-auto'>
 				<form method='post' action='<?php echo $_SERVER["REQUEST_URI"]; ?>' autocomplete="off">
 					<div class='form-group'>
@@ -67,7 +67,7 @@ if (isset($_POST["submit"])) {
 					</div>
 					<div class='form-group'>
 						<label>Numero</label>
-						<input type='text' name='contact' class='form-control' required placeholder='Numero de Telefone'>
+						<input type='number' name='contact' class='form-control' required placeholder='Numero de Telefone'>
 					</div>
 					<div class='form-group'>
 						<label>Endereço</label>
