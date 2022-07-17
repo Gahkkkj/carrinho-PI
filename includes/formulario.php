@@ -1,9 +1,15 @@
 <section>
+<<<<<<< Updated upstream
     <a href="indexProdutos.php">
         <button class="btn btn-success"> Voltar </button>
     </a>
 
     <h2 class="mt-3"><?php echo TITLE;?> </h2>
+=======
+<head>
+   <link rel="stylesheet" href="../assets/css/main.css?date= . <?php echo time(); ?>">
+</head>
+>>>>>>> Stashed changes
 
     <form method="POST" class="form-send">
         <div class="form-group">
@@ -11,10 +17,20 @@
             <input type="text" required class="form-control" name="nome" value="<?php echo isset($obNoticia->nome) ? $obNoticia->nome : ''; ?>">
         </div>
 
+<<<<<<< Updated upstream
         <div class="form-group">
             <label> Descrição </label>
             <textarea class="form-control" required name="descricao" rows="5"><?php echo isset($obNoticia->descricao) ? $obNoticia->descricao : ''; ?> </textarea>
         </div>
+=======
+        <div class='container mt-5'>
+            <div class='row'>
+            <div class=' col-md-12 mx-auto'>
+            <div class="box-formulario bg-dark">
+                    <a href="indexProdutos.php">
+                        <button class="btn btn-success"> Voltar </button>
+                    </a>
+>>>>>>> Stashed changes
 
         <div class="form-group">
             <label> Data Compra </label>
