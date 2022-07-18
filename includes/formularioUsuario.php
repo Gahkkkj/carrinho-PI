@@ -1,7 +1,22 @@
 <section>
+<<<<<<< Updated upstream
     <a href="indexUsuario.php">
         <button class="btn btn-success"> Voltar </button>
     </a>
+=======
+<head>
+<link rel="stylesheet" href="../assets/css/main.css?date= . <?php echo time(); ?>">
+</head>
+    <div class='container mt-5 ' >
+        <div class='row'>
+        <div class=' col-md-12 mx-auto'>
+        <div class="box-formulario bg-dark">
+                <a href="indexUsuario.php"style="background-color: #C7A4A4;">
+                    <button class="btn btn-success"> Voltar </button>
+                </a>
+                <h2 class="mt-3 mb-4"><?php echo TITLE; ?> </h2>
+                <form method="POST" class="form-send">
+>>>>>>> Stashed changes
 
     <h2 class="mt-3"><?php echo TITLE;?> </h2>
 
