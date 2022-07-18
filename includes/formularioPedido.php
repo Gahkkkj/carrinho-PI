@@ -1,20 +1,7 @@
 <section>
-<<<<<<< Updated upstream
     <a href="pedidoindex.php">
         <button class="btn btn-success"> Voltar </button>
     </a>
-=======
-<head>
-<link rel="stylesheet" href="../assets/css/main.css?date= . <?php echo time(); ?>">
-</head>
-    <div class='container mt-5'>
-        <div class='row'>
-        <div class=' col-md-12 mx-auto'>
-        <div class="box-formulario bg-dark">
-                <a href="pedidoindex.php">
-                    <button class="btn btn-success"> Voltar </button>
-                </a>
->>>>>>> Stashed changes
 
     <h2 class="mt-3"><?php echo TITLE;?> </h2>
 
