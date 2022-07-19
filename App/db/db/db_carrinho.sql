@@ -75,9 +75,11 @@ CREATE TABLE `detalhes_pedido` (
 CREATE TABLE `produtos_carrinho` (
   `PID` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `PRODUCT` varchar(45) NOT NULL DEFAULT '',
+  `data_compra` timestamp NULL DEFAULT NULL,
   `preco_produto` double(10, 2) NOT NULL DEFAULT '0.00',
   `IMAGE` varchar(45) NULL DEFAULT '',
   `DESCRIPTION` text,
+  `quantidade` int,
   PRIMARY KEY (`PID`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1 AUTO_INCREMENT = 6;
 
@@ -96,13 +98,8 @@ CREATE TABLE `Usuario` (
   PRIMARY KEY (`UID`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1 AUTO_INCREMENT = 1;
 
--- ADICIONANDO FOREIGN KEY DE ID / GRUPO EM EMPRESA
-ALTER TABLE
-  `empresa`
-ADD
-  CONSTRAINT `fk_id_grupo` FOREIGN KEY (`fk_id_grupo`) REFERENCES `grupo` (`id`);
 
--- ADICIONANDO FOREIGN KEY DE ID / EMPRESA EM USUARIO
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */
 ;
 

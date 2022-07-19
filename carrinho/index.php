@@ -44,8 +44,9 @@ $condicoes = array_filter($condicoes);
   <section>
     <?php include "navbar.php"; ?>
     <div class='container mt-5 pb-5'>
-      <h2 class='text-muted mb-4 text-center' style="text-align: center;">Produtos</h2>
-
+    <nav class="navbar1 navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1"> <b> PRODUTOS </b> </span>
+</nav>
       
         <form method="get">
 
@@ -71,7 +72,7 @@ $condicoes = array_filter($condicoes);
       <div class='row'>
         <?php foreach ($data as $row) : ?>
           <div class='col-md-3 mt-2'>
-            <div class="card">
+            <div class="card bg-dark text-light">
               <img class="card-img-top" src="images/2.jpg<?php echo $row["IMAGE"]; ?>">
               <div class="card-body" style="text-align: center;">
                 <h5 class="card-title"><?php echo $row["PRODUCT"]; ?></h5>

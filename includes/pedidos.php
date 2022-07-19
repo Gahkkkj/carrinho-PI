@@ -1,11 +1,11 @@
-<?php 
-    require __DIR__.'../../vendor/autoload.php';
+<?php
+require __DIR__ . '../../vendor/autoload.php';
 
-    use \App\entity\Pedido;
+use \App\entity\Pedido;
 
-    $Pedido = Pedido::getPedido();
-    $obPedido = new Pedido;
-    // echo "<pre>"; print_r($vaga); echo "</pre>"; exit;
+$Pedido = Pedido::getPedido();
+$obPedido = new Pedido;
+// echo "<pre>"; print_r($vaga); echo "</pre>"; exit;
 ?>
 
 <?php
@@ -32,8 +32,8 @@ if (isset($_GET['status'])) {
 <?php } ?>
 
 <nav class="navbar1 navbar-light bg-light">
-      <span class="navbar-brand mb-0 h1"> <b> LOJA! </b> </span>
-    </nav>
+    <span class="navbar-brand mb-0 h1"> <b> PEDIDOS! </b> </span>
+</nav>
 
 <section>
 
@@ -41,37 +41,37 @@ if (isset($_GET['status'])) {
         <div class="alert alert-secondary mt-3"> Nenhum Pedido Encontrado </div>
 
     <?php } else { ?>
-
-        <table class="table bg-light mt-3" style="text-align: center;">
-        <thead>
-            <tr>
-                <th>Pedido</th>
-                <th>Preço Produto</th>
-                <th>Total</th>
-            </tr>
-        </thead>
- 
-        <tbody>
-            <?php foreach ($Pedido as $key => $value) { ?>
+        <div class="box-pedidos">
+         <table class="table table-striped table-responsive-mb table-bordered table-hover table-dark mt-3" style="text-align: center;">
+            <thead>
                 <tr>
-                    <td><?php echo $value->PNAME; ?></td>
-                    <td><?php echo $value->preco_produto; ?></td>
-                    <td><?php echo $value->TOTAL; ?></td>
-                    <td>
-                                <a href="editarPedidos.php?ID=<?php echo $value->ID; ?>">
-                                    <button type="button" class="btn btn-primary">Editar</button>
-                                </a>
+                    <th>Pedido</th>
+                    <th>Preço Produto</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
 
-                                <a href="excluirPedidos.php?ID=<?php echo $value->ID; ?>">
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </a>
-                            </td>
-                          
+            <tbody>
+                <?php foreach ($Pedido as $key => $value) { ?>
+                    <tr>
+                        <td><?php echo $value->PNAME; ?></td>
+                        <td><?php echo $value->preco_produto; ?></td>
+                        <td><?php echo $value->TOTAL; ?></td>
+                        <td>
+                            <a href="editarPedidos.php?ID=<?php echo $value->ID; ?>">
+                                <button type="button" class="btn btn-primary">Editar</button>
+                            </a>
 
-                            </tr>
-            <?php } ?> 
-        </tbody>
-    </table>
-    <?php } ?> 
+                            <a href="excluirPedidos.php?ID=<?php echo $value->ID; ?>">
+                                <button type="button" class="btn btn-danger">Excluir</button>
+                            </a>
+                        </td>
 
+
+                    </tr>
+                <?php } ?>
+            </tbody>
+            </table>
+        <?php } ?>
+        </div>
 </section>

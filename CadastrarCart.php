@@ -7,11 +7,13 @@ use \App\entity\Carrinho;
 
 $obCarrinho = new Carrinho;
 
-if (isset( $_POST['PRODUCT'], $_POST['preco_produto'], $_POST['DESCRIPTION'])) {
+if (isset( $_POST['PRODUCT'], $_POST['data_compra'], $_POST['preco_produto'], $_POST['DESCRIPTION'],$_POST['quantidade'])) {
    
     $obCarrinho->PRODUCT = $_POST['PRODUCT'];
+    $obCarrinho->data_compra = $_POST['data_compra'];
     $obCarrinho->preco_produto = $_POST['preco_produto'];
     $obCarrinho->DESCRIPTION = $_POST['DESCRIPTION'];
+    $obCarrinho->quantidade = $_POST['quantidade'];
 
     $obCarrinho->cadastrarCarrinho();
 
