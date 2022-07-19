@@ -15,7 +15,7 @@ if (isset( $_POST['PRODUCT'], $_POST['preco_produto'], $_POST['DESCRIPTION'])) {
 
     $obCarrinho->cadastrarCarrinho();
 
-    header('location: indexProdutos.php?status=success');
+    header('location: indexGerente.php?status=success');
     // echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
  
     exit;

@@ -20,7 +20,7 @@
     }
     // ValIDação do ID
     if(!isset($_GET['id']) || !is_numeric($_GET['id'])) {
-        header('location: indexProdutos.php?status=error');
+        header('location: indexGerente.php?status=error');
         exit;
     }
   

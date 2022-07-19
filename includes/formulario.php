@@ -1,4 +1,7 @@
 <section>
+    <a href="indexGerente.php">
+        <button class="btn btn-success"> Voltar </button>
+    </a>
 
 
     <form method="POST" class="form-send">
