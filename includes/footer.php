@@ -2,7 +2,7 @@
 
 </footer>
       </section class="fixe">
-      <footer class="pt-4 pt-md-5 mt-5 border-top bg-dark" id="futer">
+      <footer class=" pt-md-5 border-top bg-dark" id="futer">
         <div class="row andrei">
           <div class="col-4">
             <h5 class="andreifooter"> MAIS </h5>

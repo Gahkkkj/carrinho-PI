@@ -29,6 +29,7 @@
 	<head>
         <title>Detalhes do produto</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/main.css?date= . <?php echo time(); ?>">
     </head>
     <body>
 	<?php include "navbar.php"; ?>
@@ -59,4 +60,8 @@
 			</div>
 		</div>
     </body>
+	</footer>
+	<?php include "../includes/footer.php"; ?>
+	</footer>
+
 </html> 

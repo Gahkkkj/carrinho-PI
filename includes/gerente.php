@@ -45,6 +45,10 @@ if (isset($_GET['status'])) {
 				<button type="button" class="btn btn btn-success">Ver pedidos </button>
 			</a>
 
+            <a href="indexUsuario.php">
+        <button class="btn btn-success"> Usuarios </button>
+    </a>
+
     <?php if (count($Noticia) == 0) { ?>
         <div class="alert alert-secondary mt-3"> Nenhum produto encondrado </div>
 

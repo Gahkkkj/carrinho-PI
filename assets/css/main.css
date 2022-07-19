@@ -311,6 +311,7 @@ body {
 }
 
 #futer{   
+  margin-top: 15%;
   bottom: 0;
   width: 100%;
 }
@@ -382,13 +383,12 @@ body {
   border-color: black;
 }
 
-
-
-
-
-
-
-
+.funciona{
+  position: absolute;
+  background: greenyellow;
+  margin-left: 20.35%;
+  margin-top: 1.5%;
+}
 
 
 

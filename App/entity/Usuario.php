@@ -11,55 +11,45 @@ class Usuario
      * Identificador único da vaga
      * @var integer
      */
-    public $id;
+    public $UID;
 
     /**
      * Título da vaga
-     * @var string
+     * @var varchar
      */
-    public $nome;
+    public $NAME;
 
     /**
      * Descrição da vaga (pode conter html)
-     * @var string
+     * @var varchar
      */
-    public $sobrenome;
+    public $CONTACT;
 
     /**
      * Descrição da vaga (pode conter html)
-     * @var int
-     */
-    public $idade;
-
-    /**
-     * Descrição da vaga (pode conter html)
-     * @var int
-     */
-    public $cpf;
-
-    /**
-     * Define se a vaga está ativa ou não
      * @var text
      */
-    public $descricao;
+    public $ADDRESS;
 
     /**
      * Descrição da vaga (pode conter html)
-     * @var enum
+     * @var varchar
      */
-    public $sexo;
-
-    /**
-     * Descrição da vaga (pode conter html)
-     * @var int
-     */
-    public $ordem;
+    public $CITY;
 
     /**
      * Define se a vaga está ativa ou não
-     * @var string
+     * @var varchar
      */
-    public $status; 
+    public $PINCODE;
+
+    /**
+     * Descrição da vaga (pode conter html)
+     * @var varchar
+     */
+    public $EMAIL;
+
+
 
     public function cadastrarUsuario()
     {
@@ -68,18 +58,17 @@ class Usuario
         // echo "<pre>"; print_r($this); echo "</pre>"; exit;
 
         // Inserir a vaga no bano e retornar o ID
-        $objdatabase = new database('usuario');
+        $objdatabase = new database('Usuario');
 
         $this->id = $objdatabase->insert([
-            'nome' => $this->nome,
-            'sobrenome' => $this->sobrenome,
-            'idade' => $this->idade,
-            'cpf' => $this->cpf,
-            'descricao' => $this->descricao,
-            'sexo' => $this->sexo,  
-            'ordem' => $this->ordem,
-            'status' => $this->status,
-        ]);
+            'UID' => $this->UID,
+            'NAME' => $this->NAME,
+            'CONTACT' => $this->CONTACT,
+            'ADDRESS' => $this->ADDRESS,
+            'CITY' => $this->CITY,
+            'PINCODE' => $this->PINCODE,  
+            'EMAIL' => $this->EMAIL,
+           ]);
 
         return true;
     }
@@ -93,9 +82,9 @@ class Usuario
      * @return array
      */
 
-    public static function getnoar($where = null, $order = null, $limit = null)
+    public static function getUsuario($where = null, $order = null, $limit = null)
     {
-        $objdatabase = new database('usuario');
+        $objdatabase = new database('Usuario');
 
         return ($objdatabase)->select($where, $order, $limit)->fetchAll(PDO::FETCH_CLASS, self::class);
     }
@@ -105,11 +94,11 @@ class Usuario
      * @params string @id
      * @return Grupo
      */
-    public static function getArUsuario($id)
+    public static function getUsuarios($UID)
     {
-        $objdatabase = new database('usuario');
+        $objdatabase = new database('Usuario');
 
-        return ($objdatabase)->select('id = ' . $id)->fetchObject(self::class);
+        return ($objdatabase)->select('UID = ' . $UID)->fetchObject(self::class);
     }
     /**
      * Função para excluir vagas no banco
@@ -117,9 +106,9 @@ class Usuario
      */
     public function excluirUsuario()
     {
-        $objdatabase = new database('usuario');
+        $objdatabase = new database('Usuario');
 
-        return ($objdatabase)->delete('id = ' . $this->id);
+        return ($objdatabase)->delete('UID = ' . $this->UID);
     }
 
     /**
@@ -130,23 +119,15 @@ class Usuario
         //Definir a data
         // $this->data = date('Y-m-d H:i:s');
 
-        $objDatabase = new database('usuario');
+        $objDatabase = new database('Usuario');
 
-        return ($objDatabase)->update('id = ' . $this->id, [
-            'nome' => $this->nome,
-            'sobrenome' => $this->sobrenome,
-            'cpf' => $this->cpf,
-            'telefone' => $this->telefone,
-            'email' => $this->email,  
-            'numero_end' => $this->numero_end,
-            'rua_end' => $this->rua_end,
-            'bairro_end' => $this->bairro_end,
-            'cidade_end' => $this->cidade_end,
-            'estado_end' => $this->estado_end,   
-            'focal' => $this->focal,
-            'ordem' => $this->ordem,
-            'status' => $this->status,
-            'data_inc' => $this->data_inc,    
+        return ($objDatabase)->update('UID = ' . $this->UID, [
+            'NAME' => $this->NAME,
+            'CONTACT' => $this->CONTACT,
+            'ADDRESS' => $this->ADDRESS,
+            'CITY' => $this->CITY,
+            'PINCODE' => $this->PINCODE,  
+            'EMAIL' => $this->EMAIL,
         ]);
     }
 }

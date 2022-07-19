@@ -20,7 +20,7 @@ if ($res->num_rows > 0) {
 }
 
     require __DIR__.'/includes/header.php';
-    require __DIR__.'/pedidos.php';
+    require __DIR__.'/includes/pedidos.php';
     require __DIR__.'/includes/footer.php';
     
   

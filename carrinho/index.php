@@ -19,7 +19,15 @@ if ($res->num_rows > 0) {
     $data[] = $row;
   }
 }
+?>
+<?php
+$busca = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_STRING);
 
+$condicoes = [
+    strlen($busca) ? 'PRODUCT LIKE "%' .str_replace(' ','%',$busca).'%"' : null
+];
+
+$condicoes = array_filter($condicoes);
 
 ?>
 <html>
@@ -27,7 +35,7 @@ if ($res->num_rows > 0) {
 <head>
   <title>Produtos</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/css/main.css?date= . <?php echo time(); ?>">
+  <link rel="stylesheet" href="../assets/css/main.css?date= . <?php echo time(); ?>">
 
 
 </head>
@@ -38,6 +46,27 @@ if ($res->num_rows > 0) {
     <div class='container mt-5 pb-5'>
       <h2 class='text-muted mb-4 text-center' style="text-align: center;">Produtos</h2>
 
+      
+        <form method="get">
+
+            <div class="row my-4">
+
+
+                <div class="col">
+
+                    <input type="text" placeholder="Buscar por nome!" name="busca" class="form-control" value="<?= $busca ?>">
+
+                </div>
+
+                <div class="col d-flex align-itens-end">
+
+                    <button type="submit" class="btn btn-primary"> Filtrar </button>
+
+                </div>
+
+            </div>
+
+        </form>
 
       <div class='row'>
         <?php foreach ($data as $row) : ?>
@@ -83,39 +112,7 @@ if ($res->num_rows > 0) {
 
 
   </footer>
-  </section class="fixe">
-  <footer class="pt-4 pt-md-5 mt-5 border-top bg-dark" style="text-align: center;">
-    <div class="row andrei">
-      <div class="col-4">
-        <h5 class="andreifooter" style="text-align: center; color: orange;"> MAIS </h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Algo legal</a></li>
-          <li><a class="text-muted" href="#">Feature aleatória</a></li>
-          <li><a class="text-muted" href="#">Recursos para times</a></li>
-          <li><a class="text-muted" href="#">Coisas para desenvolvedores</a></li>
-          <li><a class="text-muted" href="#">Outra coisa legal</a></li>
-          <li><a class="text-muted" href="#">Último item</a></li>
-        </ul>
-      </div>
-      <div class="col-4">
-        <h5 class="andreifooter" style="text-align: center; color: orange;"> FONTES </h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Fonte</a></li>
-          <li><a class="text-muted" href="#">Nome da fonte</a></li>
-          <li><a class="text-muted" href="#">Outra fonte</a></li>
-          <li><a class="text-muted" href="#">Fonte final</a></li>
-        </ul>
-      </div>
-      <div class="col-4">
-        <h5 class="andreifooter" style="text-align: center; color: orange;"> SOBRE </h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Equipe</a></li>
-          <li><a class="text-muted" href="#">Locais</a></li>
-          <li><a class="text-muted" href="#">Privacidade</a></li>
-          <li><a class="text-muted" href="#">Termos</a></li>
-        </ul>
-      </div>
-    </div>
+  <?php include "../includes/footer.php"; ?>
   </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

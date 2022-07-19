@@ -19,17 +19,17 @@ if ($res->num_rows > 0) {
     }
 }
     // Validação do ID
-    if(!isset($_GET['id']) || !is_numeric($_GET['id'])) {
-        header('location: listaUsuario.php?status=error');
+    if(!isset($_GET['UID']) || !is_numeric($_GET['UID'])) {
+        header('location: indexUsuario.php?status=error');
         exit;
     }
 
     // Consulta Vaga
-    $obUsuario = Usuario::getArUsuario($_GET['id']);
+    $obUsuario = Usuario::getUsuarios($_GET['UID']);
 
     // Validação da Vaga
     if(!$obUsuario instanceof Usuario) {
-        header('location: listaUsuario.php?status=error');
+        header('location:indexUsuario.php?status=error');
         exit;
     }
 
@@ -38,7 +38,7 @@ if ($res->num_rows > 0) {
 
         $obUsuario->excluirUsuario();
 
-        header('location: listaUsuario.php?status=success');
+        header('location: indexUsuario.php?status=success');
         exit;
     }
 

@@ -44,44 +44,7 @@ CREATE TABLE `produtos`(
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1 AUTO_INCREMENT = 1;
 
-CREATE TABLE `empresa` (
-  `id` INT(10) NOT NULL AUTO_INCREMENT,
-  `nome_fantasia` varchar(255) DEFAULT NULL,
-  `nome` varchar(255) DEFAULT NULL,
-  `cnpj` bigint,
-  `descricao` TEXT,
-  `numero_end` INT,
-  `rua_end` varchar(50),
-  `bairro_end` varchar(50),
-  `cidade_end` varchar(50),
-  `estado_end` varchar(2),
-  `ordem` INT(10) NOT NULL,
-  `status` enum('s', 'n') DEFAULT NULL,
-  `data_inc` timestamp NULL DEFAULT NULL,
-  `fk_id_grupo` int,
-  PRIMARY KEY (`id`)
-) ENGINE = innodb;
-
 -- COMANDO DE CRIAÇÃO DE TABELA DE USUÁRIOS
-CREATE TABLE `usuario` (
-  `id` INT(10) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(255) DEFAULT NULL,
-  `sobrenome` varchar(255) DEFAULT NULL,
-  `cpf` bigint NOT NULL,
-  `telefone` bigint,
-  `email` varchar(100),
-  `numero_end` INT,
-  `rua_end` varchar(50),
-  `bairro_end` varchar(50),
-  `cidade_end` varchar(50),
-  `estado_end` varchar(2),
-  `focal` enum('s', 'n') DEFAULT NULL,
-  `ordem` INT(10) NOT NULL,
-  `status` enum('s', 'n') DEFAULT NULL,
-  `data_inc` timestamp NULL DEFAULT NULL,
-  `fk_id_empresa` int,
-  PRIMARY KEY (`id`)
-) ENGINE = innodb;
 
 CREATE TABLE `orders` (
   `OID` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -118,20 +81,11 @@ CREATE TABLE `produtos_carrinho` (
   PRIMARY KEY (`PID`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1 AUTO_INCREMENT = 6;
 
+-- ------------------------------------------------------
 --
--- insert table `produtos`
+--  table `Usuario`
 --
-INSERT INTO `produtos_carrinho` (`PID`, `PRODUCT`, `preco_produto`, `IMAGE`, `DESCRIPTION`) VALUES
-(2, 'Product 1', 100.00, '2.jpg', 'pc gamer pronto pra entrega'),
-(3, 'Product 2', 75.00, '3.jpg', 'placa de video mostra'),
-(4, 'Product 3', 45.00, '4.jpg', 'headset gamer black'),
-(5, 'Product 4', 85.00, '5.jpg', 'garrafinha de agua tonica bolada com rgb');
-
--- --------------------------------------------------------
---
---  table `users`
---
-CREATE TABLE `users` (
+CREATE TABLE `Usuario` (
   `UID` int(11) NOT NULL AUTO_INCREMENT,
   `NAME` varchar(150) NOT NULL DEFAULT '',
   `CONTACT` varchar(150) NOT NULL DEFAULT '',
