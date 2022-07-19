@@ -11,13 +11,15 @@ $cart = new Cart();
 <head>
 	<title>Confirindo</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/main.css?date= . <?php echo time(); ?>">
 </head>
 
 <body>
 	<?php include "navbar.php"; ?>
 	<div class="container">
-		<div class='container mt-5'>
-			<h2 class='text-muted mb-4'>Seu pedido concluido</h2>
+	<nav class="navbar1 navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1"> <b> PEDIDO CONCLUIDO </b> </span>
+</nav>
 
 
 			<div class='row'>
@@ -30,7 +32,9 @@ $cart = new Cart();
 
 	</div>
 
-
+	</footer>
+	<?php include "../includes/footer.php"; ?>
+	</footer>
 </body>
 
 </html>

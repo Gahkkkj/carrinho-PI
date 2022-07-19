@@ -30,7 +30,9 @@
     <?php echo $mensagem; ?>
 </section>
 <?php } ?>
-
+<nav class="navbar1 navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1"> <b> USUARIOS! </b> </span>
+</nav>
 <section>
 
     <?php if(count($Usuario) == 0) { ?>
@@ -38,7 +40,7 @@
 
     <?php } else { ?>
 
-        <table class="table bg-light mt-3" style="text-align: center;">
+        <table class="table table-striped table-responsive-mb table-bordered table-hover table-dark mt-3" style="text-align: center;">
         <thead>
             <tr>
                 <th>Nome</th>

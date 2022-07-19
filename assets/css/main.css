@@ -312,7 +312,7 @@ body {
 
 #futer{   
   margin-top: 15%;
-  bottom: 0;
+
   width: 100%;
 }
 
@@ -397,9 +397,20 @@ color:orange;
 
 }
 
+.box-carrinho{
 
+  padding: 40px;
+color:orange;
 
+}
 
+.box-detalhes{
+
+  padding: 40px;
+  color: orange;
+  text-decoration: none;
+
+}
 
 
 

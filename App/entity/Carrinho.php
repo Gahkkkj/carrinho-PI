@@ -18,6 +18,13 @@ class Carrinho
      * @var varchar
      */
     public $PRODUCT;
+   
+   
+    /**
+     * @var timestamp
+     */
+    public $data_compra;
+
 
     /**
      * Descrição da vaga (pode conter html)
@@ -39,6 +46,12 @@ class Carrinho
      */
     public $DESCRIPTION;
 
+    /**
+    * Descrição da vaga (pode conter html)
+    * @var int
+    */
+    public $quantidade;
+
     public function cadastrarCarrinho()
     {
         // Definir a data 
@@ -50,10 +63,11 @@ class Carrinho
 
         $this->PID = $objdatabase->insert([
             'PRODUCT' => $this->PRODUCT,
+            'data_compra' => $this->data_compra,
             'preco_produto' => $this->preco_produto,
             'IMAGE' => $this->IMAGE,   
             'DESCRIPTION' => $this->DESCRIPTION,    
-
+            'quantidade' => $this->quantidade,
        
         ]);
 
@@ -110,10 +124,11 @@ class Carrinho
 
         return ($objDatabase)->update('PID = ' . $this->PID, [
             'PRODUCT' => $this->PRODUCT,
+            'data_compra' => $this->data_compra,
             'preco_produto' => $this->preco_produto,
             'IMAGE' => $this->IMAGE,   
             'DESCRIPTION' => $this->DESCRIPTION,    
-        
+            'quantidade' => $this->quantidade,
         ]);
     }
 }

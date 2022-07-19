@@ -50,12 +50,17 @@ if (isset($_POST["submit"])) {
 </head>
 
 <body>
+
 	<section>
 		<?php include "navbar.php"; ?>
+		<nav class="navbar1 navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1"> <b> CADASTRE-SE </b> </span>
+</nav>
 		<div class='container mt-5'>
-			<h2 class='text-muted mb-4'>Detalhes da compra</h2>
+
 			<div class='>
 			<div class=' col-md-6 mx-auto'>
+			<div class="box-formulario bg-dark">
 				<form method='post' action='<?php echo $_SERVER["REQUEST_URI"]; ?>' autocomplete="off">
 					<div class='form-group'>
 						<label>Nome</label>
@@ -67,11 +72,12 @@ if (isset($_POST["submit"])) {
 					</div>
 					<div class='form-group'>
 						<label>Numero</label>
-						<input type='text' name='contact' class='form-control' required placeholder='Numero de Telefone'>
+						<input type='number' name='contact' class='form-control' required placeholder='Numero de Telefone'>
 					</div>
 					<div class='form-group'>
 						<label>Endereço</label>
-						<textarea class='form-control' required name='Endereço'></textarea>
+						<input type='text' name='address' class='form-control' required placeholder='Endereço'>
+					
 					</div>
 					<div class='form-group'>
 						<label>Cidade</label>
