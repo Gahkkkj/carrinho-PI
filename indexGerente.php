@@ -18,9 +18,8 @@
     
         }
     }
-
-    $Noticia = Noticia::getNoticia();
     $obNoticia = new Noticia;
+    $Noticia = $obNoticia::getNoticia();
 
     $busca = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_STRING);
 
@@ -40,7 +39,7 @@
     // echo "<pre>"; print_r($vaga); echo "</pre>"; exit;
 
     require __DIR__.'/includes/header.php';
-    require __DIR__.'/includes/listagem.php';
+    require __DIR__.'/includes/gerente.php';
     require __DIR__.'/includes/footer.php';
     
  

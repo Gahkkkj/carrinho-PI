@@ -1,6 +1,8 @@
 <?php
-
-
+//     require __DIR__.'../../vendor/autoload.php';
+//     use \App\entity\Noticia;
+// $obNoticia = new Noticia;
+// $Noticia = $obNoticia::getNoticia();
 $mensagem = '';
 if (isset($_GET['status'])) {
     switch ($_GET['status']) {
@@ -24,15 +26,20 @@ if (isset($_GET['status'])) {
 <?php } ?>
 
 <nav class="navbar1 navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1"> <b> LOJA! </b> </span>
+    <span class="navbar-brand mb-0 h1"> <b> Gerente </b> </span>
 </nav>
 
 <section>
-    <a href="cadastrar">
-        <button class="btn btn-success"> Cadastrar </button>
-    </a>
+
     <a href="cadastrarCart.php">
-        <button class="btn btn-success"> Cadastrar Pedidos </button>
+        <button class="btn btn-success"> Cadastrar Produto </button>
+    </a>
+    
+    <a href="cadastrarFornecedor.php">
+        <button class="btn btn-success"> Cadastrar Fornecedor </button>
+    </a>
+    <a href="indexteste.php">
+        <button class="btn btn-success"> Ver Fornecedores </button>
     </a>
 				<a href="pedidoindex.php">
 				<button type="button" class="btn btn btn-success">Ver pedidos </button>

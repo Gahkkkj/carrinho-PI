@@ -17,7 +17,7 @@ if (isset($_POST['nome'], $_POST['descricao'], $_POST['data_compra'], $_POST['no
 
     $obNoticia->cadastrar();
 
-    header('location: indexProdutos.php?status=success');
+    header('location: indexGerente.php?status=success');
     // echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
 
     exit;
