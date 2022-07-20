@@ -79,19 +79,19 @@ $condicoes = array_filter($condicoes);
                 <p class="card-text">
                   Preço R$ <?php echo $row["preco_produto"]; ?>
                 </p>
-                <a href="view_details.php?id=<?php echo $row["PID"]; ?>" class='btn btn-primary float-right' style="width: 47%">Carrinho<a>
+                <a href="view_details.php?id=<?php echo $row["PID"]; ?>" class='btn btn-primary float-right' style="width: 100%">Carrinho<a>
 
 
                 <div>
-                  <a href="../editar.php?id=<?php echo $row["PID"]; ?>">
+                  <!-- <a href="../editar.php?id=<?php echo $row["PID"]; ?>">
                     <button type='button' class='btn btn-primary float-left' style="width: 45%">Editar</button>
-                  </a>
+                  </a> -->
                 </div>
                 <br>
                 <br>
-                <a href="../excluir.php?id=<?php echo $row["PID"]; ?>">
+                <!-- <a href="../excluir.php?id=<?php echo $row["PID"]; ?>">
                   <button type='button' class='btn btn-danger botoes' style="padding: 0.375rem 5rem; text-align: center;">Excluir</button>
-                </a>
+                </a> -->
                 <div style="margin-top: 5%; height: 10%;">
                   <a href="https://wa.me/5551995665319" style="margin-top: 25px;">
                     <button type="button" class="btn btn-success" style="padding: 0.6rem 5.9rem; text-align: center">
