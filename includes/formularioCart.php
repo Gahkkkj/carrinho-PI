@@ -10,7 +10,7 @@
         <div class='row'>
             <div class=' col-md-12 mx-auto'>
                 <div class="box-formulario bg-dark">
-                    <a href="indexProdutos.php">
+                    <a href="indexgerente.php">
                         <button class="btn btn-success"> Voltar </button>
                     </a>
                     <h2 class="mt-3"><?php echo TITLE; ?> </h2>
