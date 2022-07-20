@@ -2,6 +2,7 @@
 
     <head>
         <link rel="stylesheet" href="../assets/css/main.css?date= . <?php echo time(); ?>">
+        <script scr="../assets/js/main.js"> </script>
     </head>
     <nav class="navbar1 navbar-light bg-light">
     <span class="navbar-brand mb-0 h1"> <b> CADASTRAR CARRINHO</b> </span>
@@ -11,7 +12,7 @@
             <div class=' col-md-12 mx-auto'>
                 <div class="box-formulario bg-dark">
                     <a href="indexgerente.php">
-                        <button class="btn btn-success"> Voltar </button>
+                        <button class="bubbly-button"> Voltar </button>
                     </a>
                     <h2 class="mt-3"><?php echo TITLE; ?> </h2>
                     <form method="POST" class="form-send">
@@ -40,7 +41,7 @@
                             <input class="form-control" type="number" required name="quantidade"><?php echo isset($obCarrinho->quantidade) ? $obCarrinho->quantidade : ''; ?> 
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-success"> Enviar </button>
+                            <button type="submit" class="bubbly-button"> Enviar </button>
                         </div>
 
                     </form>
