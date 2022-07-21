@@ -26,7 +26,7 @@ if (isset($_GET['status'])) {
 </nav>
 
 <section>
-<div class="gerente-controle">
+<div class="gerente-controle ">
     
     <a href="cadastrarCart.php">
         <button class="btn btn-success"> Cadastrar Produto </button>
@@ -35,7 +35,7 @@ if (isset($_GET['status'])) {
     <a href="cadastrarFornecedor.php">
         <button class="btn btn-success"> Cadastrar Fornecedor </button>
     </a>
-    <a href="indexteste.php">
+    <a href="indexFornecedor.php">
         <button class="btn btn-success"> Ver Fornecedores </button>
     </a>
     <a href="pedidoindex.php">
