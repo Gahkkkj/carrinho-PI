@@ -22,7 +22,7 @@
 
     require __DIR__.'/includes/header.php';
 
-    require __DIR__.'/listagemFornecedor.php';   
+    require __DIR__.'/includes/listagemFornecedor.php';   
 
     require __DIR__.'/includes/footer.php';
 

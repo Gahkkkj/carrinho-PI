@@ -29,7 +29,7 @@
 
     // ValIDação da Vaga
     if(!$obCarrinho instanceof Carrinho) {
-        header('location:  ./carrinho/index.php?status=error');
+        header('location:  indexGerente.php?status=error');
         exit;
     }
 
@@ -38,7 +38,7 @@
 
         $obCarrinho->excluirCarrinhos();
 
-        header('location:  ./carrinho/index.php?status=success');
+        header('location:  indexGerente.php?status=success');
         exit;
     }
 

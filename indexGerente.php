@@ -1,7 +1,7 @@
 <?php 
     require __DIR__.'/vendor/autoload.php';
 
-    use \App\entity\Noticia;
+    use \App\entity\Fornecedor;
 
     include "./carrinho/config.php";
     session_start();
@@ -18,8 +18,8 @@
     
         }
     }
-    $obNoticia = new Noticia;
-    $Noticia = $obNoticia::getNoticia();
+    $obFornecedor = new Fornecedor;
+    $Fornecedor = $obFornecedor::getFornecedor();
 
     $busca = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_STRING);
 
@@ -35,7 +35,7 @@
 
     $where = implode(' AND ',$condicoes);
 
-    $Noticia = Noticia::getNoticia($where);
+    $Fornecedor = Fornecedor::getFornecedor($where);
     // echo "<pre>"; print_r($vaga); echo "</pre>"; exit;
 
     require __DIR__.'/includes/header.php';

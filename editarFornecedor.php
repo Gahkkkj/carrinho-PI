@@ -23,7 +23,7 @@ if ($res->num_rows > 0) {
 }
 //Validação do ID
 if (!isset($_GET['id'])  || !is_numeric($_GET['id'])) {
-    header('location: index.php?status=error');
+    header('location: indexFornecedor.php?status=error');
     exit;
 }
 
@@ -32,7 +32,7 @@ $obFornecedor = Fornecedor::getArFornecedor($_GET['id']);
 
 //Validação da Vaga
 if (!$obFornecedor instanceof Fornecedor) {
-    header('location: index.php?status=error');
+    header('location: indexFornecedor.php?status=error');
     exit;
 }
 
@@ -52,7 +52,7 @@ if (isset($_POST['nome'], $_POST['cnpj'], $_POST['descricao'], $_POST['numero_en
 
     $obFornecedor->atualizarFornecedor();
 
-    header('location: listagemFornecedor.php?status=success');
+    header('location: ./indexFornecedor.php?status=success');
     exit;
     
 }

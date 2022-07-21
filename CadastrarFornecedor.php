@@ -44,7 +44,7 @@ if (isset($_POST['nome'], $_POST['cnpj'], $_POST['descricao'], $_POST['numero_en
 
     $obFornecedor->cadastrarFornecedor();
 
-    header('location: listagemFornecedor.php?status=success');
+    header('location: indexGerente.php?status=success');
     // echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
 
     exit;
