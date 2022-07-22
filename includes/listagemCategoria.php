@@ -70,14 +70,14 @@ if (isset($_GET['status'])) {
                             <div class="row mt-3" style="margin-right: 0px">
                                 <div class="col-6">
                                     <a href="editar.php?id=<?php echo $value->id; ?>">
-                                        <button type='button' class='btn btn-success botoes' style="padding: 0.375rem 1.1rem; text-align: center;">Editar</button>
+                                        <button type='button' class='btn-editar fas fa-edit' style="padding: 0.375rem 1.1rem; text-align: center;">Editar</button>
                                     </a>
                                 </div>
 
                                 <div class="col-5">
 
                                     <a href="excluir.php?id=<?php echo $value->id; ?>">
-                                        <button type='button' class='btn btn-danger botoes' style="padding: 0.375rem 1.1rem; text-align: center;">Excluir</button>
+                                        <button type='button' class='btn-excluir fas fa-trash-alt' style="padding: 0.375rem 1.1rem; text-align: center;">Excluir</button>
                                     </a>
                                 </div>
 

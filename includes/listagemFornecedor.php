@@ -82,15 +82,16 @@ $obFornecedor = new Fornecedor;
                             <td>
 
                                 <a href="./editarFornecedor.php?id=<?php echo $value->id; ?>">
-                                    <button type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn-editar fas fa-edit"></button>
                                 </a>
-
+                                </td>
+                                <td>
                                 <a href="./excluirFornecedor.php?id=<?php echo $value->id; ?>">
-                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                    <button type="button" class="btn-excluir fas fa-trash-alt"></button>
                                 </a>
 
-                            </td>
-                     
+                           
+                                </td>
                         </tr>
                     <?php } ?>
                 </tbody>

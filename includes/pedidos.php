@@ -59,11 +59,11 @@ if (isset($_GET['status'])) {
                         <td><?php echo $value->TOTAL; ?></td>
                         <td>
                             <a href="editarPedidos.php?ID=<?php echo $value->ID; ?>">
-                                <button type="button" class="btn btn-primary">Editar</button>
+                                <button type="button" class="btn-editar fas fa-edit">Editar</button>
                             </a>
 
                             <a href="excluirPedidos.php?ID=<?php echo $value->ID; ?>">
-                                <button type="button" class="btn btn-danger">Excluir</button>
+                                <button type="button" class="btn-excluir fas fa-trash-alt">Excluir</button>
                             </a>
                         </td>
 

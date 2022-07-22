@@ -23,7 +23,7 @@
                             <textarea class="form-control" type="text" required name="PRODUCT"><?php echo isset($obCarrinho->PRODUCT) ? $obCarrinho->PRODUCT : ''; ?> </textarea>
                         </div>
                         <div class="form-group">
-                            <label> Data Compra </label>
+                            <label> Data de validade </label>
                             <input type="date" required class="form-control" name="data_compra" value="<?php echo isset($obCarrinho->data_compra) ? date('Y-m-d', strtotime($obCarrinho->data_compra)) : ''; ?>">
                         </div>
 

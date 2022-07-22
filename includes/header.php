@@ -23,6 +23,7 @@
         <p class="lead " style="color: orange;"> Busque do melhor! </p>
       </h1>
       <h2 class="row">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
          <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="./carrinho/index.php" role="button">Produtos</a>
          <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="indexGerente.php">Gerente</a>
         <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="./carrinho/view_carrinho.php">Carrinho (<?php echo $cart->get_cart_count(); ?>)</a>

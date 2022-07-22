@@ -31,6 +31,7 @@ if ($res->num_rows > 0) {
 	<title>Detalhes do produto</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/css/main.css?date= . <?php echo time(); ?>">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
@@ -60,14 +61,17 @@ if ($res->num_rows > 0) {
 									<input type='hidden' name='preco_produto' value='<?php echo $data["preco_produto"]; ?>'>
 									<input type='hidden' name='img' value='<?php echo $data["IMAGE"]; ?>'>
 									<p><input type='number' min='1' value='1' name='qty' required class='form-control col-md-5'></p>
-									<input type='submit' name='submit' value='Adicionar ao Carrinho' class='btn btn-primary'>
+									<input type='submit' name='submit' value='Adicionar ao Carrinho' class='btn btn-primary '>
 								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
+			</section>
+</footer>
+<?php include "../includes/footer.php"; ?>
+</footer>
 </body>
 
 

@@ -58,9 +58,12 @@ if (isset($_POST["submit"])) {
 </nav>
 		<div class='container mt-5'>
 
-			<div class='>
-			<div class=' col-md-6 mx-auto'>
+				
+			<div class=' col-md-10 mx-auto'>
 			<div class="box-formulario bg-dark">
+			<a href="indexGerente.php">
+                        <button class="btn btn-success"> Voltar </button>
+                    </a>
 				<form method='post' action='<?php echo $_SERVER["REQUEST_URI"]; ?>' autocomplete="off">
 					<div class='form-group'>
 						<label>Nome</label>
