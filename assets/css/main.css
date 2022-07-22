@@ -412,12 +412,24 @@ color:orange;
 
 }
 .gerente-controle{
-  background-color: #343a40
-  padding: 40px;
+  background-color: #343a40;
+  padding: 1%;
+  
   color: orange;
-  text-decoration: none;
+
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   
 
+ 
+
+}
+.gerente-controle a{
+
+  padding-left: 40px;
 }
 .gerente-controle .btn {
   
