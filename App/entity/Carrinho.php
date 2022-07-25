@@ -52,6 +52,12 @@ class Carrinho
     */
     public $quantidade;
 
+    /**
+    * Descrição da vaga (pode conter html)
+    * @var int
+    */
+    public $fk_id_categoria;
+
     public function cadastrarCarrinho()
     {
         // Definir a data 
@@ -83,12 +89,32 @@ class Carrinho
      * @return array
      */
 
-    public static function getCarrinho($where = null, $order = null, $limit = null)
+    public static function getnoar($where = null, $order = null, $limit = null)
     {
-        $objdatabase = new database('produtos_carrinho');
 
-        return ($objdatabase)->select($where, $order, $limit)->fetchAll(PDO::FETCH_CLASS, self::class);
+        $fk_id_categoria = new Categoria;
+        $objdatabase = new Database('produtos_carrinho');
+
+        // echo "<pre>"; print_r($where); echo "</pre>"; exit;
+        $return = ($objdatabase)->select($where, $order, $limit)->fetchAll(PDO::FETCH_CLASS, self::class);
+        $result = array();
+        
+        foreach ($return as $key => $value) {
+            // echo "<pre>"; print_r($value); echo "</pre>"; exit;
+            $result[$key]['PID'] = $value->PID;
+            $result[$key]['PRODUCT'] = $value->PRODUCT;
+            $result[$key]['data_compra'] = $value->data_compra;
+            $result[$key]['preco_produto'] = $value->preco_produto;
+            $result[$key]['IMAGE'] = $value->IMAGE;
+            $result[$key]['DESCRIPTION'] = $value->DESCRIPTION;
+            $result[$key]['quantidade'] = $value->quantidade;
+            $result[$key]['fk_id_categoria'] = $fk_id_categoria::getCategorias($value->fk_id_categoria);
+        }
+
+        // echo "<pre>"; print_r($result); echo "</pre>"; exit;
+        return $result;
     }
+
 
     /**
      * Método responsável por obter as vagas do banco de dados
@@ -127,6 +153,7 @@ class Carrinho
             'IMAGE' => $this->IMAGE,   
             'DESCRIPTION' => $this->DESCRIPTION,    
             'quantidade' => $this->quantidade,
+            'fk_id_categoria' => $this->fk_id_categoria,
         ]);
     }
 }

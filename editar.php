@@ -4,6 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 define('TITLE', 'Editar Produto');
 
 use \App\Entity\Carrinho;
+use \App\Entity\Categoria;
 
 include "./carrinho/config.php";
 session_start();
@@ -43,13 +44,14 @@ $obCategoria = new Categoria;
 $Categoria = $obCategoria::getCategoria();
 
 //Validação do POST
-if (isset( $_POST['PRODUCT'],$_POST['data_compra'], $_POST['preco_produto'], $_POST['DESCRIPTION'], $_POST['quantidade'])) {
+if (isset( $_POST['PRODUCT'],$_POST['data_compra'], $_POST['preco_produto'], $_POST['DESCRIPTION'], $_POST['quantidade'], $_POST['fk_id_categoria'])) {
    
     $obCarrinho->PRODUCT = $_POST['PRODUCT'];
     $obCarrinho->data_compra = $_POST['data_compra'];
     $obCarrinho->preco_produto = $_POST['preco_produto'];
     $obCarrinho->DESCRIPTION = $_POST['DESCRIPTION'];
     $obCarrinho->quantidade = $_POST['quantidade'];
+    $obCarrinho->fk_id_categoria = $_POST['fk_id_categoria'];
 
     $obCarrinho->atualizarCarrinho();
     // echo "<pre>"; print_r($obCarrinho); echo "</pre>"; exit; 

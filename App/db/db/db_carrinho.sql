@@ -119,7 +119,7 @@ CREATE TABLE `Usuario` (
 CREATE TABLE `categoria` (
  `id` INT(10) NOT NULL AUTO_INCREMENT,
  `nome` VARCHAR(255) DEFAULT NULL,
- `categoria` VARCHAR(255) DEFAULT NULL,
+ `descricao` VARCHAR(255) DEFAULT NULL,
  PRIMARY KEY (`id`)
 ) ENGINE = innodb;
 

@@ -4,18 +4,22 @@ require __DIR__ . '/vendor/autoload.php';
 define('TITLE', 'Cadastrar Carrinho');
 
 use \App\entity\Carrinho;
+use \App\entity\Categoria;
 
-$Categoria = Categoria::getCategoria();
 
 $obCarrinho = new Carrinho;
 
-if (isset( $_POST['PRODUCT'], $_POST['data_compra'], $_POST['preco_produto'], $_POST['DESCRIPTION'],$_POST['quantidade'])) {
+$Categoria = Categoria::getCategoria();
+
+
+if (isset( $_POST['PRODUCT'], $_POST['data_compra'], $_POST['preco_produto'], $_POST['DESCRIPTION'],$_POST['quantidade'], $_POST['fk_id_categoria'])) {
    
     $obCarrinho->PRODUCT = $_POST['PRODUCT'];
     $obCarrinho->data_compra = $_POST['data_compra'];
     $obCarrinho->preco_produto = $_POST['preco_produto'];
     $obCarrinho->DESCRIPTION = $_POST['DESCRIPTION'];
     $obCarrinho->quantidade = $_POST['quantidade'];
+    $obCarrinho->fk_id_categoria = $_POST['fk_id_categoria'];
 
     $obCarrinho->cadastrarCarrinho();
 
@@ -25,7 +29,6 @@ if (isset( $_POST['PRODUCT'], $_POST['data_compra'], $_POST['preco_produto'], $_
     exit;
 }
 include "./carrinho/config.php";
-session_start();
 
 include "./carrinho/cart.class.php";
 $cart = new Cart();

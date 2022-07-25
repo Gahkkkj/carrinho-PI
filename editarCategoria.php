@@ -5,6 +5,21 @@ define('TITLE', 'Editar registro!');
 
 use App\entity\Categoria;
 
+include "./carrinho/config.php";
+    
+include "./carrinho/cart.class.php";
+$cart = new Cart();
+
+$data = [];
+$sql = "select * from produtos_carrinho";
+$res = $con->query($sql);
+if ($res->num_rows > 0) {
+    while ($row = $res->fetch_assoc()) {
+        $data[] = $row;
+
+    }
+}
+
 //Validação do ID
 if (!isset($_GET['id'])  || !is_numeric($_GET['id'])) {
     header('location: index.php?status=error');

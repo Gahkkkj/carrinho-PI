@@ -1,11 +1,5 @@
 <?php
 
-// use \App\Entity\Categoria;  
-      
-// $fk_id_categoria = new Categoria;
-
-// $listaCategoria = $fk_id_categoria::getCategoria();
-
 include "config.php";
 if (!isset($_SESSION)) {
   session_start();
@@ -37,7 +31,12 @@ $condicoes = [
 
 $condicoes = array_filter($condicoes);
 
+use \App\Entity\Carrinho;
+use \App\Entity\Categoria;
 
+// $listaCategoria = Categoria::getCategoria();
+
+// $Categoria = Carrinho::getCarrinhos($busca);
 
 ?>
 
@@ -60,27 +59,6 @@ $condicoes = array_filter($condicoes);
     <nav class="navbar1 navbar-light bg-light">
     <span class="navbar-brand mb-0 h1"> <b> PRODUTOS </b> </span>
 </nav>
-      
-        <form method="get">
-
-            <div class="row my-4">
-
-
-                <div class="col">
-
-                    <input type="text" placeholder="Buscar por nome!" name="busca" class="form-control" value="<?= $busca ?>">
-
-                </div>
-
-                <div class="col d-flex align-itens-end">
-
-                    <button type="submit" class="btn btn-primary"> Filtrar </button>
-
-                </div>
-
-            </div>
-
-        </form>
 
         <form action="index.php" method="get">
 
@@ -95,12 +73,12 @@ $condicoes = array_filter($condicoes);
 
     <div class="col-4">
 
-        <select class="form-control bg-dark text-light" placeholder="Selecione uma categoria!" name="categoria" value="">
-            <option value="" id="estiloSelect">Selecione um categoria!</option>
-            <?php foreach ($Categoria as $key => $value) { ?>
-                <option value="<?php echo $value->id; ?> "> <?php echo $value->nome; ?> </option>
-            <?php } ?>
-        </select>
+    <select class="form-control bg-dark text-light" name="empresa" value="">
+      <option value="">Selecione uma Empresa</option>
+        <?php foreach ($listaCategoria as $key => $value) { ?>
+          <option value="<?php echo $value['id']; ?> "> <?php echo $value['nome']; ?> </option>
+        <?php } ?>
+    </select>
 
     </div>
 

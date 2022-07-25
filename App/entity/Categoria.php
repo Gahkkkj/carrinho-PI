@@ -8,31 +8,26 @@ use \PDO;
 class Categoria
 {
     /**
-     * Identificador único da vaga
+     * Identificador
      * @var integer
      */
     public $id;
 
     /**
-     * Título da vaga
+     * Título
      * @var string
      */
     public $nome;
 
     /**
-     * Descrição da vaga (pode conter html)
+     * Descrição (pode conter html)
      * @var string
      */
     public $descricao;
 
-    /**
-     * Função para cadastrar a vaga no banco
-     * @return boolean
-     */
     public function cadastrar()
     {
 
-        // Inserir a vaga no bano e retornar o ID
         $objdatabase = new database('categoria');
 
         $this->id = $objdatabase->insert([
@@ -42,15 +37,6 @@ class Categoria
 
         return true;
     }
-
-
-    /**
-     * Método responsável por obter as vagas do banco de dados
-     * @params string @where
-     * @params string @order
-     * @params string $limit
-     * @return array
-     */
 
     public static function getCategoria($where = null, $order = null, $limit = null)
     {
