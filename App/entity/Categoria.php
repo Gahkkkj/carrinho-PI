@@ -23,7 +23,7 @@ class Categoria
      * Descrição da vaga (pode conter html)
      * @var string
      */
-    public $fornecedor;
+    public $descricao;
 
     public function cadastrarCategoria()
     {
@@ -36,7 +36,7 @@ class Categoria
 
         $this->id = $objdatabase->insert([
             'nome' => $this->nome,
-            'fornecedor' => $this->fornecedor,
+            'descricao' => $this->descricao,
         ]);
 
         return true;
@@ -85,14 +85,12 @@ class Categoria
      * @return boolean
      */
     public function atualizarCategoria() {
-        //Definir a data
-        // $this->data = date('Y-m-d H:i:s');
 
         $objDatabase = new database('categorias');
 
         return ($objDatabase)->update('id = ' . $this->id, [
             'nome' => $this->nome,
-            'fornecedor' => $this->fornecedor,
+            'descricao' => $this->descricao,
         ]);
     }
 }

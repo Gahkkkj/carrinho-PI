@@ -117,8 +117,6 @@ class Carrinho
      * @return boolean
      */
     public function atualizarCarrinho() {
-        //Definir a data
-        // $this->data = date('Y-m-d H:i:s');
 
         $objDatabase = new database('produtos_carrinho');
 

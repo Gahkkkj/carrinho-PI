@@ -7,10 +7,9 @@ use \App\entity\Categoria;
 
 $obCategoria = new Categoria;
 
-if (isset($_POST['nome'], $_POST['descricao'], $_POST['data_compra'])) {
+if (isset($_POST['nome'], $_POST['descricao'])) {
     $obCategoria->nome = $_POST['nome'];
     $obCategoria->descricao = $_POST['descricao'];
-    $obCategoria->data_compra = $_POST['data_compra'];
 
     $obCategoria->cadastrar();
 

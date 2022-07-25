@@ -32,7 +32,7 @@ if (isset($_GET['status'])) {
         <button class="btn btn-success"> Cadastrar </button>
 
     <?php if (count($listaCategoria) == 0) { ?>
-        <div class="alert alert-secondary mt-3"> Nenhum produto encondrado </div>
+        <div class="alert alert-secondary mt-3"> Nenhuma categoria encondrado </div>
 
     <?php } else { ?>
 
@@ -66,17 +66,16 @@ if (isset($_GET['status'])) {
                         <div class='card-body' style="text-align: center;">
                             <h5 class='card-title'><?php echo $value->nome; ?></h5>
                             <p class='card-text'><?php echo $value->descricao; ?></p>
-                            <p class='card-text'><?php echo $value->preco; ?></p>
                             <div class="row mt-3" style="margin-right: 0px">
                                 <div class="col-6">
-                                    <a href="editar.php?id=<?php echo $value->id; ?>">
+                                    <a href="editarCategoria.php?id=<?php echo $value->id; ?>">
                                         <button type='button' class='btn btn-success botoes' style="padding: 0.375rem 1.1rem; text-align: center;">Editar</button>
                                     </a>
                                 </div>
 
                                 <div class="col-5">
 
-                                    <a href="excluir.php?id=<?php echo $value->id; ?>">
+                                    <a href="excluirCategoria.php?id=<?php echo $value->id; ?>">
                                         <button type='button' class='btn btn-danger botoes' style="padding: 0.375rem 1.1rem; text-align: center;">Excluir</button>
                                     </a>
                                 </div>
@@ -104,29 +103,28 @@ if (isset($_GET['status'])) {
         <section>
 		
 		<div class='container mt-5 pb-5'>
-			<h2 class='text-muted mb-4 text-center'>Produtos</h2>
+			<h2 class='text-muted mb-4 text-center'>Categorias</h2>
 			
                 
         <div class='card-deck row' style="margin-top: 5%">
-				<?php foreach($data as $row => $value) { ?>
-                    <div class="col-12 col-xl-3 item item-selecionado-<?php echo $value->$IDpedido; ?>">
+				<?php foreach($listaCategoria as $value => $value) { ?>
+                    <div class="col-12 col-xl-3 item item-selecionado-<?php echo $value['id']; ?>">
                     <div class='card mb-4 botoes'>
                         <img src='assets/image/adoleta.webp' class="card-img-top">
                         <div class='card-body' style="text-align: center;">
-                            <h5 class='card-title'><?php echo $row["PRODUCT"]; ?></h5>
-                            <p class='card-text'><?php echo $row["preco_produto"]; ?></p>
-                            <p class='card-text'><?php echo  $row["PID"]; ?></p>
+                            <h5 class='card-title'><?php echo $value["nome"]; ?></h5>
+                            <p class='card-text'><?php echo $value["descricao"]; ?></p>
                         </div>
                         <div class="row mt-3" style="margin-right: 0px">
                                 <div class="col-6">
-                                    <a href="editar.php?id=<?php echo $value->ID; ?>">
+                                    <a href="editarCategoria.php?id=<?php echo $value['id']; ?>">
                                         <button type='button' class='btn btn-success botoes' style="padding: 0.375rem 1.1rem; text-align: center;">Editar</button>
                                     </a>
                                 </div>
 
                                 <div class="col-5">
 
-                                    <a href="excluir.php?id=<?php echo $value->ID; ?>">
+                                    <a href="excluirCategoria.php?id=<?php echo $value['id']; ?>">
                                         <button type='button' class='btn btn-danger botoes' style="padding: 0.375rem 1.1rem; text-align: center;">Excluir</button>
                                     </a>
                                 </div>
