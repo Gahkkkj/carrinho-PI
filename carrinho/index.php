@@ -1,4 +1,11 @@
 <?php
+
+// use \App\Entity\Categoria;  
+      
+// $fk_id_categoria = new Categoria;
+
+// $listaCategoria = $fk_id_categoria::getCategoria();
+
 include "config.php";
 if (!isset($_SESSION)) {
   session_start();
@@ -19,6 +26,7 @@ if ($res->num_rows > 0) {
     $data[] = $row;
   }
 }
+
 ?>
 <?php
 $busca = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_STRING);
@@ -29,7 +37,12 @@ $condicoes = [
 
 $condicoes = array_filter($condicoes);
 
+
+
 ?>
+
+
+
 <html>
 
 <head>
@@ -68,6 +81,35 @@ $condicoes = array_filter($condicoes);
             </div>
 
         </form>
+
+        <form action="index.php" method="get">
+
+<div class="row">
+
+    <div class="col-4">
+        <input type="text" name="busca" class="form-control bg-dark text-light m-0" placeholder="Filtrar por nome"></input>
+    </div>
+
+
+
+
+    <div class="col-4">
+
+        <select class="form-control bg-dark text-light" placeholder="Selecione uma categoria!" name="categoria" value="">
+            <option value="" id="estiloSelect">Selecione um categoria!</option>
+            <?php foreach ($Categoria as $key => $value) { ?>
+                <option value="<?php echo $value->id; ?> "> <?php echo $value->nome; ?> </option>
+            <?php } ?>
+        </select>
+
+    </div>
+
+
+    <div class="col-4">
+        <button type="submit" class="btn btn-dark w-100 rounded m-0">Filtrar</button>
+    </div>
+</div>
+</form>
 
       <div class='row'>
         <?php foreach ($data as $row) : ?>

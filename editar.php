@@ -38,6 +38,10 @@ if (!$obCarrinho instanceof Carrinho) {
     header('location:./carrinho/index.php?status=error');
     exit;
 }
+
+$obCategoria = new Categoria;
+$Categoria = $obCategoria::getCategoria();
+
 //Validação do POST
 if (isset( $_POST['PRODUCT'],$_POST['data_compra'], $_POST['preco_produto'], $_POST['DESCRIPTION'], $_POST['quantidade'])) {
    

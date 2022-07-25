@@ -5,6 +5,8 @@ define('TITLE', 'Cadastrar Carrinho');
 
 use \App\entity\Carrinho;
 
+$Categoria = Categoria::getCategoria();
+
 $obCarrinho = new Carrinho;
 
 if (isset( $_POST['PRODUCT'], $_POST['data_compra'], $_POST['preco_produto'], $_POST['DESCRIPTION'],$_POST['quantidade'])) {

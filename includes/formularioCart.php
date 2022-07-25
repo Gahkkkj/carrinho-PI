@@ -40,6 +40,16 @@
                             <label> Quantidade </label>
                             <input class="form-control" type="number" required name="quantidade"><?php echo isset($obCarrinho->quantidade) ? $obCarrinho->quantidade : ''; ?> 
                         </div>
+                        
+                        <div class="form-group">
+                            <label for="">Categorias</label>
+                                <select class="form-control"  id="estiloSelect"name="fk_id_categoria">
+                                    <option value="">Selecione uma categoria!</option>
+                                        <?php foreach ($Categoria as $key => $value) { ?>
+                                        <option value="<?php echo $value->id; ?> " <?php echo $obCarrinho->fk_id_categoria == $value->id ? 'selected' : ''; ?>> <?php echo $value->nome; ?> </option>
+                                        <?php } ?>
+                                </select>
+                        </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-success"> Enviar </button>
                         </div>

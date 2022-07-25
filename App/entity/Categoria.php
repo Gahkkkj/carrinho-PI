@@ -13,8 +13,8 @@ class Categoria
      */
     public $id;
 
-      /**
-     * Descrição da vaga (pode conter html)
+    /**
+     * Título da vaga
      * @var string
      */
     public $nome;
@@ -25,18 +25,19 @@ class Categoria
      */
     public $descricao;
 
-    public function cadastrarCategoria()
+    /**
+     * Função para cadastrar a vaga no banco
+     * @return boolean
+     */
+    public function cadastrar()
     {
-        // Definir a data 
-        // $this->data_inc = date('Y-m-d H:i:s');
-        // echo "<pre>"; print_r($this); echo "</pre>"; exit;
 
         // Inserir a vaga no bano e retornar o ID
-        $objdatabase = new database('categorias');
+        $objdatabase = new database('categoria');
 
         $this->id = $objdatabase->insert([
             'nome' => $this->nome,
-            'descricao' => $this->descricao,
+            'descricao' => $this->descricao,          
         ]);
 
         return true;
@@ -53,7 +54,7 @@ class Categoria
 
     public static function getCategoria($where = null, $order = null, $limit = null)
     {
-        $objdatabase = new database('categorias');
+        $objdatabase = new database('categoria');
 
         return ($objdatabase)->select($where, $order, $limit)->fetchAll(PDO::FETCH_CLASS, self::class);
     }
@@ -65,7 +66,7 @@ class Categoria
      */
     public static function getCategorias($id)
     {
-        $objdatabase = new database('categorias');
+        $objdatabase = new database('categoria');
 
         return ($objdatabase)->select('id = ' . $id)->fetchObject(self::class);
     }
@@ -73,9 +74,9 @@ class Categoria
      * Função para excluir vagas no banco
      * @return boolean
      */
-    public function excluirCategoria()
+    public function excluir()
     {
-        $objdatabase = new database('categorias');
+        $objdatabase = new database('categoria');
 
         return ($objdatabase)->delete('id = ' . $this->id);
     }
@@ -84,9 +85,9 @@ class Categoria
      * Função para atualizar a vaga do banco de dados
      * @return boolean
      */
-    public function atualizarCategoria() {
+    public function atualizar() {
 
-        $objDatabase = new database('categorias');
+        $objDatabase = new database('categoria');
 
         return ($objDatabase)->update('id = ' . $this->id, [
             'nome' => $this->nome,
