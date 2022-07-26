@@ -1,8 +1,9 @@
 <?php 
     require __DIR__.'/vendor/autoload.php';
 
-    use \App\entity\Noticia;
-    
+    use \App\Entity\Categoria;
+    use \App\Entity\Carrinho;  
+      
     include "./carrinho/config.php";
     session_start();
 

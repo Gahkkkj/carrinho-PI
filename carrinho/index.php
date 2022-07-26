@@ -1,5 +1,15 @@
 <?php
+// die();
+require __DIR__ . '../../vendor/autoload.php';
 
+use \App\Entity\Carrinho;
+use \App\Entity\Categoria;
+
+// $listaCategoria = Categoria::getCategoria();
+// $Categoria = Carrinho::getnoar($busca);
+
+?>
+<?php
 include "config.php";
 if (!isset($_SESSION)) {
   session_start();
@@ -22,25 +32,26 @@ if ($res->num_rows > 0) {
 }
 
 ?>
-<?php
-$busca = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_STRING);
+<?php 
+    $busca = '';
 
-$condicoes = [
-    strlen($busca) ? 'PRODUCT LIKE "%' .str_replace(' ','%',$busca).'%"' : null
-];
+if(isset( $_GET['categoria']) || isset( $_GET['busca'])) {
+    if(isset( $_GET['categoria']) && $_GET['categoria'] != 0) {
+        $busca = 'fk_id_categoria = ' . $_GET['categoria'];
 
-$condicoes = array_filter($condicoes);
+        if(!empty($_GET['busca']) && count($_GET) > 1) {
+            $busca .= ' AND ';
+        }
+    }
 
-use \App\Entity\Carrinho;
-use \App\Entity\Categoria;
+    if(!empty($_GET['busca'])) {
+        $busca .= 'nome = ' . $_GET['busca'];
+    }
 
-// $listaCategoria = Categoria::getCategoria();
-
-// $Categoria = Carrinho::getCarrinhos($busca);
+    // echo $busca;
+}
 
 ?>
-
-
 
 <html>
 
@@ -68,20 +79,16 @@ use \App\Entity\Categoria;
         <input type="text" name="busca" class="form-control bg-dark text-light m-0" placeholder="Filtrar por nome"></input>
     </div>
 
-
-
-
     <div class="col-4">
 
-    <select class="form-control bg-dark text-light" name="empresa" value="">
-      <option value="">Selecione uma Empresa</option>
+    <select class="form-control bg-dark text-light" name="categoria" value="">
+      <option value="">Selecione uma categoria!</option>
         <?php foreach ($listaCategoria as $key => $value) { ?>
           <option value="<?php echo $value['id']; ?> "> <?php echo $value['nome']; ?> </option>
         <?php } ?>
     </select>
 
     </div>
-
 
     <div class="col-4">
         <button type="submit" class="btn btn-dark w-100 rounded m-0">Filtrar</button>
@@ -100,7 +107,6 @@ use \App\Entity\Categoria;
                   Preço R$ <?php echo $row["preco_produto"]; ?>
                 </p>
                 <a href="view_details.php?id=<?php echo $row["PID"]; ?>" class='btn btn-primary float-right' style="width: 100%">Carrinho<a>
-
 
                 <div>
                   <!-- <a href="../editar.php?id=<?php echo $row["PID"]; ?>">
@@ -130,7 +136,6 @@ use \App\Entity\Categoria;
     </div>
 
   </section>
-
 
   </footer>
   <?php include "../includes/footer.php"; ?>
