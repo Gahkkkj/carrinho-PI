@@ -52,8 +52,8 @@ $cart = new Cart();
 											<td><input type='number' value='<?php echo $item["qty"]; ?>' class='qty' pid='<?php echo $item["id"]; ?>' min='1'></td>
 											<td> R$ <span class='row_total'><?php echo $item["total"]; ?></span></td>
 											<td>
-												<a>
-													<button type="button" href='remove.php?id=<?php echo $item["id"]; ?>' onclick="return confirm('Certeza que quer remover')" class="btn-excluir fas fa-trash-alt"></button>
+												<a  href='remove.php?id=<?php echo $item["id"]; ?>' onclick="return confirm('Certeza que quer remover')">
+													<button type="button" class="btn-excluir fas fa-trash-alt"></button>
 												</a>
 											</td>
 										</tr>
@@ -61,7 +61,7 @@ $cart = new Cart();
 								</tbody>
 								<tfoot>
 									<tr>
-										<td colspan='3'><a href='index.php' ><button href='index.php' class="btn btn-primary fas fa-shopping-bag">Continue comprando</button></a></td>
+										<td colspan='3'><a href='index.php' ><button type="button" href='index.php' class="btn btn-primary fas fa-shopping-bag">Continue comprando</button></a></td>
 										<th>Total</th>
 										<th> R$ <span id='total'><?php echo $cart->get_cart_total(); ?></span></th>
 										<td><a href='checkout.php' class='btn btn-success'>Cadastre-se</a></td>
