@@ -1,248 +1,303 @@
-
-
 .selector-for-some-widget {
-    box-sizing: content-box;
-} 
-.navandrei .nav-link {
-    color: orange;
-    text-decoration: none;
-    background-color: transparent;
-    font-family: naruto;
+  box-sizing: content-box;
 }
+
+.navandrei .nav-link {
+  color: orange;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: naruto;
+}
+
 .jumbotronandrei {
   margin: 5%;
 }
+
 footer {
   text-align: center;
 }
+
 .andreifooter {
   color: orange;
   font-family: naruto;
 }
+
 .andreidisplay-4 {
   color: orange;
   font-family: naruto;
 }
+
 .andreih2 {
   color: orange;
   font-family: naruto;
   text-align: left;
 }
+
 .andreih2 {
-    color: orange;
-    font-family: naruto;
-    text-align: left;
+  color: orange;
+  font-family: naruto;
+  text-align: left;
 }
+
 .andreih2ranking {
   color: orange;
   font-family: naruto;
   text-align: center;
 }
+
 .andreih4 {
-    color: orange;
-    font-family: naruto;
-    text-align: left;
+  color: orange;
+  font-family: naruto;
+  text-align: left;
 }
+
 .andreip {
   text-align: justify;
 }
+
 .andreicarrossel {
   width: 80%;
   text-align: center;
   margin: 0 10% 0 10%;
 }
+
 @font-face {
   font-family: 'naruto';
   src: url('njnaruto.ttf');
   font-weight: normal;
   font-style: normal;
 }
+
 .hr2 {
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #CCC, transparent);
 }
+
 .afonte {
-    color: orange;
-    font-family: naruto;
+  color: orange;
+  font-family: naruto;
 }
+
 body {
   width: 100%;
 }
+
 .andreitable {
   margin: 5%;
   width: 90%;
   text-align: center;
 }
+
 .andreitable .thead-dark th {
   color: orange;
   font-family: naruto;
 }
+
 .headerpadrao {
   margin-bottom: 5%;
 }
+
 .selector-for-some-widget {
   box-sizing: content-box;
-} 
+}
+
 .navandrei .nav-link {
   color: orange;
   text-decoration: none;
   background-color: transparent;
   font-family: naruto;
 }
+
 .jumbotronandrei {
-margin: 5%;
+  margin: 5%;
 }
+
 footer {
-text-align: center;
+  text-align: center;
 }
+
 .andreifooter {
-color: orange;
-font-family: naruto;
+  color: orange;
+  font-family: naruto;
 }
+
 .andreidisplay-4 {
-color: orange;
-font-family: naruto;
+  color: orange;
+  font-family: naruto;
 }
-.andreih2 {
-color: orange;
-font-family: naruto;
-text-align: left;
-}
+
 .andreih2 {
   color: orange;
   font-family: naruto;
   text-align: left;
 }
-.andreih2ranking {
-color: orange;
-font-family: naruto;
-text-align: center;
+
+.andreih2 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
 }
+
+.andreih2ranking {
+  color: orange;
+  font-family: naruto;
+  text-align: center;
+}
+
 .andreih4 {
   color: orange;
   font-family: naruto;
   text-align: left;
 }
+
 .andreip {
-text-align: justify;
+  text-align: justify;
 }
+
 .andreicarrossel {
-width: 80%;
-text-align: center;
-margin: 0 10% 0 10%;
+  width: 80%;
+  text-align: center;
+  margin: 0 10% 0 10%;
 }
+
 @font-face {
-font-family: 'naruto';
-src: url('njnaruto.ttf');
-font-weight: normal;
-font-style: normal;
+  font-family: 'naruto';
+  src: url('njnaruto.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
+
 .hr2 {
   border: 0;
   height: 2px;
-  background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+  background-image: linear-gradient(to right, transparent, #CCC, transparent);
 }
+
 .afonte {
   color: orange;
   font-family: naruto;
 }
+
 body {
-width: 100%;
+  width: 100%;
 }
+
 .andreitable {
-margin: 5%;
-width: 90%;
-text-align: center;
+  margin: 5%;
+  width: 90%;
+  text-align: center;
 }
+
 .andreitable .thead-dark th {
-color: orange;
-font-family: naruto;
+  color: orange;
+  font-family: naruto;
 }
+
 .headerpadrao {
-margin-bottom: 5%;
+  margin-bottom: 5%;
 }
+
 .selector-for-some-widget {
   box-sizing: content-box;
-} 
+}
+
 .navandrei .nav-link {
   color: orange;
   text-decoration: none;
   background-color: transparent;
   font-family: naruto;
 }
+
 .jumbotronandrei {
-margin: 5%;
+  margin: 5%;
 }
+
 footer {
-text-align: center;
+  text-align: center;
 }
+
 .andreifooter {
-color: orange;
-font-family: naruto;
+  color: orange;
+  font-family: naruto;
 }
+
 .andreidisplay-4 {
-color: orange;
-font-family: naruto;
+  color: orange;
+  font-family: naruto;
 }
-.andreih2 {
-color: orange;
-font-family: naruto;
-text-align: left;
-}
+
 .andreih2 {
   color: orange;
   font-family: naruto;
   text-align: left;
 }
-.andreih2ranking {
-color: orange;
-font-family: naruto;
-text-align: center;
+
+.andreih2 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
 }
+
+.andreih2ranking {
+  color: orange;
+  font-family: naruto;
+  text-align: center;
+}
+
 .andreih4 {
   color: orange;
   font-family: naruto;
   text-align: left;
 }
+
 .andreip {
-text-align: justify;
+  text-align: justify;
 }
+
 .andreicarrossel {
-width: 80%;
-text-align: center;
-margin: 0 10% 0 10%;
+  width: 80%;
+  text-align: center;
+  margin: 0 10% 0 10%;
 }
+
 @font-face {
-font-family: 'naruto';
-src: url('njnaruto.ttf');
-font-weight: normal;
-font-style: normal;
+  font-family: 'naruto';
+  src: url('njnaruto.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
+
 .hr2 {
   border: 0;
   height: 2px;
-  background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+  background-image: linear-gradient(to right, transparent, #CCC, transparent);
 }
+
 .afonte {
   color: orange;
   font-family: naruto;
 }
+
 body {
-width: 100%;
+  width: 100%;
 }
+
 .andreitable {
-margin: 5%;
-width: 90%;
-text-align: center;
+  margin: 5%;
+  width: 90%;
+  text-align: center;
 }
+
 .andreitable .thead-dark th {
-color: orange;
-font-family: naruto;
+  color: orange;
+  font-family: naruto;
 }
+
 .headerpadrao {
-margin-bottom: 5%;
+  margin-bottom: 5%;
 }
+
 body {
   background-color: #C7A4A4;
 }
@@ -294,15 +349,18 @@ body {
   border-radius: 100%;
   border-color: black;
 }
+
 .rowandrei {
   margin: 10% 10%;
 }
+
 .imageandrei {
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;
   border-color: black;
 }
+
 .jumbandrei {
   border-style: solid;
   border-width: 3px;
@@ -310,7 +368,7 @@ body {
   border-color: black;
 }
 
-#futer{   
+#futer {
   margin-top: 15%;
 
   width: 100%;
@@ -367,15 +425,18 @@ body {
   border-radius: 100%;
   border-color: black;
 }
+
 .rowandrei {
   margin: 10% 10%;
 }
+
 .imageandrei {
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;
   border-color: black;
 }
+
 .jumbandrei {
   border-style: solid;
   border-width: 3px;
@@ -383,38 +444,39 @@ body {
   border-color: black;
 }
 
-.funciona{
+.funciona {
   position: absolute;
   background: greenyellow;
   margin-left: 20.35%;
   margin-top: 1.5%;
 }
 
-.box-formulario{
+.box-formulario {
 
   padding: 40px;
-color:orange;
+  color: orange;
 
 }
 
-.box-carrinho{
+.box-carrinho {
 
   padding: 40px;
-color:orange;
+  color: orange;
 
 }
 
-.box-detalhes{
+.box-detalhes {
 
   padding: 40px;
   color: orange;
   text-decoration: none;
 
 }
-.gerente-controle{
+
+.gerente-controle {
   background-color: #343a40;
   padding: 1%;
-  
+
   color: orange;
 
   display: -ms-flexbox;
@@ -422,17 +484,19 @@ color:orange;
   align-items: center;
   justify-content: center;
 
-  
 
- 
+
+
 
 }
-.gerente-controle a{
+
+.gerente-controle a {
 
   padding-left: 40px;
 }
+
 .gerente-controle .btn {
-  
+
   color: orange;
   outline: none;
   border: none;
@@ -444,7 +508,7 @@ color:orange;
   font-size: 1.2em;
   font-family: 'open_sansregular';
   border-radius: 3px;
-  background:#353535;
+  background: #353535;
   position: relative;
   transition: all 0.8s ease;
   -webkit-transition: all 0.3s ease;
@@ -454,86 +518,94 @@ color:orange;
 }
 
 
-  /* botão  */
+/* botão  */
 
 
-  .btn1 {
-    outline: none;
-    border: none;
-    padding: 0.7em 1em;
-    display: inline-block;
-    text-decoration: none;
-    margin: auto;
-    cursor: pointer;
-    font-size: 1.2em;
-    font-family: 'open_sansregular';
-    border-radius: 3px;
-    background:#353535;
-    position: relative;
-    transition: all 0.8s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-  }
-  .btn-box {
-    overflow: hidden;
-    color: #fff;
-  }
-  .btn-box i { 
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    left: 0.1em;
-    font-size:1em;
-    -webkit-transition-duration: 0.6s;
-    transition-duration: 0.6s;
-  }
-  .btn-box:hover i  { 
-    left:-0.2em;
-  }
-  .btn-box .reflexo {
-    background-color: #fff;
-    width: 100%;
-    height: 30px;
-    position: absolute;
-    left: -145px;
-    transform: rotateZ(45deg);
-    -webkit-transform: rotateZ(45deg);
-    -moz-transform: rotateZ(45deg);
-    -o-transform: rotateZ(45deg);
-    -ms-transform: rotateZ(45deg);
-  }
-  .btn-box:hover {
-    background-color: #00a8ea;
-    color: #353535;
-  }
-  .btn-box:hover .reflexo {
-    transition: all 0.8s ease;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    left: 135px;
-  }
+.btn1 {
+  outline: none;
+  border: none;
+  padding: 0.7em 1em;
+  display: inline-block;
+  text-decoration: none;
+  margin: auto;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-family: 'open_sansregular';
+  border-radius: 3px;
+  background: #353535;
+  position: relative;
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+
+.btn-box {
+  overflow: hidden;
+  color: #fff;
+}
+
+.btn-box i {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  left: 0.1em;
+  font-size: 1em;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+
+.btn-box:hover i {
+  left: -0.2em;
+}
+
+.btn-box .reflexo {
+  background-color: #fff;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  left: -145px;
+  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+}
+
+.btn-box:hover {
+  background-color: #00a8ea;
+  color: #353535;
+}
+
+.btn-box:hover .reflexo {
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  left: 135px;
+}
+
 /* botão 2 */
-  .btn2 {
-  
-    padding: 0.7em 1.3em;
-    cursor: pointer;
-    background: linear-gradient(90deg, #ffc400 0%, orange 100%);
-    text-decoration: none;
-    font-weight:bold;
-    font-size:1.1em; 
-    color: #fff;
+.btn2 {
+
+  padding: 0.7em 1.3em;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ffc400 0%, orange 100%);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #fff;
 
 }
+
 .zoom-shadow {
   display: inline-block;
   vertical-align: middle;
@@ -548,7 +620,10 @@ color:orange;
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
 }
-.zoom-shadow:hover, .zoom-shadow:focus, .zoom-shadow:active {
+
+.zoom-shadow:hover,
+.zoom-shadow:focus,
+.zoom-shadow:active {
   box-shadow: 0 13px 8px -8px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -573,10 +648,13 @@ color:orange;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
   box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
 }
+
 .bubbly-button:focus {
   outline: 0;
 }
-.bubbly-button:before, .bubbly-button:after {
+
+.bubbly-button:before,
+.bubbly-button:after {
   position: absolute;
   content: "";
   display: block;
@@ -587,27 +665,32 @@ color:orange;
   transition: all ease-in-out 0.5s;
   background-repeat: no-repeat;
 }
+
 .bubbly-button:before {
   display: none;
   top: -75%;
   background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
   background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 }
+
 .bubbly-button:after {
   display: none;
   bottom: -75%;
   background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
+
 .bubbly-button:active {
   transform: scale(0.9);
   background-color: #e60074;
   box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
 }
+
 .bubbly-button.animate:before {
   display: block;
   animation: topBubbles ease-in-out 0.75s forwards;
 }
+
 .bubbly-button.animate:after {
   display: block;
   animation: bottomBubbles ease-in-out 0.75s forwards;
@@ -617,30 +700,31 @@ color:orange;
   0% {
     background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
   }
+
   50% {
     background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
   }
+
   100% {
     background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
+
 @keyframes bottomBubbles {
   0% {
     background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
   }
+
   50% {
     background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
   }
+
   100% {
     background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
-
-
-
-
 /* ------------------------------------------------------- */
 /* Botão de excluir */
 .btn-excluir {
@@ -734,20 +818,11 @@ botão de editar */
 
 .fa-edit {
 
-   margin: auto;
-  display: flex;
+
   color: rgb(76, 0, 255);
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1vw 3vw 1vw 3vw;
-  border-radius: 6px;
+
   background-color: #06022e;
   transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 500ms linear;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 /* -------------------------------------------------------------
