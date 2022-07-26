@@ -98,14 +98,15 @@ CREATE TABLE `produtos_carrinho` (
   `IMAGE` varchar(45) NULL DEFAULT '',
   `DESCRIPTION` text,
   `quantidade` int,
+  `fk_id_categoria` int,
   PRIMARY KEY (`PID`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1 AUTO_INCREMENT = 6;
 
 -- ------------------------------------------------------
 --
---  table `Usuario`
+--  table `usuario`
 --
-CREATE TABLE `Usuario` (
+CREATE TABLE `usuario` (
   `UID` int(11) NOT NULL AUTO_INCREMENT,
   `NAME` varchar(150) NOT NULL DEFAULT '',
   `CONTACT` varchar(150) NOT NULL DEFAULT '',
