@@ -18,9 +18,9 @@
     
         }
     }
-
-    $Carrinho = Carrinho::getCarrinho();
     $obCarrinho = new Carrinho;
+    $Carrinho = Carrinho::getCarrinhos();
+
 
     $busca = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_STRING);
 
@@ -36,7 +36,7 @@
 
     $where = implode(' AND ',$condicoes);
 
-    $Carrinho = Carrinho::getCarrinho($where);
+    $Carrinho = Carrinho::getCarrinhos($where);
     // echo "<pre>"; print_r($vaga); echo "</pre>"; exit;
 
     require __DIR__.'/includes/header.php';

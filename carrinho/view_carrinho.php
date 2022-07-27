@@ -1,3 +1,4 @@
+</div>
 <?php
 include "config.php";
 session_start();
@@ -22,17 +23,16 @@ $cart = new Cart();
 		<span class="navbar-brand mb-0 h1"> <b> CARRINHO </b> </span>
 	</nav>
 	<section>
-
-		<div class='container mt-3'>
-			<div class='row'>
-				<div class='col-md-12'>
-					<div class="box-carrinho bg-dark">
-						<h2 class='mb-4'>itens no carrinho</h2>
+		<div class="container">
+			<div class="row">
+				<div class="d-flex col-8">
+					<div class="bg-dark p-2 flex-grow-1  ">
+						<h2 class='mb-4 text-center ' style="color:orange ">Itens no carrinho</h2>
 						<a href="index.php">
-							<button class="btn btn-success"> Voltar </button>
+							<button class="btn btn-success "> Voltar </button>
 						</a>
 						<?php if ($cart->get_cart_total() > 0) : ?>
-							<table class='table table-striped table-responsive-mb table-bordered table-hover table-dark'>
+							<table class='table flex-shrink-1  table-grid table-striped table-responsive-mb table-bordered table-hover table-dark'>
 								<thead>
 									<tr>
 										<th colspan='2' class='text-center'>Produtos</th>
@@ -51,6 +51,7 @@ $cart = new Cart();
 											<td> R$ <?php echo $item["preco_produto"]; ?></td>
 											<td><input type='number' value='<?php echo $item["qty"]; ?>' class='qty' pid='<?php echo $item["id"]; ?>' min='1'></td>
 											<td> R$ <span class='row_total'><?php echo $item["total"]; ?></span></td>
+<<<<<<< Updated upstream
 											<td><button type="button" href='remove.php?id=<?php echo $item["id"]; ?>' onclick="return confirm('Certeza que quer remover')" class="btn-excluir fas fa-trash-alt"></button></td>
 										</tr>
 									<?php endforeach; ?>
@@ -63,48 +64,76 @@ $cart = new Cart();
 										<td><a href='checkout.php' class='btn btn-success'>Cadastre-se</a></td>
 									</tr>
 								</tfoot>
+=======
+											<td>
+												<a href='remove.php?id=<?php echo $item["id"]; ?>' onclick="return confirm('Certeza que quer remover')">
+													<button class="btn-excluir fas fa-trash-alt"></button>
+												</a>
+											</td>
+										</tr>
+									<?php endforeach; ?>
+								</tbody>
+>>>>>>> Stashed changes
 							</table>
-						<?php else : ?>
-							<div class='alert alert-warning alert-dismissible fade show'>carrinho vazio...</div>
-						<?php endif; ?>
+							<p colspan='3'><a href='index.php'><button href='index.php' class="btn btn-primary fas fa-shopping-bag">Continue comprando</button></a></p>
+					</div>
+
+					<div class="col-5">
+						<div class="cart-summary">
+							<div style="font-weight: 900; ">
+								<div class="text-center" style="padding: 0px 2px; font-size: 24px; color: rgb(0, 0, 0);">Total</div>
+								<div class=" font-weight-bold text-center" style=" font-size: 20px;">Total: <span>R$<span id='total'><?php echo $cart->get_cart_total(); ?></span></div>
+								<a href='checkout.php'>
+									<button type="button" class='btn-continuar'>Continuar<span> (<?php echo $cart->get_cart_count(); ?>)</span></button>
+								</a>
+							</div>
+						</div>
+					<?php else : ?>
+						<div class='alert alert-warning alert-dismissible fade show'>carrinho vazio...</div>
+					<?php endif; ?>
 					</div>
 				</div>
 			</div>
+		</div>
 
-
-			<script>
-				$(document).ready(function() {
-					$(".qty").change(function() {
-						update_cart($(this));
-					});
-					$(".qty").keyup(function() {
-						update_cart($(this));
-					});
-
-					function update_cart(cls) {
-						var pid = $(cls).attr("pid");
-						var q = $(cls).val();
-
-						$.ajax({
-							url: "ajax_update_cart.php",
-							type: "post",
-							data: {
-								id: pid,
-								qty: q
-							},
-							success: function(res) {
-								console.log(res);
-
-								var a = JSON.parse(res);
-								$("#total").text(a.total);
-								$(cls).closest("tr").find(".row_total").text(a.row_total);
-							}
-						});
-					}
-				});
-			</script>
 
 	</section>
+
+
+
+
+
+	<script>
+		$(document).ready(function() {
+			$(".qty").change(function() {
+				update_cart($(this));
+			});
+			$(".qty").keyup(function() {
+				update_cart($(this));
+			});
+
+			function update_cart(cls) {
+				var pid = $(cls).attr("pid");
+				var q = $(cls).val();
+
+				$.ajax({
+					url: "ajax_update_cart.php",
+					type: "post",
+					data: {
+						id: pid,
+						qty: q
+					},
+					success: function(res) {
+						console.log(res);
+
+						var a = JSON.parse(res);
+						$("#total").text(a.total);
+						$(cls).closest("tr").find(".row_total").text(a.row_total);
+					}
+				});
+			}
+		});
+	</script>
 	</footer>
 	<?php include "../includes/footer.php"; ?>
 	</footer>
