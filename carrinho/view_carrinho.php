@@ -27,13 +27,12 @@ $cart = new Cart();
 			<div class="row">
 				<div class="d-flex col-8">
 					<div class="bg-dark p-4">
-						<h2 class='mb-4 text-center' style="color:orange ">Itens no carrinho</h2>
+						<h2 class='mb-4 text-center justify-content-center' style="color:orange ">Itens no carrinho</h2>
 						<?php if ($cart->get_cart_total() > 0) : ?>
 							<table class='table flex-shrink-1  table-grid table-striped table-responsive-mb table-bordered table-hover table-dark'>
 								<thead>
-									<tr>
+									<tr class="thead-light">
 										<th colspan='2' class='text-center'>Produto</th>
-
 										<th>preço</th>
 										<th>Quantidade</th>
 										<th>Total</th>
@@ -61,28 +60,29 @@ $cart = new Cart();
 								</tbody>
 							</table>
 							<a href='index.php'>
-								<button type="button" href='index.php' class="btn-continue	 fas fa-shopping-bag"><br>Continue comprando</button>
+								<button type="button" href='index.php' class="btn-continue	fas fa-shopping-bag">Continue comprando</button>
 							</a>
 					</div>
 
-					<div class="col-5">
+					<div class="d-flex  col-5">
 						<div class="cart-summary">
 							<div style="font-weight: 900; ">
 								<div class="text-center" style="font-size: 24px; color: rgb(0, 0, 0);">Total</div>
 								<div class=" font-weight-bold text-center" style=" font-size: 20px;">Total: <span>R$<span id='total'><?php echo $cart->get_cart_total(); ?></span></div>
 								<a href='checkout.php'>
-									<button type="button" class='btn-Comprar'>Comprar<span> (<?php echo $cart->get_cart_count(); ?>)</span></button>
+									<button type="button" class='btn-Comprar'>Comprar <span>(<?php echo $cart->get_cart_count(); ?>)</span></button>
 								</a>
 							</div>
 						</div>
-					<?php else : ?>
-						<div class='alert alert-warning alert-dismissible fade show'>carrinho vazio...</div>
-					<?php endif; ?>
+
 					</div>
 				</div>
 			</div>
 		</div>
-
+	<?php else : ?>
+		<div class="d-flex justify-content-center">
+		<div class='alert alert-warning alert-dismissible fade show'>carrinho vazio...</div>
+	<?php endif; ?>
 
 	</section>
 
