@@ -1,4 +1,15 @@
 <?php
+// die();
+require __DIR__ . '../../vendor/autoload.php';
+
+use \App\Entity\Carrinho;
+use \App\Entity\Categoria;
+
+// $listaCategoria = Categoria::getCategoria();
+// $Categoria = Carrinho::getnoar($busca);
+
+?>
+<?php
 include "config.php";
 if (!isset($_SESSION)) {
   session_start();
@@ -19,17 +30,29 @@ if ($res->num_rows > 0) {
     $data[] = $row;
   }
 }
-?>
-<?php
-$busca = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_STRING);
-
-$condicoes = [
-    strlen($busca) ? 'PRODUCT LIKE "%' .str_replace(' ','%',$busca).'%"' : null
-];
-
-$condicoes = array_filter($condicoes);
 
 ?>
+<?php 
+    $busca = '';
+
+if(isset( $_GET['categoria']) || isset( $_GET['busca'])) {
+    if(isset( $_GET['categoria']) && $_GET['categoria'] != 0) {
+        $busca = 'fk_id_categoria = ' . $_GET['categoria'];
+
+        if(!empty($_GET['busca']) && count($_GET) > 1) {
+            $busca .= ' AND ';
+        }
+    }
+
+    if(!empty($_GET['busca'])) {
+        $busca .= 'nome = ' . $_GET['busca'];
+    }
+
+    // echo $busca;
+}
+
+?>
+
 <html>
 
 <head>
@@ -47,27 +70,31 @@ $condicoes = array_filter($condicoes);
     <nav class="navbar1 navbar-light bg-light">
     <span class="navbar-brand mb-0 h1"> <b> PRODUTOS </b> </span>
 </nav>
-      
-        <form method="get">
 
-            <div class="row my-4">
+        <form action="index.php" method="get">
 
+<div class="row">
 
-                <div class="col">
+    <div class="col-4">
+        <input type="text" name="busca" class="form-control bg-dark text-light m-0" placeholder="Filtrar por nome"></input>
+    </div>
 
-                    <input type="text" placeholder="Buscar por nome!" name="busca" class="form-control" value="<?= $busca ?>">
+    <div class="col-4">
 
-                </div>
+    <select class="form-control bg-dark text-light" name="categoria" value="">
+      <option value="">Selecione uma categoria!</option>
+        <?php foreach ($listaCategoria as $key => $value) { ?>
+          <option value="<?php echo $value['id']; ?> "> <?php echo $value['nome']; ?> </option>
+        <?php } ?>
+    </select>
 
-                <div class="col d-flex align-itens-end">
+    </div>
 
-                    <button type="submit" class="btn btn-primary"> Filtrar </button>
-
-                </div>
-
-            </div>
-
-        </form>
+    <div class="col-4">
+        <button type="submit" class="btn btn-dark w-100 rounded m-0">Filtrar</button>
+    </div>
+</div>
+</form>
 
       <div class='row'>
         <?php foreach ($data as $row) : ?>
@@ -80,7 +107,6 @@ $condicoes = array_filter($condicoes);
                   Preço R$ <?php echo $row["preco_produto"]; ?>
                 </p>
                 <a href="view_details.php?id=<?php echo $row["PID"]; ?>" class='btn btn-primary float-right' style="width: 100%">Carrinho<a>
-
 
                 <div>
                   <!-- <a href="../editar.php?id=<?php echo $row["PID"]; ?>">
@@ -110,7 +136,6 @@ $condicoes = array_filter($condicoes);
     </div>
 
   </section>
-
 
   </footer>
   <?php include "../includes/footer.php"; ?>

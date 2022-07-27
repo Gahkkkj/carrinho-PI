@@ -5,7 +5,7 @@
         <script scr="../assets/js/main.js"> </script>
     </head>
     <nav class="navbar1 navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1"> <b> CADASTRAR CARRINHO</b> </span>
+    <span class="navbar-brand mb-0 h1"> <b> CADASTRAR PRODUTO</b> </span>
 </nav>
     <div class='container mt-5'>
         <div class='row'>
@@ -19,7 +19,7 @@
 
 
                         <div class="form-group">
-                            <label> Produto nome </label>
+                            <label> Nome </label>
                             <textarea class="form-control" type="text" required name="PRODUCT"><?php echo isset($obCarrinho->PRODUCT) ? $obCarrinho->PRODUCT : ''; ?> </textarea>
                         </div>
                         <div class="form-group">
@@ -28,7 +28,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label> Preço produto </label>
+                            <label> Preço </label>
                             <input class="form-control" type="number" required name="preco_produto"><?php echo isset($obCarrinho->preco_produto) ? $obCarrinho->preco_produto : ''; ?>
                         </div>
 
@@ -39,6 +39,16 @@
                         <div class="form-group">
                             <label> Quantidade </label>
                             <input class="form-control" type="number" required name="quantidade"><?php echo isset($obCarrinho->quantidade) ? $obCarrinho->quantidade : ''; ?> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="">Categoria</label>
+                                <select class="form-control"  id="estiloSelect"name="fk_id_categoria">
+                                    <option value="">Selecione uma categoria!</option>
+                                        <?php foreach ($Categoria as $key => $value) { ?>
+                                        <option value="<?php echo $value->id; ?> " <?php echo $obCarrinho->fk_id_categoria == $value->id ? 'selected' : ''; ?>> <?php echo $value->nome; ?> </option>
+                                        <?php } ?>
+                                </select>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-success"> Enviar </button>

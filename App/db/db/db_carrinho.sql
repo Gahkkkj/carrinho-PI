@@ -98,14 +98,15 @@ CREATE TABLE `produtos_carrinho` (
   `IMAGE` varchar(45) NULL DEFAULT '',
   `DESCRIPTION` text,
   `quantidade` int,
+  `fk_id_categoria` int,
   PRIMARY KEY (`PID`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1 AUTO_INCREMENT = 6;
 
 -- ------------------------------------------------------
 --
---  table `Usuario`
+--  table `usuario`
 --
-CREATE TABLE `Usuario` (
+CREATE TABLE `usuario` (
   `UID` int(11) NOT NULL AUTO_INCREMENT,
   `NAME` varchar(150) NOT NULL DEFAULT '',
   `CONTACT` varchar(150) NOT NULL DEFAULT '',
@@ -116,6 +117,12 @@ CREATE TABLE `Usuario` (
   PRIMARY KEY (`UID`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1 AUTO_INCREMENT = 1;
 
+CREATE TABLE `categoria` (
+ `id` INT(10) NOT NULL AUTO_INCREMENT,
+ `nome` VARCHAR(255) DEFAULT NULL,
+ `descricao` VARCHAR(255) DEFAULT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE = innodb;
 
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */

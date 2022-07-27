@@ -8,52 +8,39 @@ use \PDO;
 class Categoria
 {
     /**
-     * Identificador único da vaga
+     * Identificador
      * @var integer
      */
     public $id;
 
-      /**
-     * Descrição da vaga (pode conter html)
+    /**
+     * Título
      * @var string
      */
     public $nome;
 
     /**
-     * Descrição da vaga (pode conter html)
+     * Descrição (pode conter html)
      * @var string
      */
-    public $fornecedor;
+    public $descricao;
 
-    public function cadastrarCategoria()
+    public function cadastrar()
     {
-        // Definir a data 
-        // $this->data_inc = date('Y-m-d H:i:s');
-        // echo "<pre>"; print_r($this); echo "</pre>"; exit;
 
-        // Inserir a vaga no bano e retornar o ID
-        $objdatabase = new database('categorias');
+        $objdatabase = new database('categoria');
 
         $this->id = $objdatabase->insert([
             'nome' => $this->nome,
-            'fornecedor' => $this->fornecedor,
+            'descricao' => $this->descricao,          
         ]);
 
         return true;
     }
 
-
-    /**
-     * Método responsável por obter as vagas do banco de dados
-     * @params string @where
-     * @params string @order
-     * @params string $limit
-     * @return array
-     */
-
     public static function getCategoria($where = null, $order = null, $limit = null)
     {
-        $objdatabase = new database('categorias');
+        $objdatabase = new database('categoria');
 
         return ($objdatabase)->select($where, $order, $limit)->fetchAll(PDO::FETCH_CLASS, self::class);
     }
@@ -65,7 +52,7 @@ class Categoria
      */
     public static function getCategorias($id)
     {
-        $objdatabase = new database('categorias');
+        $objdatabase = new database('categoria');
 
         return ($objdatabase)->select('id = ' . $id)->fetchObject(self::class);
     }
@@ -73,9 +60,9 @@ class Categoria
      * Função para excluir vagas no banco
      * @return boolean
      */
-    public function excluirCategoria()
+    public function excluir()
     {
-        $objdatabase = new database('categorias');
+        $objdatabase = new database('categoria');
 
         return ($objdatabase)->delete('id = ' . $this->id);
     }
@@ -84,15 +71,13 @@ class Categoria
      * Função para atualizar a vaga do banco de dados
      * @return boolean
      */
-    public function atualizarCategoria() {
-        //Definir a data
-        // $this->data = date('Y-m-d H:i:s');
+    public function atualizar() {
 
-        $objDatabase = new database('categorias');
+        $objDatabase = new database('categoria');
 
         return ($objDatabase)->update('id = ' . $this->id, [
             'nome' => $this->nome,
-            'fornecedor' => $this->fornecedor,
+            'descricao' => $this->descricao,
         ]);
     }
 }
