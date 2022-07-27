@@ -27,7 +27,7 @@ $cart = new Cart();
 			<div class='row'>
 				<div class='col-md-12'>
 					<div class="box-carrinho bg-dark">
-						<h2 class='mb-4'>itens no carrinho</h2>
+						<h2 class='mb-4'>Itens no carrinho:</h2>
 						<a href="index.php">
 							<button class="btn btn-success"> Voltar </button>
 						</a>
@@ -69,7 +69,7 @@ $cart = new Cart();
 								</tfoot>
 							</table>
 						<?php else : ?>
-							<div class='alert alert-warning alert-dismissible fade show'>carrinho vazio...</div>
+							<div class='alert alert-warning alert-dismissible fade show'>Carrinho vazio...</div>
 						<?php endif; ?>
 					</div>
 				</div>

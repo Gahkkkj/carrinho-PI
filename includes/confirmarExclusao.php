@@ -7,7 +7,7 @@
     <h2 class="mt-3"> EXCLUIR </h2>
     <form method="post">
         <div class="form-group">
-            <p> Você deseja realmente excluir Produto <strong><?php echo $obCarrinho->PID; ?> </strong></p>
+            <p> Você deseja realmente excluir o produto <strong><?php echo $obCarrinho->PRODUCT; ?>? </strong></p>
         </div>
 
         <div class="form-group" style="margin-top: 5%; margin-bottom: 10%;">

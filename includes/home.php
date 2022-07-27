@@ -1,7 +1,7 @@
 
 
     <nav class="navbar1 navbar-light bg-light">
-      <span class="navbar-brand mb-0 h1"> <b> HOME! </b> </span>
+      <span class="navbar-brand mb-0 h1"> <b> HOME </b> </span>
     </nav>
 
     <div class="container1">

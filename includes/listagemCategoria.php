@@ -1,92 +1,92 @@
 <?php
-    $mensagem = '';
-    if(isset($_GET['status'])) {
-        switch ($_GET['status']) {
-            case 'success':
-                $mensagem = '<div class="alert alert-success">Ação executada com sucesso!</div>';
-                break;
-            case 'error':
-                $mensagem = '<div class="alert alert-danger">Ação não executada!</div>';
-                    break;
-            default:
-                # code...
-                break;
-        }
+$mensagem = '';
+if (isset($_GET['status'])) {
+    switch ($_GET['status']) {
+        case 'success':
+            $mensagem = '<div class="alert alert-success">Ação executada com sucesso!</div>';
+            break;
+        case 'error':
+            $mensagem = '<div class="alert alert-danger">Ação não executada!</div>';
+            break;
+        default:
+            # code...
+            break;
     }
+}
 ?>
 
-<?php if($mensagem != '') { ?>
-<section>
-    <?php echo $mensagem; ?>
-</section>
+<?php
+require __DIR__ . '../../vendor/autoload.php';
+
+use \App\entity\Categoria;
+
+$Categoria = Categoria::getCategoria();
+$obCategoria = new Categoria;
+// echo "<pre>"; print_r($vaga); echo "</pre>"; exit;
+?>
+
+<?php if ($mensagem != '') { ?>
+    <section>
+        <?php echo $mensagem; ?>
+    </section>
 <?php } ?>
 
-<header>
-    
 
-</header>
 
- <div class="container">
 
 <section>
-    
+
+    <nav class="navbar1 navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1"> <b> CATEGORIA </b> </span>
+    </nav>
+
     <a href="cadastrarCategoria">
-    <button type="botao_comeco"><span class="spano"></span>Cadastrar</button>
+    <button class="gerente-controle-2"><span class="spano"></span>Cadastrar</button>
     </a>
 
-</h5>
-    <?php if(count($Categoria) == 0) {?>
-        <div class="alert alert-secondary mt-3">Nenhuma Categoria encontrada</div>
-    <?php } else {?>
-        <table class="table bg-dark text-light mt-3">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Descrição</th>
-            </tr>
-        </thead>
+    <div class="container" style="padding: 0px;">
 
-        <tbody>
-            <?php foreach ($Categoria as $key => $value) { ?>
-                <tr>
-                <td><?php echo $value->id; ?></td>
-                    <td><?php echo $value->nome; ?></td>
-                    <td><?php echo $value->descricao; ?></td>
-                    <td>
-                    <a class="neon-bt2" href="editarCategoria.php?id=<?php echo $value->id; ?>">
+        <?php if (count($Categoria) == 0) { ?>
+            <div class="alert alert-secondary mt-3"> Nenhuma categoria encontrada! </div>
 
-                            <span></span>
+        <?php } else { ?>
 
-                            <span></span>
+            <table class="table bg-dark text-light mt-3" style="text-align: center;">
+                <thead>
+                    <tr>
 
-                            <span></span>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Ações</th>
 
-                            <span></span>
+                        <!-- Para editar e excluir -->
+                    </tr>
+                </thead>
 
-                            Editar
+                <tbody>
+                    <?php foreach ($Categoria as $key => $value) { ?>
+                        <tr>
 
-                            </a>
+                            <td style="border: 1px solid #dee2e6;"><?php echo $value->nome; ?></td>
+                            <td style="border: 1px solid #dee2e6;"><?php echo $value->descricao; ?></td>
+                         
+                            <td style="border: 1px solid #dee2e6;">
 
-                        <a class="neon-bt" href="excluirCategoria.php?id=<?php echo $value->id; ?>">
+                                <a href="./editarCategoria.php?id=<?php echo $value->id; ?>">
+                                    <button type="button" class="btn btn-primary" syle>Editar</button>
+                                </a>
 
-                            <span></span>
+                                <a href="./excluirCategoria.php?id=<?php echo $value->id; ?>">
+                                    <button type="button" class="btn btn-excluir fas fa-trash-alt float-none" style="padding: 0.6vw 2vw 0.6vw 2vw;"></button>
+                                </a>
 
-                            <span></span>
+                            </td>
+                     
+                        </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
 
-                            <span></span>
-
-                            <span></span>
-
-                            Excluir
-
-                            </a>
-                    </td>
-                </tr>
-            <?php } ?>
-        </tbody>
-    </table>
-    <?php }?>
-  </div>
+        <?php } ?>
 
 </section>
-

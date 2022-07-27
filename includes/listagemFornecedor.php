@@ -1,3 +1,5 @@
+
+
 <?php
 $mensagem = '';
 if (isset($_GET['status'])) {
@@ -31,22 +33,26 @@ $obFornecedor = new Fornecedor;
     </section>
 <?php } ?>
 
-<a href="indexGerente.php">
-    <button class="btn btn-success"> Voltar </button>
-</a>
-
 
 <section>
 
-    <div class="container">
+    <nav class="navbar1 navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1"> <b> FORNECEDOR </b> </span>
+    </nav>
+
+    <a href="cadastrarFornecedor">
+    <button class="gerente-controle-2"><span class="spano"></span>Cadastrar</button>
+    </a>
+
+    <div class="container" style="padding: 0px;">
 
         <?php if (count($Fornecedor) == 0) { ?>
-            <div class="alert alert-secondary mt-3"> Nenhum Usuário Encontrada </div>
+            <div class="alert alert-secondary mt-3"> Nenhum fornecedor encontrada! </div>
 
         <?php } else { ?>
 
-            <table class="table bg-dark text-light mt-3">
-                <thead>
+            <table class="table bg-dark text-light mt-3" style="text-align: center;">
+            <thead>
                     <tr>
 
                         <th>Nome</th>
@@ -59,13 +65,13 @@ $obFornecedor = new Fornecedor;
                         <th>Estado</th>
                         <th>Ordem</th>
                         <th>Status</th>
+                        <th>Ações</th>
 
                         <!-- Para editar e excluir -->
                     </tr>
                 </thead>
-
                 <tbody>
-                    <?php foreach ($Fornecedor as $key => $value) { ?>
+                <?php foreach ($Fornecedor as $key => $value) { ?>
                         <tr>
 
                             <td><?php echo $value->nome; ?></td>
@@ -81,12 +87,12 @@ $obFornecedor = new Fornecedor;
                          
                             <td>
 
-                                <a href="./editarFornecedor.php?id=<?php echo $value->id; ?>">
-                                    <button type="button" class="btn btn-primary">Editar</button>
+                            <a href="./editarFornecedor.php?id=<?php echo $value->id; ?>">
+                                    <button type="button" class="btn btn-primary" syle>Editar</button>
                                 </a>
 
                                 <a href="./excluirFornecedor.php?id=<?php echo $value->id; ?>">
-                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                    <button type="button" class="btn btn-excluir fas fa-trash-alt float-none" style="padding: 0.6vw 2vw 0.6vw 2vw;"></button>
                                 </a>
 
                             </td>
