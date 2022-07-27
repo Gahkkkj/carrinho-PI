@@ -893,8 +893,8 @@ botão de voltar */
   background-repeat: no-repeat;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-/* btn-continuar */
-.btn-continuar{
+/* btn-comprar */
+.btn-comprar{
   
   margin: auto;
   display: flex;
@@ -913,19 +913,53 @@ botão de voltar */
   background-repeat: no-repeat;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-.btn-continuar:hover {
+.btn-comprar:hover {
   transform: scale(1.1);
   background-color: rgb(255, 115, 0);
   background-position: -60px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.btn-continuar:active {
+.btn-comprar:active {
   transform: scale(1);
   background-color: rgb(255, 230, 0);
   background-position: 500px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+/* btn-continue */
+.btn-continue{
+  
+  margin: auto;
+  display: flex;
+  color: rgb(240, 240, 240);
+
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1vw 3vw 1vw 3vw;
+  border-radius: 6px;
+  background-color: rgb(55, 45, 194);
+  transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 500ms linear;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.btn-continue:hover {
+  transform: scale(1.1);
+  background-color: rgb(23, 18, 85);
+  background-position: -60px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.btn-continue:active {
+  transform: scale(1);
+  background-color: rgb(55, 45, 194);
+  background-position: 500px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
 
 
 

@@ -28,9 +28,6 @@ $cart = new Cart();
 				<div class="d-flex col-8">
 					<div class="bg-dark p-2 flex-grow-1  ">
 						<h2 class='mb-4 text-center ' style="color:orange ">Itens no carrinho</h2>
-						<a href="index.php">
-							<button class="btn btn-success "> Voltar </button>
-						</a>
 						<?php if ($cart->get_cart_total() > 0) : ?>
 							<table class='table flex-shrink-1  table-grid table-striped table-responsive-mb table-bordered table-hover table-dark'>
 								<thead>
@@ -51,31 +48,14 @@ $cart = new Cart();
 											<td> R$ <?php echo $item["preco_produto"]; ?></td>
 											<td><input type='number' value='<?php echo $item["qty"]; ?>' class='qty' pid='<?php echo $item["id"]; ?>' min='1'></td>
 											<td> R$ <span class='row_total'><?php echo $item["total"]; ?></span></td>
-<<<<<<< Updated upstream
 											<td><button type="button" href='remove.php?id=<?php echo $item["id"]; ?>' onclick="return confirm('Certeza que quer remover')" class="btn-excluir fas fa-trash-alt"></button></td>
 										</tr>
 									<?php endforeach; ?>
 								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan='3'><button href='index.php' class="btn btn-primary fas fa-shopping-bag">Continue comprando</button></td>
-										<th>Total</th>
-										<th> R$ <span id='total'><?php echo $cart->get_cart_total(); ?></span></th>
-										<td><a href='checkout.php' class='btn btn-success'>Cadastre-se</a></td>
-									</tr>
-								</tfoot>
-=======
-											<td>
-												<a href='remove.php?id=<?php echo $item["id"]; ?>' onclick="return confirm('Certeza que quer remover')">
-													<button class="btn-excluir fas fa-trash-alt"></button>
-												</a>
-											</td>
-										</tr>
-									<?php endforeach; ?>
-								</tbody>
->>>>>>> Stashed changes
 							</table>
-							<p colspan='3'><a href='index.php'><button href='index.php' class="btn btn-primary fas fa-shopping-bag">Continue comprando</button></a></p>
+							<a href='index.php'>
+								<button type="button" href='index.php' class="btn-continue	 fas fa-shopping-bag"><br>Continue comprando</button>
+							</a>
 					</div>
 
 					<div class="col-5">
@@ -84,7 +64,7 @@ $cart = new Cart();
 								<div class="text-center" style="padding: 0px 2px; font-size: 24px; color: rgb(0, 0, 0);">Total</div>
 								<div class=" font-weight-bold text-center" style=" font-size: 20px;">Total: <span>R$<span id='total'><?php echo $cart->get_cart_total(); ?></span></div>
 								<a href='checkout.php'>
-									<button type="button" class='btn-continuar'>Continuar<span> (<?php echo $cart->get_cart_count(); ?>)</span></button>
+									<button type="button" class='btn-Comprar'>Comprar<span> (<?php echo $cart->get_cart_count(); ?>)</span></button>
 								</a>
 							</div>
 						</div>
