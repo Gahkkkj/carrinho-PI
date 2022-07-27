@@ -22,8 +22,6 @@
 			if($_SESSION['usuarioNiveisAcessoId'] == "1"){
 				header("Location: administrativo.php");
 			}elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
-				header("Location: colaborador.php");
-			}else{
 				header("Location: cliente.php");
 			}
 		//Não foi encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
