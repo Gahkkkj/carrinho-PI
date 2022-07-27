@@ -1,0 +1,267 @@
+/* principal login ----------------------------------------------------------------*/
+body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "main" "footer";
+    overflow-x: hidden;
+    background: #F5F7FA;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 500% 500%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+    background-repeat:repeat;
+  }
+  
+  .card{
+    margin-bottom:20px;
+    border:none;
+  }
+  
+  .box {
+    width: 650px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #191919;
+    ;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px
+  }
+  
+  .box input[type="text"],
+  .box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+  }
+  
+  .box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500
+  }
+  
+  .box input[type="text"]:focus,
+  .box input[type="password"]:focus {
+    width: 300px;
+    border-color: #fc0000
+  }
+  
+  .box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #fc0000;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+  }
+  
+  .box input[type="submit"]:hover {
+    background: #fc0000
+  }
+  
+  .forgot {
+    text-decoration: underline
+  }
+  
+  ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0
+  }
+  
+  ul.social-network li {
+    display: inline;
+    margin: 0 5px
+  }
+  
+  .social-network a.icoFacebook:hover {
+    background-color: #3B5998
+  }
+  
+  .social-network a.icoTwitter:hover {
+    background-color: #33ccff
+  }
+  
+  .social-network a.icoGoogle:hover {
+    background-color: #BD3518
+  }
+  
+  .social-network a.icoFacebook:hover i,
+  .social-network a.icoTwitter:hover i,
+  .social-network a.icoGoogle:hover i {
+    color: #fff
+  }
+  
+  a.socialIcon:hover,
+  .socialHoverClass {
+    color: #44BCDD
+  }
+  
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px
+  }
+  
+  .social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center
+  }
+  
+  .social-circle li a:hover i,
+  .triggeredHover {
+    transform: rotate(360deg);
+    transition: all 0.2s
+  }
+  
+  .social-circle i {
+    color: #fff;
+    transition: all 0.8s;
+    transition: all 0.8s
+  }
+  /* ---------------------------//----------------------- */
+  /* cadastrar-inicio-----------//----------------------- */
+  .box-cadastro {
+  
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #191919;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px;
+  }
+     
+  /* cadastrar-final-----------//----------------------- */
+  @media screen and (min-width: 768px) {
+    :root {
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+    }
+  }
+    
+  
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  canvas{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    margin:0;
+    cursor:none;
+  }
+   header2 {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    margin-top: 10%;
+  }
+  
+  @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  } 
+  #table-listagem {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+  }
+  
+  @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  } 
+  /*formulario*/
+  .formulario {
+    margin-top: 10%;
+  }
+  /*===== BASE =====*/
+  *, ::before, ::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .bd-grid {
+    max-width: 1024px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  
+  
+  
+  
+  
+  
