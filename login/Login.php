@@ -19,7 +19,7 @@
     <div class="container">
 
       <form class="form-signin" method="POST" action="valida.php">
-        <h2 class="form-signin-heading">Área Restrita</h2>
+        <h2 class="form-signin-heading">Login</h2>
         <label for="inputEmail" class="sr-only">Email</label>
         <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
         <label for="inputPassword" class="sr-only">Senha</label>
