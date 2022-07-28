@@ -5,11 +5,6 @@ require __DIR__ . '../../vendor/autoload.php';
 use \App\Entity\Carrinho;
 use \App\Entity\Categoria;
 
-// $listaCategoria = Categoria::getCategoria();
-// $Categoria = Carrinho::getnoar($busca);
-
-?>
-<?php
 include "config.php";
 if (!isset($_SESSION)) {
   session_start();
@@ -31,25 +26,25 @@ if ($res->num_rows > 0) {
   }
 }
 
-?>
-<?php 
-    $busca = '';
+// $busca = '';
 
-if(isset( $_GET['categoria']) || isset( $_GET['busca'])) {
-    if(isset( $_GET['categoria']) && $_GET['categoria'] != 0) {
-        $busca = 'fk_id_categoria = ' . $_GET['categoria'];
+// if(isset( $_GET['categoria']) || isset( $_GET['busca'])) {
+//     if(isset( $_GET['categoria']) && $_GET['categoria'] != 0) {
+//         $busca = 'fk_id_categoria = ' . $_GET['categoria'];
 
-        if(!empty($_GET['busca']) && count($_GET) > 1) {
-            $busca .= ' AND ';
-        }
-    }
+//         if(!empty($_GET['busca']) && count($_GET) > 1) {
+//             $busca .= ' AND ';
+//         }
+//     }
 
-    if(!empty($_GET['busca'])) {
-        $busca .= 'nome = ' . $_GET['busca'];
-    }
 
-    // echo $busca;
-}
+//     // echo $busca;
+//     // echo "<pre>"; print_r ($_GET['categoria']); echo "</pre>"; exit; 
+//     // echo "<pre>"; print_r ($busca); echo "</pre>"; exit; 
+// }
+
+// $listaCategoria = Categoria::getCategoria();
+// $Categoria = Carrinho::getnoar($busca);
 
 ?>
 
@@ -59,8 +54,6 @@ if(isset( $_GET['categoria']) || isset( $_GET['busca'])) {
   <title>Produtos</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/main.css?date= . <?php echo time(); ?>">
-
-
 </head>
 
 <body>
@@ -68,10 +61,12 @@ if(isset( $_GET['categoria']) || isset( $_GET['busca'])) {
     <?php include "navbar.php"; ?>
     <div class='container mt-5 pb-5'>
     <nav class="navbar1 navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1"> <b> PRODUTOS </b> </span>
-</nav>
+      <span class="navbar-brand mb-0 h1"> <b> PRODUTOS </b> </span>
+    </nav>
+  <section>
 
-        <form action="index.php" method="get">
+
+<!-- <form action="index.php" method="get">
 
 <div class="row">
 
@@ -94,7 +89,9 @@ if(isset( $_GET['categoria']) || isset( $_GET['busca'])) {
         <button type="submit" class="btn btn-dark w-100 rounded m-0">Filtrar</button>
     </div>
 </div>
-</form>
+</form> -->
+
+</section>
 
       <div class='row'>
         <?php foreach ($data as $row) : ?>

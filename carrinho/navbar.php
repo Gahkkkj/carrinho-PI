@@ -14,7 +14,7 @@
 <body class="text-dark" style="background-color: #C7A4A4;">
 
   <header>
-    <div class="d-flex justify-content-around align-items-center bg-dark andreifooter" style=" font-family: naruto; ">
+    <div class="d-flex justify-content-around align-items-center bg-dark footerPadrao" style=" font-family: naruto; ">
       <a class="navbar-brand btn btn-dark " style="color: orange;" href="../index.php">Menu</a>
        <h1 class="display-4" style="color: orange;"> MAXEL
         <p class="lead " style="color: orange;"> Busque do melhor! </p>
