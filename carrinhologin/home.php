@@ -27,9 +27,7 @@
      <input type="image" class="iconesmaxel" src="../assets/image/local.jpg" width="120px" height="120px"> </a> <p class="col col-4 d-flex" style="margin-left: 7%;">Localização</p> 
    
     </div>
-    <div class="col" style="margin-left: 4%;">
-     <input type="image" class="iconesmaxel" src="../assets/image/relampago.jpg" width="120px" height="120px"> <p class="col col-4 d-flex" style="margin-left: 7%;">produtos</p>  
-    </div>
+  
     <div class="col" style="margin-left: 4%;">
     <a href="index.php">
      <input type="image" class="iconesmaxel" src="../assets/image/pc.jpg" width="120px" height="120px"> </a><p class="col col-4 d-flex" style="margin-left: 7%;">produtos</p> 
