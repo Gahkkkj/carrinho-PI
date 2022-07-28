@@ -23,17 +23,15 @@ if ($res->num_rows > 0) {
 $obUsuario = new Usuario();
 
 // echo "<pre>"; print_r($_POST); echo "<pre>"; exit;
-if (isset($_POST['nome'], $_POST['sobrenome'], $_POST['idade'], $_POST['cpf'], $_POST['descricao'], $_POST['sexo'], $_POST['ordem'], $_POST['status'], $_POST['niveis_acesso_id'])) {
-    $obUsuario->nome = $_POST['nome'];
-    $obUsuario->sobrenome = $_POST['sobrenome'];
-    $obUsuario->idade = $_POST['idade'];
-    $obUsuario->cpf = $_POST['cpf'];
-    $obUsuario->descricao = $_POST['descricao'];
-    $obUsuario->sexo = $_POST['sexo'];
-    $obUsuario->ordem = $_POST['ordem'];
-    $obUsuario->status = $_POST['status'];
+if (isset($_POST['NAME'], $_POST['EMAIL'],  $_POST['CONTACT'], $_POST['ADDRESS'], $_POST['CITY'], $_POST['PINCODE'],$_POST['niveis_acesso_id'])) {
+    $obUsuario->NAME = $_POST['NAME'];
+    $obUsuario->EMAIL = $_POST['EMAIL'];
+    $obUsuario->CONTACT = $_POST['CONTACT'];
+    $obUsuario->ADDRESS = $_POST['ADDRESS'];
+    $obUsuario->CITY = $_POST['CITY'];
+    $obUsuario->PINCODE = $_POST['PINCODE'];
     $obUsuario->niveis_acesso_id = $_POST['niveis_acesso_id'];
-    // echo "<pre>"; print_r($_POST); echo "<pre>"; exit;
+
 
 
 // echo "<pre>"; print_r($obGrupo); echo "<pre>"; exit;
