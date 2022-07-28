@@ -22,7 +22,7 @@
 			if($_SESSION['usuarioNiveisAcessoId'] == "1"){
 				header("Location: ../index.php");
 			}elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
-				header("Location: ../indexClient.php");	
+				header("Location: ../carrinho/index.php");	
 			}
 			//Não foi encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
 			//redireciona o usuario para a página de login

@@ -27,7 +27,7 @@
         <h1 class="row">
        
           <a class="navbar-brand btn btn-dark " style="color: orange;" href="../index.php">Menu</a>
-          <a class="navbar-brand btn btn-dark " style="color: orange;" href="./login/sair.php">Sair</a>
+          <a class="navbar-brand btn btn-dark " style="color: orange;" href="../login/sair.php">Sair</a>
         </h1>
 
         <h2 class="display-4" style="color: orange;"> MAXEL

@@ -23,5 +23,5 @@ if ($res->num_rows > 0) {
 
 
 require __DIR__ . './carrinho/navbar.php';
-require __DIR__ . '/includes/home.php';
+require __DIR__ . './carrinho/index.php';
 require __DIR__ . '/includes/footer.php';
