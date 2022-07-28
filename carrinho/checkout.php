@@ -1,20 +1,33 @@
 <?php
+require __DIR__ . '../../vendor/autoload.php';
+use App\entity\Usuario;
+
 include "config.php";
 
 
 include "cart.class.php";
 $cart = new Cart();
 
+//Validação do POST
+if (isset( $_POST['CONTACT'], $_POST['ADDRESS'], $_POST['CITY'])) {
+  
+	$contact = mysqli_real_escape_string($con, $_POST["CONTACT"]);
+	$address = mysqli_real_escape_string($con, $_POST["ADDRESS"]);
+	$city = mysqli_real_escape_string($con, $_POST["CITY"]);
+   
+    $obUsuario->atualizarEndereco();
+
+    header('location: checkout.php?status=success');
+    exit;
+    
+}
+
 if (isset($_POST["submit"])) {
 
-	$name = mysqli_real_escape_string($con, $_POST["name"]);
-	$email = mysqli_real_escape_string($con, $_POST["email"]);
-	$contact = mysqli_real_escape_string($con, $_POST["contact"]);
-	$address = mysqli_real_escape_string($con, $_POST["address"]);
-	$city = mysqli_real_escape_string($con, $_POST["city"]);
-	$pincode = mysqli_real_escape_string($con, $_POST["pincode"]);
+
+
 	#insert User Details
-	$sql = "insert into Usuario (NAME,EMAIL,CONTACT,ADDRESS,CITY,PINCODE) values ('{$name}','{$email}','{$contact}','{$address}','{$city}','{$pincode}')";
+	$sql = "insert into Usuario (CONTACT,ADDRESS,CITY) values ('{$contact}','{$address}','{$city}')";
 	if ($con->query($sql)) {
 		$uid = $con->insert_id;
 
@@ -54,16 +67,41 @@ if (isset($_POST["submit"])) {
 	<section>
 		<?php include "navbar.php"; ?>
 		<nav class="navbar1 navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1"> <b> CADASTRE-SE </b> </span>
-</nav>
+			<span class="navbar-brand mb-0 h1"> <b> CADASTRE-SE </b> </span>
+		</nav>
 		<div class='container mt-5'>
 
-				
+<<<<<<< HEAD
+
 			<div class=' col-md-10 mx-auto'>
+				<div class="box-formulario bg-dark">
+					<a href="index.php">
+						<button class="btn btn-success"> Voltar </button>
+					</a>
+					<span class="navbar-brand text-center d-flex"> <b>Informações adicionais</b> </span>
+					<form method='post' action='<?php echo $_SERVER["REQUEST_URI"]; ?>' autocomplete="off">
+
+						<div class='form-group'>
+							<label>Numero</label>
+							<input type='number' name='contact' class='form-control' required placeholder='Numero de Telefone'>
+						</div>
+						<div class='form-group'>
+							<label>Endereço</label>
+							<input type='text' name='address' class='form-control' required placeholder='Endereço'>
+
+						</div>
+						<div class='form-group'>
+							<label>Cidade</label>
+							<input type='text' name='city' class='form-control' required placeholder='Cidade'>
+						</div>
+
+						<input type='submit' name='submit' value='Enviar' class='btn btn-success'>
+					</form>
+				</div>
+=======
+			<div class='>
+			<div class=' col-md-6 mx-auto'>
 			<div class="box-formulario bg-dark">
-			<a href="index.php">
-                        <button class="btn btn-success"> Voltar </button>
-                    </a>
 				<form method='post' action='<?php echo $_SERVER["REQUEST_URI"]; ?>' autocomplete="off">
 					<div class='form-group'>
 						<label>Nome</label>
@@ -75,7 +113,7 @@ if (isset($_POST["submit"])) {
 					</div>
 					<div class='form-group'>
 						<label>Numero</label>
-						<input type='number' name='contact' class='form-control' required placeholder='Numero de Telefone'>
+						<input type='number' name='contact' class='form-control' required placeholder='Número de Telefone'>
 					</div>
 					<div class='form-group'>
 						<label>Endereço</label>
@@ -92,9 +130,9 @@ if (isset($_POST["submit"])) {
 					</div>
 					<input type='submit' name='submit' value='Enviar' class='btn btn-success'>
 				</form>
+>>>>>>> 76710eb4f4762c0e55ffaf8bbfb54cac8a17ced2
 			</div>
-		</div>
-	
+
 	</section>
 	</footer>
 	<?php include "../includes/footer.php"; ?>
