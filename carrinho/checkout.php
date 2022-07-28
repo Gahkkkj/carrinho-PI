@@ -71,7 +71,6 @@ if (isset($_POST["submit"])) {
 		</nav>
 		<div class='container mt-5'>
 
-<<<<<<< HEAD
 
 			<div class=' col-md-10 mx-auto'>
 				<div class="box-formulario bg-dark">
@@ -98,39 +97,6 @@ if (isset($_POST["submit"])) {
 						<input type='submit' name='submit' value='Enviar' class='btn btn-success'>
 					</form>
 				</div>
-=======
-			<div class='>
-			<div class=' col-md-6 mx-auto'>
-			<div class="box-formulario bg-dark">
-				<form method='post' action='<?php echo $_SERVER["REQUEST_URI"]; ?>' autocomplete="off">
-					<div class='form-group'>
-						<label>Nome</label>
-						<input type='text' name='name' class='form-control' required placeholder='Usuario'>
-					</div>
-					<div class='form-group'>
-						<label>Email</label>
-						<input type='email' name='email' class='form-control' required placeholder='Email'>
-					</div>
-					<div class='form-group'>
-						<label>Numero</label>
-						<input type='number' name='contact' class='form-control' required placeholder='Número de Telefone'>
-					</div>
-					<div class='form-group'>
-						<label>Endereço</label>
-						<input type='text' name='address' class='form-control' required placeholder='Endereço'>
-					
-					</div>
-					<div class='form-group'>
-						<label>Cidade</label>
-						<input type='text' name='city' class='form-control' required placeholder='Cidade'>
-					</div>
-					<div class='form-group'>
-						<label>Senha</label>
-						<input type='text' name='pincode' class='form-control' required placeholder='Senha'>
-					</div>
-					<input type='submit' name='submit' value='Enviar' class='btn btn-success'>
-				</form>
->>>>>>> 76710eb4f4762c0e55ffaf8bbfb54cac8a17ced2
 			</div>
 
 	</section>
