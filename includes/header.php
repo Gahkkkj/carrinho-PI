@@ -20,6 +20,7 @@
   <header>
   <div class="d-flex align-items-center bg-dark andreifooter" style=" font-family: naruto; ">
       <?php
+     
       echo "Usuario: " . $_SESSION['usuarioNome'];
       ?>
       <br>

@@ -1,6 +1,9 @@
 <?php 
-if(!session_id()){
+if(!isset($_SESSION)){
 	session_start();
+		}
+		if(!isset($_SESSION['usuarioId'])) {
+	 die("SE FODEU você não pode acessar esta pagina porque não esta logado.<p><a href=\"../login/Login.php\">Entrar	</a></p>");
 	
 }
  

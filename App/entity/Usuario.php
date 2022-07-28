@@ -141,6 +141,8 @@ class Usuario
             'CITY' => $this->CITY,
             'PINCODE' => $this->PINCODE,
             'EMAIL' => $this->EMAIL,
+            'niveis_acesso_id' => $this->niveis_acesso_id,
+            
         ]);
     }
 }
