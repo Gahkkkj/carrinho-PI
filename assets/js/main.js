@@ -1,6 +1,6 @@
 // MODAL
-$("#andreiModal").click(function(){
-    $("#modalAndrei").modal('show');
+$("#PadraoModal").click(function(){
+    $("#modalPadrao").modal('show');
 });
 // CARROSSEL
 $('#carouselExampleIndicators').carousel()
@@ -8,11 +8,11 @@ $('#carouselExampleIndicators').on('slide.bs.carousel', function () {
 })
 // TOAST
 $(document).ready(function(){
-  $('#andreiToast').toast('show');
+  $('#PadraoToast').toast('show');
 });
 // TOOLTIP
 $('[data-toggle="tooltip"]').tooltip(function(){
-  $('#andreiTooltip').tooltip('show');
+  $('#PadraoTooltip').tooltip('show');
 });
   
 let x = 0;

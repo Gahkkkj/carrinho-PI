@@ -16,7 +16,7 @@
     </div>
 
 
-  <div class="row rowandrei">
+  <div class="row rowPadrao">
     <div class="col"style="margin-left: 4%;">
       <a href="view_carrinho.php">
      <input type="image" class="iconesmaxel" src="../assets/image/loja.jpg" width="120px" height="120px"></a><p class="col col-4 d-flex"  style="margin-left: 7%;">Carrinho</p> 
@@ -37,9 +37,9 @@
 
   
 
-  <div class="jumbotron jumbotron-fluid jumbandrei" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); background-color: white;">
+  <div class="jumbotron jumbotron-fluid jumbPadrao" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); background-color: white;">
   <div class="container" style="text-align: center; margin-top: -3%; margin-bottom: -2%;">
     <h5 style="margin-bottom:2%; margin-top:-2%;"> <b> NOSSA EQUIPE! </b> </h5>
-    <img class="imageandrei" src="../assets/image/tec.jpg" width="80%" height="80%" style="text-align: center;">
+    <img class="imagePadrao" src="../assets/image/tec.jpg" width="80%" height="80%" style="text-align: center;">
 </div>
 </div>

@@ -3,7 +3,7 @@
 </footer>
       </section class="fixe">
       <footer class=" pt-md-5 border-top bg-dark" id="futer">
-        <div class="row andrei">
+        <div class="row Padrao">
           <div class="col-4">
             <h5 class="footerPadrao"> MAIS </h5>
             <ul class="list-unstyled text-small">
