@@ -44,7 +44,6 @@ CREATE TABLE `produtos`(
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1 AUTO_INCREMENT = 1;
 
-
 CREATE TABLE `fornecedor` (
   `id` INT(10) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) DEFAULT NULL,
@@ -63,7 +62,6 @@ CREATE TABLE `fornecedor` (
 ) ENGINE = innodb;
 
 -- COMANDO DE CRIAÇÃO DE TABELA DE USUÁRIOS
-
 CREATE TABLE `orders` (
   `OID` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `PEDIDO_NO` varchar(45) NOT NULL DEFAULT '',
@@ -114,17 +112,16 @@ CREATE TABLE `usuario` (
   `CITY` varchar(45) NOT NULL DEFAULT '',
   `PINCODE` varchar(45) NOT NULL DEFAULT '',
   `EMAIL` varchar(45) NOT NULL DEFAULT '',
-  `niveis_acesso_id` int(1)NOT NULL,
+  `niveis_acesso_id` INT(11) NOT NULL  DEFAULT '1',
   PRIMARY KEY (`UID`)
-) ENGINE = InnoDB ;
+) ENGINE = InnoDB DEFAULT CHARSET = latin1 AUTO_INCREMENT = 1;
 
 CREATE TABLE `categoria` (
- `id` INT(10) NOT NULL AUTO_INCREMENT,
- `nome` VARCHAR(255) DEFAULT NULL,
- `descricao` VARCHAR(255) DEFAULT NULL,
- PRIMARY KEY (`id`)
+  `id` INT(10) NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(255) DEFAULT NULL,
+  `descricao` VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE = innodb;
-
 
 INSERT INTO `usuario` (`UID`, `NAME`, `EMAIL`, `PINCODE`, `niveis_acesso_id`) VALUES
 
@@ -138,3 +135,4 @@ INSERT INTO `usuario` (`UID`, `NAME`, `EMAIL`, `PINCODE`, `niveis_acesso_id`) VA
 ;
 
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */
+;
