@@ -20,7 +20,7 @@
 			$_SESSION['usuarioNiveisAcessoId'] = $resultado['niveis_acesso_id'];
 			$_SESSION['usuarioEMAIL'] = $resultado['EMAIL'];
 			if($_SESSION['usuarioNiveisAcessoId'] == "1"){
-				header("Location: ../carrinho/index.php");
+				header("Location: ../carrinhologin/indexClient.php");
 			}elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
 				header("Location: ../index.php");	
 			}

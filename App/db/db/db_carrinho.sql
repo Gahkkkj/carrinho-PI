@@ -125,8 +125,8 @@ CREATE TABLE `categoria` (
 
 INSERT INTO `usuario` (`UID`, `NAME`, `EMAIL`, `PINCODE`, `niveis_acesso_id`) VALUES
 
-(9, 'Gerente', 'Gerente@gmail.com.br', '123',  1),
-(10, 'Usuario', 'Usuario@gmail.com.br', '123',  2);
+(9, 'Gerente', 'Gerente@gmail.com.br', '123', 2),
+(10, 'Usuario', 'Usuario@gmail.com.br', '123', 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */
 ;

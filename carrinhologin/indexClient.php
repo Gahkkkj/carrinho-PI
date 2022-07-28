@@ -1,15 +1,14 @@
-<?php
-	session_start();
 
-?>
 <?php
+
+require __DIR__.'../../vendor/autoload.php';
 use \App\Entity\Categoria;
 use \App\Entity\Carrinho;
 
-include "./carrinho/config.php";
+include "config.php";
 
 
-include "./carrinho/cart.class.php";
+include "cart.class.php";
 $cart = new Cart();
 
 $data = [];
@@ -22,6 +21,6 @@ if ($res->num_rows > 0) {
 }
 
 
-require __DIR__ . './carrinho/navbar.php';
-require __DIR__ . './carrinho/index.php';
-require __DIR__ . '/includes/footer.php';
+require __DIR__ . '/navbar.php';
+require __DIR__ . '/home.php';
+require __DIR__ . '../../includes/footer.php';
