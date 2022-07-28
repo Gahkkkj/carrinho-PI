@@ -94,11 +94,11 @@ class Usuario
         $objdatabase = new database('Usuario');
 
         $this->id = $objdatabase->insert([
-            'UID' => $this->UID,
+
             'NAME' => $this->NAME,
             'PINCODE' => $this->PINCODE,
             'EMAIL' => $this->EMAIL,
-          
+      
         ]);
 
         return true;

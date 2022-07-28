@@ -1,31 +1,25 @@
 <?php
 require __DIR__ . '../../vendor/autoload.php';
 
-define('TITLE', 'Cadastrar registro!');
-
 use App\entity\Usuario;
 
 $obUsuario = new Usuario();
 
 // echo "<pre>"; print_r($_POST); echo "<pre>"; exit;
 if (isset($_POST['NAME'], $_POST['EMAIL'],  $_POST['PINCODE'])) {
-    $obUsuario->NAME = $_POST['NAME'];
-    $obUsuario->EMAIL = $_POST['EMAIL'];
+  $obUsuario->NAME = $_POST['NAME'];
+  $obUsuario->EMAIL = $_POST['EMAIL'];
+  $obUsuario->PINCODE = $_POST['PINCODE'];
 
-    $obUsuario->PINCODE = $_POST['PINCODE'];
-
-
-
-
-// echo "<pre>"; print_r($obGrupo); echo "<pre>"; exit;
+  // echo "<pre>"; print_r($obGrupo); echo "<pre>"; exit;
 
 
-    $obUsuario->cadastrarUsuario();
+  $obUsuario->cadastrarReduzido();
 
-    header('location: Login.php?status=success');
-    // echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
+  header('location: Login.php?status=success');
+  // echo "<pre>"; print_r($_POST); echo "</pre>"; exit;
 
-    exit;
+  exit;
 }
 
 ?>
@@ -52,37 +46,30 @@ if (isset($_POST['NAME'], $_POST['EMAIL'],  $_POST['PINCODE'])) {
 
   <div class="container">
     <div class="box">
-      <form class="form-signin" method="POST" action="valida.php">
+      <form class="form-signin" method="POST">
         <h2 class="box-1 form-signin-heading">Cadastrar</h2>
         <form method="POST" class="form-send">
+          <div class="form-group">
 
-                        <div class="form-group">
-               
-                            <input type="text" required class="form-control" name="NAME"placeholder="Nome" value="<?php echo isset($obUsuario->NAME) ? $obUsuario->NAME : ''; ?>">
-                        </div>
-                        <div class="form-group">
-                 
-                            <input type="text" required class="form-control" name="EMAIL" placeholder="Email"value="<?php echo isset($obUsuario->EMAIL) ? $obUsuario->EMAIL : ''; ?>">
-</div>
-                        <div class="form-group">
-              
-                            <input type="text" required class="form-control" name="PINCODE"placeholder="Senha" value="<?php echo isset($obUsuario->PINCODE) ? $obUsuario->PINCODE : ''; ?>">
-                        </div>
-                        <div>
-                        <button class="btn btn-lg btn-danger btn-block" type="submit">Acessar</button>
-                    </div>
-                    </form>
-              
-                 
-                </div>
+            <input type="text" required class="form-control" name="NAME" placeholder="Nome" value="<?php echo isset($obUsuario->NAME) ? $obUsuario->NAME : ''; ?>">
+          </div>
+          <div class="form-group">
 
-            </div>
-        
-        </div>
+            <input type="text" required class="form-control" name="EMAIL" placeholder="Email" value="<?php echo isset($obUsuario->EMAIL) ? $obUsuario->EMAIL : ''; ?>">
+          </div>
+          <div class="form-group">
 
-  </div> <!-- /container -->
+            <input type="text" required class="form-control" name="PINCODE" placeholder="Senha" value="<?php echo isset($obUsuario->PINCODE) ? $obUsuario->PINCODE : ''; ?>">
+          </div>
+          <div>
+            <button class="btn btn-lg btn-danger btn-block" type="submit">Acessar</button>
+          </div>
+        </form>
+      </form>
+    </div>
 
-  
+  </div>
+
 </body>
 
 </html>
