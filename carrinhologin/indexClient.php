@@ -21,6 +21,6 @@ if ($res->num_rows > 0) {
 }
 
 
-require __DIR__ . '/navbar.php';
+require __DIR__ . '/navbarClient.php';
 require __DIR__ . '/home.php';
 require __DIR__ . '../../includes/footer.php';

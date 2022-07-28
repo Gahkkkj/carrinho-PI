@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/css/main.css?date= . <?php echo time(); ?>">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-  <title> Maxel </title>
+  <title> Gabriel </title>
 
 </head>
 
@@ -17,17 +17,17 @@
 
   </div>
   <header>
-    <div class="d-flex align-items-center bg-dark footerPadrao" style=" font-family: naruto; ">
+    <div class="d-flex align-items-center bg-dark andreifooter" style=" font-family: naruto; ">
       <?php
       echo "Usuario: " . $_SESSION['usuarioNome'];
       ?>
       <br>
     </div>
-      <div class="d-flex justify-content-around align-items-center bg-dark footerPadrao" style=" font-family: naruto; ">
+      <div class="d-flex justify-content-around align-items-center bg-dark andreifooter" style=" font-family: naruto; ">
         <h1 class="row">
        
-        <h1 class="display-4" style="color: orange; margin-left: 3%;"> MAXEL
-        <p class="lead " style="color: orange; margin-left: 6%;"> Busque do melhor! </p>
+          <a class="navbar-brand btn btn-dark " style="color: orange;" href="../index.php">Menu</a>
+          <a class="navbar-brand btn btn-dark " style="color: orange;" href="../login/sair.php">Sair</a>
         </h1>
 
         <h2 class="display-4" style="color: orange;"> MAXEL
