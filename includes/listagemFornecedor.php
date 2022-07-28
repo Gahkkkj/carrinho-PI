@@ -41,7 +41,7 @@ $obFornecedor = new Fornecedor;
     </nav>
 
     <a href="cadastrarFornecedor">
-    <button class="gerente-controle-2"><span class="spano"></span>Cadastrar</button>
+    <button class="btn btn-primary"><span class="spano"></span>Cadastrar</button>
     </a>
 
     <div class="container" style="padding: 0px;">
@@ -92,7 +92,7 @@ $obFornecedor = new Fornecedor;
                                 </a>
 
                                 <a href="./excluirFornecedor.php?id=<?php echo $value->id; ?>">
-                                    <button type="button" class="btn btn-excluir fas fa-trash-alt float-none" style="padding: 0.6vw 2vw 0.6vw 2vw;"></button>
+                                    <button type="button" class="btn btn-danger fas fa-trash-alt float-none" style="padding: 0.6vw 2vw 0.6vw 2vw;"></button>
                                 </a>
 
                             </td>
