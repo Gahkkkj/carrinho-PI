@@ -49,7 +49,7 @@ class Usuario
      */
     public $EMAIL;
 
-    /**
+   /**
      * Identificador único da vaga
      * @var int
      */
@@ -71,15 +71,34 @@ class Usuario
         $objdatabase = new database('Usuario');
 
         $this->id = $objdatabase->insert([
-            'UID' => $this->UID,
+      
             'NAME' => $this->NAME,
             'CONTACT' => $this->CONTACT,
             'ADDRESS' => $this->ADDRESS,
             'CITY' => $this->CITY,
             'PINCODE' => $this->PINCODE,
             'EMAIL' => $this->EMAIL,
-            'situacoe_id' => $this->situacoe_id,
             'niveis_acesso_id' => $this->niveis_acesso_id,
+        ]);
+
+        return true;
+    }
+
+    public function cadastrarReduzido()
+    {
+        // Definir a data 
+        // $this->data_inc = date('Y-m-d H:i:s');
+        // echo "<pre>"; print_r($this); echo "</pre>"; exit;
+
+        // Inserir a vaga no bano e retornar o ID
+        $objdatabase = new database('Usuario');
+
+        $this->id = $objdatabase->insert([
+            'UID' => $this->UID,
+            'NAME' => $this->NAME,
+            'PINCODE' => $this->PINCODE,
+            'EMAIL' => $this->EMAIL,
+          
         ]);
 
         return true;
@@ -145,4 +164,24 @@ class Usuario
             
         ]);
     }
+
+
+ /**
+     * Função para atualizar a vaga do banco de dados
+     * @return boolean
+     */
+    public function atualizarEndereco()
+    {
+        //Definir a data
+        // $this->data = date('Y-m-d H:i:s');
+
+        $objDatabase = new database('Usuario');
+
+        return ($objDatabase)->update('UID = ' . $this->UID, [
+            'CONTACT' => $this->CONTACT,
+            'ADDRESS' => $this->ADDRESS,
+            'CITY' => $this->CITY,
+        ]);
+    }
 }
+
