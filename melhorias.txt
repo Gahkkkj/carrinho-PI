@@ -1,0 +1,5 @@
+1- cadastro de categoria
+2- vinculo da categoria com o produto
+3- listagem de usuario com editar,excluir
+4- arrumar bug de excluir produto no carrinho
+5- remover do projeto tudo o que não vai ter
