@@ -31,6 +31,7 @@ session_start();
         <label for="inputPassword" class="sr-only">Senha</label>
         <input type="password" name="PINCODE" id="inputPassword" class="form-control" placeholder="senha" required>
         <button class="btn btn-lg btn-danger btn-block" type="submit">Acessar</button>
+        <a href="cadastrar.php">Não é cadastrado ainda?Cadastre-se</a>
       </form>
     </div>
     <p class="text-center text-danger">
