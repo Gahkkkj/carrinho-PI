@@ -46,33 +46,12 @@ if (isset($_GET['status'])) {
         <button class="btn btn-success"> Usuarios </button>
     </a>
 </div>
-<section>
-    <form method="get" class="">
 
-        <div class="row my-4">
-
-
-            <div class="col">
-
-                <input type="text" placeholder="Buscar por nome!" name="busca" class="form-control" value="<?= $busca ?>">
-
-            </div>
-
-            <div class="col d-flex align-itens-center ">
-
-                <button type="submit" class="btn btn-primary"> Filtrar </button>
-
-            </div>
-
-        </div>
-
-    </form>
-</section>
 <div class="container">
     <div class='row'>
         <?php foreach ($data as $row) : ?>
             <div class='col-md-3 mt-2'>
-                <div class="card bg-dark text-light">
+                <div class="card bg-dark text-light" style="margin-top: 15%;">
                     <img class="card-img-top" src="./carrinho/images/2.jpg<?php echo $row["IMAGE"]; ?>">
                     <div class="card-body" style="text-align: center;">
                         <h5 class="card-title"><?php echo $row["PRODUCT"]; ?></h5>
