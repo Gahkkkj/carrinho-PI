@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-define('TITLE', 'Editar usuário!');
+define('TITLE', 'Editar registro!');
 
 use App\entity\Usuario;
 include "./carrinho/config.php";
@@ -28,14 +28,14 @@ if (!$obUsuario instanceof Usuario) {
 }
 
 //Validação do POST
-if (isset($_POST['NAME'], $_POST['EMAIL'],  $_POST['CONTACT'], $_POST['ADDRESS'], $_POST['CITY'], $_POST['PINCODE'])) {
+if (isset($_POST['NAME'], $_POST['EMAIL'],  $_POST['CONTACT'], $_POST['ADDRESS'], $_POST['CITY'], $_POST['PINCODE'],$_POST['niveis_acesso_id'])) {
     $obUsuario->NAME = $_POST['NAME'];
     $obUsuario->EMAIL = $_POST['EMAIL'];
     $obUsuario->CONTACT = $_POST['CONTACT'];
     $obUsuario->ADDRESS = $_POST['ADDRESS'];
     $obUsuario->CITY = $_POST['CITY'];
     $obUsuario->PINCODE = $_POST['PINCODE'];
-   
+    $obUsuario->niveis_acesso_id = $_POST['niveis_acesso_id'];
     
     
     $obUsuario->atualizarUsuario();

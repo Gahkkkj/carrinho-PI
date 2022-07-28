@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-define('TITLE', 'Editar pedido!');
+define('TITLE', 'Editar registro!');
 
 use App\entity\Pedido;
 include "./carrinho/config.php";

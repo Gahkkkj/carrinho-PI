@@ -2,13 +2,63 @@
   box-sizing: content-box;
 }
 
+.navandrei .nav-link {
+  color: orange;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: naruto;
+}
+
+.jumbotronandrei {
+  margin: 5%;
+}
+
 footer {
   text-align: center;
 }
 
-.footerPadrao {
+.andreifooter {
   color: orange;
   font-family: naruto;
+}
+
+.andreidisplay-4 {
+  color: orange;
+  font-family: naruto;
+}
+
+.andreih2 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
+}
+
+.andreih2 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
+}
+
+.andreih2ranking {
+  color: orange;
+  font-family: naruto;
+  text-align: center;
+}
+
+.andreih4 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
+}
+
+.andreip {
+  text-align: justify;
+}
+
+.andreicarrossel {
+  width: 80%;
+  text-align: center;
+  margin: 0 10% 0 10%;
 }
 
 @font-face {
@@ -33,39 +83,15 @@ body {
   width: 100%;
 }
 
-.selector-for-some-widget {
-  box-sizing: content-box;
-}
-
-footer {
+.andreitable {
+  margin: 5%;
+  width: 90%;
   text-align: center;
 }
 
-.footerPadrao {
+.andreitable .thead-dark th {
   color: orange;
   font-family: naruto;
-}
-
-@font-face {
-  font-family: 'naruto';
-  src: url('njnaruto.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.hr2 {
-  border: 0;
-  height: 2px;
-  background-image: linear-gradient(to right, transparent, #CCC, transparent);
-}
-
-.afonte {
-  color: orange;
-  font-family: naruto;
-}
-
-body {
-  width: 100%;
 }
 
 .headerpadrao {
@@ -76,13 +102,63 @@ body {
   box-sizing: content-box;
 }
 
+.navandrei .nav-link {
+  color: orange;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: naruto;
+}
+
+.jumbotronandrei {
+  margin: 5%;
+}
+
 footer {
   text-align: center;
 }
 
-.footerPadrao {
+.andreifooter {
   color: orange;
   font-family: naruto;
+}
+
+.andreidisplay-4 {
+  color: orange;
+  font-family: naruto;
+}
+
+.andreih2 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
+}
+
+.andreih2 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
+}
+
+.andreih2ranking {
+  color: orange;
+  font-family: naruto;
+  text-align: center;
+}
+
+.andreih4 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
+}
+
+.andreip {
+  text-align: justify;
+}
+
+.andreicarrossel {
+  width: 80%;
+  text-align: center;
+  margin: 0 10% 0 10%;
 }
 
 @font-face {
@@ -105,6 +181,121 @@ footer {
 
 body {
   width: 100%;
+}
+
+.andreitable {
+  margin: 5%;
+  width: 90%;
+  text-align: center;
+}
+
+.andreitable .thead-dark th {
+  color: orange;
+  font-family: naruto;
+}
+
+.headerpadrao {
+  margin-bottom: 5%;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.navandrei .nav-link {
+  color: orange;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: naruto;
+}
+
+.jumbotronandrei {
+  margin: 5%;
+}
+
+footer {
+  text-align: center;
+}
+
+.andreifooter {
+  color: orange;
+  font-family: naruto;
+}
+
+.andreidisplay-4 {
+  color: orange;
+  font-family: naruto;
+}
+
+.andreih2 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
+}
+
+.andreih2 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
+}
+
+.andreih2ranking {
+  color: orange;
+  font-family: naruto;
+  text-align: center;
+}
+
+.andreih4 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
+}
+
+.andreip {
+  text-align: justify;
+}
+
+.andreicarrossel {
+  width: 80%;
+  text-align: center;
+  margin: 0 10% 0 10%;
+}
+
+@font-face {
+  font-family: 'naruto';
+  src: url('njnaruto.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hr2 {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #CCC, transparent);
+}
+
+.afonte {
+  color: orange;
+  font-family: naruto;
+}
+
+body {
+  width: 100%;
+}
+
+.andreitable {
+  margin: 5%;
+  width: 90%;
+  text-align: center;
+}
+
+.andreitable .thead-dark th {
+  color: orange;
+  font-family: naruto;
+}
+
+.headerpadrao {
+  margin-bottom: 5%;
 }
 
 body {
@@ -159,18 +350,18 @@ body {
   border-color: black;
 }
 
-.rowPadrao {
+.rowandrei {
   margin: 10% 10%;
 }
 
-.imagePadrao {
+.imageandrei {
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;
   border-color: black;
 }
 
-.jumbPadrao {
+.jumbandrei {
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;
@@ -235,18 +426,18 @@ body {
   border-color: black;
 }
 
-.rowPadrao {
+.rowandrei {
   margin: 10% 10%;
 }
 
-.imagePadrao {
+.imageandrei {
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;
   border-color: black;
 }
 
-.jumbPadrao {
+.jumbandrei {
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;
@@ -534,6 +725,7 @@ body {
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
+
 /* ------------------------------------------------------- */
 /* Botão de excluir */
 .btn-excluir {
@@ -627,13 +819,23 @@ botão de editar */
 
 .fa-edit {
 
-
+   margin: auto;
+  display: flex;
   color: rgb(76, 0, 255);
-
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1vw 3vw 1vw 3vw;
+  border-radius: 6px;
   background-color: #06022e;
   transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 500ms linear;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
 /* -------------------------------------------------------------
 botão de voltar */
 
@@ -691,80 +893,98 @@ botão de voltar */
   background-repeat: no-repeat;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-
-.gerente-controle-2 {
-  color: orange;
-  outline: none;
-  border: none;
-  padding: 0.7em 1em;
-  display: inline-block;
-  text-decoration: none;
+/* btn-comprar */
+.btn-comprar{
+  
   margin: auto;
-  cursor: pointer;
-  font-size: 1.2em;
-  font-family: 'open_sansregular';
-  border-radius: 3px;
-  background: #353535;
-  position: relative;
-  transition: all 0.8s ease;
-  -webkit-transition: all 0.3s ease;
-}
+  display: flex;
+  color: rgb(255, 230, 0);
 
-/* .gerente-controle-2-editar {
-  color: orange;
-  outline: none;
-  border: none;
-  padding: 0.7em 1em;
-  display: inline-block;
-  text-decoration: none;
-  margin: auto;
-  cursor: pointer;
-  font-size: 1.2em;
-  font-family: 'open_sansregular';
-  border-radius: 3px;
-  background: #353535;
-  position: relative;
-  transition: all 0.8s ease;
-  -webkit-transition: all 0.3s ease;
-} */
-
-.gerente-controle-2-excluir {
-  color: orange;
-  outline: none;
-  border: none;
-  padding: 0.7em 1em;
-  display: inline-block;
-  text-decoration: none;
-  margin: auto;
-  cursor: pointer;
-  font-size: 1.2em;
-  font-family: 'open_sansregular';
-  border-radius: 3px;
-  position: relative;
-  transition: all 0.8s ease;
-  -webkit-transition: all 0.3s ease;
-}
-
-.botao-excluir {
-  margin: auto;
-  color: rgb(255, 38, 0);
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0.8vw 2vw 0.8vw 2vw;
+  padding: 1vw 3vw 1vw 3vw;
   border-radius: 6px;
-  background-color: #007bff;
+  background-color: #343a40;
   transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 500ms linear;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.btn-comprar:hover {
+  transform: scale(1.1);
+  background-color: rgb(255, 115, 0);
+  background-position: -60px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.table td, .table th {
-  vertical-align: middle;
+.btn-comprar:active {
+  transform: scale(1);
+  background-color: rgb(255, 230, 0);
+  background-position: 500px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* btn-continue */
+.btn-continue{
+  
+  margin: auto;
+  display: flex;
+  color: rgb(240, 240, 240);
+
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1vw 3vw 1vw 3vw;
+  border-radius: 6px;
+  background-color: rgb(55, 45, 194);
+  transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 500ms linear;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.btn-continue:hover {
+  transform: scale(1.1);
+  background-color: rgb(23, 18, 85);
+  background-position: -60px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+.btn-continue:active {
+  transform: scale(1);
+  background-color: rgb(55, 45, 194);
+  background-position: 500px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+
+
+
+
+/* Card-Carrinho */
+
+.card-carrinho {
+  background-color: #fff;
+  padding: 5rem 1rem;
+  border-style: solid;
+  border-width: 3px;
+  margin: 6.1% 10%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 20vw;
+  left: 80vw;
+}
+
+
+.cart-summary {
+  padding-block-start: inherit;
+  background-color: #fff;
+  padding: 8rem 2rem;
+  border-style: solid;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 

@@ -1,12 +1,15 @@
+<?php
+	session_start();
+
+?>
 <?php 
     require __DIR__.'/vendor/autoload.php';
 
     use \App\Entity\Categoria;
     use \App\Entity\Carrinho;  
-      
+    
     include "./carrinho/config.php";
-    session_start();
-
+    
 
 include "./carrinho/cart.class.php";
 $cart = new Cart();
@@ -22,5 +25,5 @@ if ($res->num_rows > 0) {
 }
 
     require __DIR__.'/includes/header.php';
-    require __DIR__.'/includes/home.php';
+   	require __DIR__.'/includes/home.php';
     require __DIR__.'/includes/footer.php';

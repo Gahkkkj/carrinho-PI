@@ -58,7 +58,7 @@ $obFornecedor = new Fornecedor;
                         <th>Nome</th>
                         <th>CNPJ</th>
                         <th>Descrição</th>
-                        <th>Núm. Endereço</th>
+                        <th>Num. Endereço</th>
                         <th>Rua</th>
                         <th>Bairro</th>
                         <th>Cidade</th>

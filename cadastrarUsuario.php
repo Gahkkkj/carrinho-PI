@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-define('TITLE', 'Cadastrar usuário!');
+define('TITLE', 'Cadastrar registro!');
 
 use App\entity\Usuario;
 
@@ -23,7 +23,7 @@ if ($res->num_rows > 0) {
 $obUsuario = new Usuario();
 
 // echo "<pre>"; print_r($_POST); echo "<pre>"; exit;
-if (isset($_POST['nome'], $_POST['sobrenome'], $_POST['idade'], $_POST['cpf'], $_POST['descricao'], $_POST['sexo'], $_POST['ordem'], $_POST['status'])) {
+if (isset($_POST['nome'], $_POST['sobrenome'], $_POST['idade'], $_POST['cpf'], $_POST['descricao'], $_POST['sexo'], $_POST['ordem'], $_POST['status'], $_POST['niveis_acesso_id'])) {
     $obUsuario->nome = $_POST['nome'];
     $obUsuario->sobrenome = $_POST['sobrenome'];
     $obUsuario->idade = $_POST['idade'];
@@ -32,7 +32,7 @@ if (isset($_POST['nome'], $_POST['sobrenome'], $_POST['idade'], $_POST['cpf'], $
     $obUsuario->sexo = $_POST['sexo'];
     $obUsuario->ordem = $_POST['ordem'];
     $obUsuario->status = $_POST['status'];
-
+    $obUsuario->niveis_acesso_id = $_POST['niveis_acesso_id'];
     // echo "<pre>"; print_r($_POST); echo "<pre>"; exit;
 
 

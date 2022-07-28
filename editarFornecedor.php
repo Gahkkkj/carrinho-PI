@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-define('TITLE', 'Editar fornecedor!');
+define('TITLE', 'Editar registro!');
 
 use App\entity\fornecedor;
 

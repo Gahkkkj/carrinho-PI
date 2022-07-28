@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-define('TITLE', 'Cadastrar fornecedor!');
+define('TITLE', 'Cadastrar registro!');
 
 use App\entity\Fornecedor;
 

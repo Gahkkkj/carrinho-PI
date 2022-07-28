@@ -26,7 +26,7 @@
                             <input type="text" required class="form-control" name="descricao" value="<?php echo isset($obFornecedor->descricao) ? $obFornecedor->descricao : ''; ?>">
                         </div>
                         <div class="form-group">
-                            <label> Número de endereço </label>
+                            <label> Numero de endereço </label>
                             <input type="number" required class="form-control" name="numero_end" value="<?php echo isset($obFornecedor->numero_end) ? $obFornecedor->numero_end : ''; ?>">
                         </div>
                         <div class="form-group">

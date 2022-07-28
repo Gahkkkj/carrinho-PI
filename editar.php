@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-define('TITLE', 'Editar produto!');
+define('TITLE', 'Editar Produto');
 
 use \App\Entity\Carrinho;
 use \App\Entity\Categoria;
@@ -56,7 +56,7 @@ if (isset( $_POST['PRODUCT'],$_POST['data_compra'], $_POST['preco_produto'], $_P
     $obCarrinho->atualizarCarrinho();
     // echo "<pre>"; print_r($obCarrinho); echo "</pre>"; exit; 
 
-    header('location: indexGerente.php?status=success');
+    header('location: ./carrinho/index.php?status=success');
     exit;
 }
 

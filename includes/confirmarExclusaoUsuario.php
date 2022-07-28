@@ -1,4 +1,7 @@
 <section class="mt-5">
+    <a href="../indexUsuario.php">
+        <button class="btn btn-success"> Voltar </button>
+    </a>
     <h2 class="mt-3"> Excluir Registro </h2>
 
     <form method="post">

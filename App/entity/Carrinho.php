@@ -15,7 +15,7 @@ class Carrinho
 
       /**
      * Descrição da vaga (pode conter html)
-     * @var string
+     * @var varchar
      */
     public $PRODUCT;
    

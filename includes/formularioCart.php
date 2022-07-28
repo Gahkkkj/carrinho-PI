@@ -23,25 +23,24 @@
                             <textarea class="form-control" type="text" required name="PRODUCT"><?php echo isset($obCarrinho->PRODUCT) ? $obCarrinho->PRODUCT : ''; ?> </textarea>
                         </div>
                         <div class="form-group">
-                            <label> Data Compra </label>
+                            <label> Data de validade </label>
                             <input type="date" required class="form-control" name="data_compra" value="<?php echo isset($obCarrinho->data_compra) ? date('Y-m-d', strtotime($obCarrinho->data_compra)) : ''; ?>">
                         </div>
 
                         <div class="form-group">
                             <label> Preço </label>
-                            <input type="number" required class="form-control" name="preco_produto" value="<?php echo isset($obCarrinho->preco_produto) ? $obCarrinho->preco_produto : ''; ?>">
+                            <input class="form-control" type="number" required name="preco_produto"><?php echo isset($obCarrinho->preco_produto) ? $obCarrinho->preco_produto : ''; ?>
                         </div>
 
                         <div class="form-group">
                             <label> Descrição </label>
                             <textarea class="form-control" type="text" required name="DESCRIPTION"><?php echo isset($obCarrinho->DESCRIPTION) ? $obCarrinho->DESCRIPTION : ''; ?> </textarea>
                         </div>
-
                         <div class="form-group">
                             <label> Quantidade </label>
-                            <input type="number" required class="form-control" name="quantidade" value="<?php echo isset($obCarrinho->quantidade) ? $obCarrinho->quantidade : ''; ?>">
+                            <input class="form-control" type="number" required name="quantidade"><?php echo isset($obCarrinho->quantidade) ? $obCarrinho->quantidade : ''; ?> 
                         </div>
-                    
+                        
                         <div class="form-group">
                             <label for="">Categoria</label>
                                 <select class="form-control"  id="estiloSelect"name="fk_id_categoria">
