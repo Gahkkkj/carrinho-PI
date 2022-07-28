@@ -5,7 +5,7 @@
       <footer class=" pt-md-5 border-top bg-dark" id="futer">
         <div class="row andrei">
           <div class="col-4">
-            <h5 class="andreifooter"> MAIS </h5>
+            <h5 class="footerPadrao"> MAIS </h5>
             <ul class="list-unstyled text-small">
               <li><a class="text-muted" href="#">Algo legal</a></li>
               <li><a class="text-muted" href="#">Feature aleatória</a></li>
@@ -16,7 +16,7 @@
             </ul>
           </div>
           <div class="col-4">
-            <h5 class="andreifooter"> FONTES </h5>
+            <h5 class="footerPadrao"> FONTES </h5>
             <ul class="list-unstyled text-small">
               <li><a class="text-muted" href="#">Fonte</a></li>
               <li><a class="text-muted" href="#">Nome da fonte</a></li>
@@ -25,7 +25,7 @@
             </ul>
           </div>
           <div class="col-4">
-            <h5 class="andreifooter"> SOBRE </h5>
+            <h5 class="footerPadrao"> SOBRE </h5>
             <ul class="list-unstyled text-small">
               <li><a class="text-muted" href="#">Equipe</a></li>
               <li><a class="text-muted" href="#">Locais</a></li>

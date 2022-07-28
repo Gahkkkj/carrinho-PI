@@ -18,14 +18,14 @@
 <body class="text-dark" style="background-color: #C7A4A4;">
 
   <header>
-  <div class="d-flex align-items-center bg-dark andreifooter" style=" font-family: naruto; ">
+  <div class="d-flex align-items-center bg-dark footerPadrao" style=" font-family: naruto; ">
       <?php
      
       echo "Usuario: " . $_SESSION['usuarioNome'];
       ?>
       <br>
     </div>
-    <div class="d-flex justify-content-around align-items-center bg-dark andreifooter">
+    <div class="d-flex justify-content-around align-items-center bg-dark footerPadrao">
 
     <h1 class="row">
       <a class="navbar-brand btn btn-dark " style="color: orange;" href="index.php">Menu</a>

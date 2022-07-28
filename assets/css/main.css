@@ -2,14 +2,14 @@
   box-sizing: content-box;
 }
 
-.navandrei .nav-link {
+.navPadrao .nav-link {
   color: orange;
   text-decoration: none;
   background-color: transparent;
   font-family: naruto;
 }
 
-.jumbotronandrei {
+.jumbotronPadrao {
   margin: 5%;
 }
 
@@ -17,45 +17,45 @@ footer {
   text-align: center;
 }
 
-.andreifooter {
+.footerPadrao {
   color: orange;
   font-family: naruto;
 }
 
-.andreidisplay-4 {
+.Padraodisplay-4 {
   color: orange;
   font-family: naruto;
 }
 
-.andreih2 {
-  color: orange;
-  font-family: naruto;
-  text-align: left;
-}
-
-.andreih2 {
+.Padraoh2 {
   color: orange;
   font-family: naruto;
   text-align: left;
 }
 
-.andreih2ranking {
+.Padraoh2 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
+}
+
+.Padraoh2ranking {
   color: orange;
   font-family: naruto;
   text-align: center;
 }
 
-.andreih4 {
+.Padraoh4 {
   color: orange;
   font-family: naruto;
   text-align: left;
 }
 
-.andreip {
+.Padraop {
   text-align: justify;
 }
 
-.andreicarrossel {
+.Padraocarrossel {
   width: 80%;
   text-align: center;
   margin: 0 10% 0 10%;
@@ -83,13 +83,13 @@ body {
   width: 100%;
 }
 
-.andreitable {
+.Padraotable {
   margin: 5%;
   width: 90%;
   text-align: center;
 }
 
-.andreitable .thead-dark th {
+.Padraotable .thead-dark th {
   color: orange;
   font-family: naruto;
 }
@@ -102,14 +102,14 @@ body {
   box-sizing: content-box;
 }
 
-.navandrei .nav-link {
+.navPadrao .nav-link {
   color: orange;
   text-decoration: none;
   background-color: transparent;
   font-family: naruto;
 }
 
-.jumbotronandrei {
+.jumbotronPadrao {
   margin: 5%;
 }
 
@@ -117,45 +117,45 @@ footer {
   text-align: center;
 }
 
-.andreifooter {
+.footerPadrao {
   color: orange;
   font-family: naruto;
 }
 
-.andreidisplay-4 {
+.Padraodisplay-4 {
   color: orange;
   font-family: naruto;
 }
 
-.andreih2 {
-  color: orange;
-  font-family: naruto;
-  text-align: left;
-}
-
-.andreih2 {
+.Padraoh2 {
   color: orange;
   font-family: naruto;
   text-align: left;
 }
 
-.andreih2ranking {
+.Padraoh2 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
+}
+
+.Padraoh2ranking {
   color: orange;
   font-family: naruto;
   text-align: center;
 }
 
-.andreih4 {
+.Padraoh4 {
   color: orange;
   font-family: naruto;
   text-align: left;
 }
 
-.andreip {
+.Padraop {
   text-align: justify;
 }
 
-.andreicarrossel {
+.Padraocarrossel {
   width: 80%;
   text-align: center;
   margin: 0 10% 0 10%;
@@ -183,13 +183,13 @@ body {
   width: 100%;
 }
 
-.andreitable {
+.Padraotable {
   margin: 5%;
   width: 90%;
   text-align: center;
 }
 
-.andreitable .thead-dark th {
+.Padraotable .thead-dark th {
   color: orange;
   font-family: naruto;
 }
@@ -202,14 +202,14 @@ body {
   box-sizing: content-box;
 }
 
-.navandrei .nav-link {
+.navPadrao .nav-link {
   color: orange;
   text-decoration: none;
   background-color: transparent;
   font-family: naruto;
 }
 
-.jumbotronandrei {
+.jumbotronPadrao {
   margin: 5%;
 }
 
@@ -217,45 +217,45 @@ footer {
   text-align: center;
 }
 
-.andreifooter {
+.footerPadrao {
   color: orange;
   font-family: naruto;
 }
 
-.andreidisplay-4 {
+.Padraodisplay-4 {
   color: orange;
   font-family: naruto;
 }
 
-.andreih2 {
-  color: orange;
-  font-family: naruto;
-  text-align: left;
-}
-
-.andreih2 {
+.Padraoh2 {
   color: orange;
   font-family: naruto;
   text-align: left;
 }
 
-.andreih2ranking {
+.Padraoh2 {
+  color: orange;
+  font-family: naruto;
+  text-align: left;
+}
+
+.Padraoh2ranking {
   color: orange;
   font-family: naruto;
   text-align: center;
 }
 
-.andreih4 {
+.Padraoh4 {
   color: orange;
   font-family: naruto;
   text-align: left;
 }
 
-.andreip {
+.Padraop {
   text-align: justify;
 }
 
-.andreicarrossel {
+.Padraocarrossel {
   width: 80%;
   text-align: center;
   margin: 0 10% 0 10%;
@@ -283,13 +283,13 @@ body {
   width: 100%;
 }
 
-.andreitable {
+.Padraotable {
   margin: 5%;
   width: 90%;
   text-align: center;
 }
 
-.andreitable .thead-dark th {
+.Padraotable .thead-dark th {
   color: orange;
   font-family: naruto;
 }
@@ -350,18 +350,18 @@ body {
   border-color: black;
 }
 
-.rowandrei {
+.rowPadrao {
   margin: 10% 10%;
 }
 
-.imageandrei {
+.imagePadrao {
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;
   border-color: black;
 }
 
-.jumbandrei {
+.jumbPadrao {
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;
@@ -426,18 +426,18 @@ body {
   border-color: black;
 }
 
-.rowandrei {
+.rowPadrao {
   margin: 10% 10%;
 }
 
-.imageandrei {
+.imagePadrao {
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;
   border-color: black;
 }
 
-.jumbandrei {
+.jumbPadrao {
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;
