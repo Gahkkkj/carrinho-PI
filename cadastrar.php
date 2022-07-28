@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-define('TITLE', 'Cadastrar noticia');
+define('TITLE', 'Cadastrar produto!');
 
 use \App\entity\Noticia;
 

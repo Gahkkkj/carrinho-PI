@@ -44,6 +44,7 @@ $obCategoria = new Categoria;
     <button class="gerente-controle-2"><span class="spano"></span>Cadastrar</button>
     </a>
 
+    
     <div class="container" style="padding: 0px;">
 
         <?php if (count($Categoria) == 0) { ?>

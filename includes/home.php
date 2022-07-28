@@ -28,9 +28,6 @@
      </a>
     </div>
     <div class="col" style="margin-left: 4%;">
-     <input type="image" class="iconesmaxel" src="assets/image/relampago.jpg" width="120px" height="120px">  
-    </div>
-    <div class="col" style="margin-left: 4%;">
     <a href="//www.google.com/local/place/getaquote?qe=4271473&g2lb=4777242%2C4792928&hl=pt-BR&gl=br&cs=1&ssta=1&lid=18195379442585995684&c=gcid%3Amobile_phone_repair_shop&n=TWF4ZWw&ll=DTsQTu4VPcVT4Q%3D%3D&entry=pa&origin=https%3A%2F%2Fwww.google.com">
      <input type="image" class="iconesmaxel" src="assets/image/pc.jpg" width="120px" height="120px">  
      </a>

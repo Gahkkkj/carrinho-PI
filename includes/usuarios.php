@@ -31,12 +31,12 @@
 </section>
 <?php } ?>
 <nav class="navbar1 navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1"> <b> USUARIOS! </b> </span>
+    <span class="navbar-brand mb-0 h1"> <b> USUÁRIOS </b> </span>
 </nav>
 <section>
 
     <?php if(count($Usuario) == 0) { ?>
-    <div class="alert alert-secondary mt-3"> Nenhum Usuario Encontrado </div>
+    <div class="alert alert-secondary mt-3"> Nenhum usuário encontrado! </div>
 
     <?php } else { ?>
 

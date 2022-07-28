@@ -1,9 +1,7 @@
 <section class="mt-5">
-    <div style="text-align:center;">
-        <a href="indexFornecedor.php">
-            <button class="btn btn-success"> Voltar </button>
-        </a>
-        <h2 class="mt-3"> Excluir Registro </h2>
+    <div style="text-align:center;  margin-top: 20%;">
+
+        <h2 class="mt-3"> Excluir fornecedor! </h2>
 
         <form method="post">
             <div class="form-group">

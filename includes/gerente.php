@@ -39,11 +39,11 @@ if (isset($_GET['status'])) {
         <button class="btn btn-success"> Ver Fornecedores </button>
     </a>
     <a href="pedidoindex.php">
-        <button type="button" class="btn btn btn-success">Ver pedidos </button>
+        <button type="button" class="btn btn btn-success">Ver Pedidos </button>
     </a>
 
     <a href="indexUsuario.php">
-        <button class="btn btn-success"> Usuarios </button>
+        <button class="btn btn-success"> Usuários </button>
     </a>
 </div>
 

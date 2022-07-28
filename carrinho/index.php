@@ -26,26 +26,6 @@ if ($res->num_rows > 0) {
   }
 }
 
-// $busca = '';
-
-// if(isset( $_GET['categoria']) || isset( $_GET['busca'])) {
-//     if(isset( $_GET['categoria']) && $_GET['categoria'] != 0) {
-//         $busca = 'fk_id_categoria = ' . $_GET['categoria'];
-
-//         if(!empty($_GET['busca']) && count($_GET) > 1) {
-//             $busca .= ' AND ';
-//         }
-//     }
-
-
-//     // echo $busca;
-//     // echo "<pre>"; print_r ($_GET['categoria']); echo "</pre>"; exit; 
-//     // echo "<pre>"; print_r ($busca); echo "</pre>"; exit; 
-// }
-
-// $listaCategoria = Categoria::getCategoria();
-// $Categoria = Carrinho::getnoar($busca);
-
 ?>
 
 <html>
@@ -64,32 +44,6 @@ if ($res->num_rows > 0) {
       <span class="navbar-brand mb-0 h1"> <b> PRODUTOS </b> </span>
     </nav>
   <section>
-
-
-<!-- <form action="index.php" method="get">
-
-<div class="row">
-
-    <div class="col-4">
-        <input type="text" name="busca" class="form-control bg-dark text-light m-0" placeholder="Filtrar por nome"></input>
-    </div>
-
-    <div class="col-4">
-
-    <select class="form-control bg-dark text-light" name="categoria" value="">
-      <option value="">Selecione uma categoria!</option>
-        <?php foreach ($listaCategoria as $key => $value) { ?>
-          <option value="<?php echo $value['id']; ?> "> <?php echo $value['nome']; ?> </option>
-        <?php } ?>
-    </select>
-
-    </div>
-
-    <div class="col-4">
-        <button type="submit" class="btn btn-dark w-100 rounded m-0">Filtrar</button>
-    </div>
-</div>
-</form> -->
 
 </section>
 
@@ -131,7 +85,7 @@ if ($res->num_rows > 0) {
         <?php endforeach; ?>
       </div>
     </div>
-
+  
   </section>
 
   </footer>

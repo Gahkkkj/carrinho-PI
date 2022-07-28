@@ -1,9 +1,6 @@
 <section>
-<div style="text-align:center;">
+<div style="text-align:center;  margin-top: 20%;"">
 
-    <a href="listaCategoria.php">
-        <button class="btn btn-success" style="margin-top: 8%; margin-bottom: 5%;"> Voltar </button>
-    </a>
     <h2 class="mt-3"> EXCLUIR </h2>
     <form method="post">
         <div class="form-group">

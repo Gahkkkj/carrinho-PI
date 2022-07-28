@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-define('TITLE', 'Cadastrar registro!');
+define('TITLE', 'Cadastrar usuário!');
 
 use App\entity\Usuario;
 

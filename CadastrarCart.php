@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-define('TITLE', 'Cadastrar Produto');
+define('TITLE', 'Cadastrar produto!');
 
 use \App\entity\Carrinho;
 use \App\entity\Categoria;

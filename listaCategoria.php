@@ -5,6 +5,14 @@
     use \App\Entity\Categoria;
     $Categoria = Categoria::getCategoria();
 
+    $busca = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_STRING);
+
+    $condicoes = [
+        strlen($busca) ? 'nome LIKE "%' .str_replace(' ','%',$busca).'%"' : null];
+
+    $condicoes = array_filter($condicoes);
+
+    $where = implode(' AND ',$condicoes);
 
     include "./carrinho/config.php";
     
@@ -20,6 +28,8 @@
     
         }
     }
+
+    $Categoria = Categoria::getCategoria($where);
 
     require __DIR__.'/includes/header.php';
 

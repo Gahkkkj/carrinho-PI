@@ -72,7 +72,7 @@ if (isset($_POST["submit"])) {
 					</div>
 					<div class='form-group'>
 						<label>Numero</label>
-						<input type='number' name='contact' class='form-control' required placeholder='Numero de Telefone'>
+						<input type='number' name='contact' class='form-control' required placeholder='Número de Telefone'>
 					</div>
 					<div class='form-group'>
 						<label>Endereço</label>

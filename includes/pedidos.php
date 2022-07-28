@@ -38,7 +38,7 @@ if (isset($_GET['status'])) {
 <section>
 
     <?php if (count($Pedido) == 0) { ?>
-        <div class="alert alert-secondary mt-3"> Nenhum Pedido Encontrado </div>
+        <div class="alert alert-secondary mt-3"> Nenhum pedido encontrado! </div>
 
     <?php } else { ?>
         <div class="box-pedidos">
@@ -68,6 +68,8 @@ if (isset($_GET['status'])) {
                         </td>
 
 
+
+                        
                     </tr>
                 <?php } ?>
             </tbody>

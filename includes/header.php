@@ -19,8 +19,8 @@
   <header>
     <div class="d-flex justify-content-around align-items-center bg-dark footerPadrao">
       <a class="navbar-brand btn btn-dark " style="color: orange;" href="index.php">Menu</a>
-       <h1 class="display-4" style="color: orange;"> MAXEL
-        <p class="lead " style="color: orange;"> Busque do melhor! </p>
+       <h1 class="display-4" style="color: orange; margin-left: 9%;"> MAXEL
+        <p class="lead " style="color: orange; margin-left: 9%;"> Busque do melhor! </p>
       </h1>
       <h2 class="row">
          <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="./carrinho/index.php" role="button">Produtos</a>
