@@ -114,6 +114,8 @@ CREATE TABLE `usuario` (
   `CITY` varchar(45) NOT NULL DEFAULT '',
   `PINCODE` varchar(45) NOT NULL DEFAULT '',
   `EMAIL` varchar(45) NOT NULL DEFAULT '',
+  `situacoe_id` int(11) NOT NULL DEFAULT '2',
+  `niveis_acesso_id` int(11) NOT NULL,
   PRIMARY KEY (`UID`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1 AUTO_INCREMENT = 1;
 
@@ -125,34 +127,10 @@ CREATE TABLE `categoria` (
 ) ENGINE = innodb;
 
 
+INSERT INTO `usuario` (`UID`, `NAME`, `EMAIL`, `PINCODE`, `situacoe_id`, `niveis_acesso_id`) VALUES
 
-
---
--- Estrutura da tabela `usuarios`
---
-
-CREATE TABLE IF NOT EXISTS `usuarios` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(220) NOT NULL,
-  `email` varchar(520) NOT NULL,
-  `senha` varchar(50) NOT NULL,
-  `situacoe_id` int(11) NOT NULL DEFAULT '0',
-  `niveis_acesso_id` int(11) NOT NULL,
- 
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB ;
-
---
--- Extraindo dados da tabela `usuarios`
---
-
-INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `situacoe_id`, `niveis_acesso_id`) VALUES
-(1, 'Cesar Szpak', 'cesar@celke.com.br', '202cb962ac59075b964b07152d234b70', 1, 1),
-(2, 'Kelly', 'kelly@celke.com.br', '202cb962ac59075b964b07152d234b70', 1, 2),
-(3, 'Jessica', 'jessica@celke.com.br', '202cb962ac59075b964b07152d234b70', 1, 2),
-(5, 'Marcia', 'marcia@celke.com.br', '831efa4c96023f4e602ebf86ca27a1d1', 1, 1),
-(9, 'Celke', 'cesar@celke.com.br', '123', 2, 2),
-(10, 'Celke', 'cesar@celke.com.br', '123', 2, 2);
+(9, 'Gerente', 'Gerente@gmail.com.br', '123', 2, 1),
+(10, 'Usuario', 'Usuario@gmail.com.br', '123', 2, 2);
 
 
 -- --------------------------------------------------------

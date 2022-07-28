@@ -49,7 +49,17 @@ class Usuario
      */
     public $EMAIL;
 
-
+    /**
+     * Identificador único da vaga
+     * @var int
+     */
+    public $situacoe_id;
+    
+    /**
+     * Identificador único da vaga
+     * @var int
+     */
+    public $niveis_acesso_id;
 
     public function cadastrarUsuario()
     {
@@ -66,9 +76,11 @@ class Usuario
             'CONTACT' => $this->CONTACT,
             'ADDRESS' => $this->ADDRESS,
             'CITY' => $this->CITY,
-            'PINCODE' => $this->PINCODE,  
+            'PINCODE' => $this->PINCODE,
             'EMAIL' => $this->EMAIL,
-           ]);
+            'situacoe_id' => $this->situacoe_id,
+            'niveis_acesso_id' => $this->niveis_acesso_id,
+        ]);
 
         return true;
     }
@@ -115,7 +127,8 @@ class Usuario
      * Função para atualizar a vaga do banco de dados
      * @return boolean
      */
-    public function atualizarUsuario() {
+    public function atualizarUsuario()
+    {
         //Definir a data
         // $this->data = date('Y-m-d H:i:s');
 
@@ -126,7 +139,7 @@ class Usuario
             'CONTACT' => $this->CONTACT,
             'ADDRESS' => $this->ADDRESS,
             'CITY' => $this->CITY,
-            'PINCODE' => $this->PINCODE,  
+            'PINCODE' => $this->PINCODE,
             'EMAIL' => $this->EMAIL,
         ]);
     }

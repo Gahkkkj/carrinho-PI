@@ -61,7 +61,7 @@ if (isset($_POST["submit"])) {
 				
 			<div class=' col-md-10 mx-auto'>
 			<div class="box-formulario bg-dark">
-			<a href="indexGerente.php">
+			<a href="index.php">
                         <button class="btn btn-success"> Voltar </button>
                     </a>
 				<form method='post' action='<?php echo $_SERVER["REQUEST_URI"]; ?>' autocomplete="off">

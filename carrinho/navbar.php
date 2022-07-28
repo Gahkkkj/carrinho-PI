@@ -14,19 +14,32 @@
 
 <body class="text-dark" style="background-color: #C7A4A4;">
 
+
+  </div>
   <header>
-    <div class="d-flex justify-content-around align-items-center bg-dark andreifooter" style=" font-family: naruto; ">
-      <a class="navbar-brand btn btn-dark " style="color: orange;" href="../index.php">Menu</a>
-       <h1 class="display-4" style="color: orange;"> MAXEL
-        <p class="lead " style="color: orange;"> Busque do melhor! </p>
-      </h1>
-      <h2 class="row">
-         <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="index.php" role="button">Produtos</a>
-        <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="view_carrinho.php">Carrinho (<?php echo $cart->get_cart_count(); ?>)</a>
-      </h2>
+    <div class="d-flex align-items-center bg-dark andreifooter" style=" font-family: naruto; ">
+      <?php
+      echo "Usuario: " . $_SESSION['usuarioNome'];
+      ?>
+      <br>
     </div>
+      <div class="d-flex justify-content-around align-items-center bg-dark andreifooter" style=" font-family: naruto; ">
+        <h1 class="row">
+       
+          <a class="navbar-brand btn btn-dark " style="color: orange;" href="../index.php">Menu</a>
+          <a class="navbar-brand btn btn-dark " style="color: orange;" href="./login/sair.php">Sair</a>
+        </h1>
+
+        <h2 class="display-4" style="color: orange;"> MAXEL
+          <p class="lead " style="color: orange;"> Busque do melhor! </p>
+        </h2>
+        <h3 class="row">
+          <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="index.php" role="button">Produtos</a>
+          <a class="nav-item nav-link btn btn-dark" style="color: orange;" href="view_carrinho.php">Carrinho (<?php echo $cart->get_cart_count(); ?>)</a>
+        </h3>
+      </div>
     </div>
 
   </header>
 
-  <div class="container"> 
+  <div class="container">
