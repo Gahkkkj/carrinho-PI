@@ -65,7 +65,7 @@ if(isset( $_GET['categoria']) || isset( $_GET['busca'])) {
 
 <body>
   <section>
-    <?php include "navbarClient.php"; ?>
+    <?php include "navbar.php"; ?>
     <div class='container mt-5 pb-5'>
     <nav class="navbar1 navbar-light bg-light">
     <span class="navbar-brand mb-0 h1"> <b> PRODUTOS </b> </span>
